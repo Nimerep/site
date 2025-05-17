@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://nimerep.github.io/site/sitemap.xml
