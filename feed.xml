@@ -3,7 +3,7 @@
     <title>Goran&#x27;s Personal Site</title>
     <link href="https://nimerep.github.io/site/feed.xml" rel="self" />
     <link href="https://nimerep.github.io/site" />
-    <updated>2025-05-18T15:14:16+02:00</updated>
+    <updated>2025-05-18T15:28:25+02:00</updated>
     <author>
         <name>Goran Peremin</name>
     </author>
@@ -28,13 +28,21 @@
                 <p data-start="182" data-end="400">Znaš onu poruku kad dođeš na webshop i iskače ti "Ova stranica koristi kolačiće kako bi poboljšala iskustvo korisnika"?</p>
 <p data-start="182" data-end="400">Super. Samo što to <strong data-start="323" data-end="400">nije ni blizu dovoljno da budeš usklađen s GDPR-om i ePrivacy Direktivom. </strong><strong data-start="402" data-end="519">U ovom blogu neću ti prodavat template. Nego ti točno pišem što trebaš znati i što napraviti da ne dobiješ kaznu.</strong></p>
 <h2 data-start="654" data-end="676">🔍 ŠTO SU KOLAČIĆI?</h2>
-<p data-start="678" data-end="884">Kolačići su male tekstualne datoteke koje tvoj site šalje na uređaj korisnika.<br data-start="756" data-end="759">Zvuči bezazleno, ali preko njih pratiš korisnike, skupljaš podatke i šibaš ih trećim stranama (npr. Meta, Google, TikTok...).</p>
+<p data-start="678" data-end="884">Kolačići su male tekstualne datoteke koje tvoj site šalje na uređaj korisnika.<br data-start="756" data-end="759">Zvuči bezazleno, ali preko njih pratiš korisnike, skupljaš podatke i šibaš ih trećim stranama (npr. Meta, Google, TikTok...). To su mali komadići koda koji te prate po webu, skupljaju podatke o tvojim navikama, interesima, pa čak i lokaciji. I ne, nije to samo “za tvoje dobro” i “bolje korisničko iskustvo”. U stvarnosti, to je alat za praćenje i profiliranje korisnika – i tu prestaje šala.</p>
 <p data-start="886" data-end="915">Kolačići se dijele u 3 grupe:</p>
 <ol>
 <li data-start="920" data-end="1000"><strong data-start="920" data-end="938">Nužni kolačići</strong> – bez njih site ne radi (npr. spremanje proizvoda u košaricu)</li>
 <li data-start="1004" data-end="1052"><strong data-start="1004" data-end="1028">Statistički kolačići</strong> – npr. Google Analytics</li>
 <li data-start="1056" data-end="1136"><strong data-start="1056" data-end="1080">Marketinški kolačići</strong> – npr. Facebook Pixel, remarketing, cross-site tracking</li>
 </ol>
+<h2 class="mb-xs mt-5 text-base font-[500] first:mt-0 dark:font-[475]">Što zakon stvarno traži?</h2>
+<ul>
+<li class="my-0"><strong>Transparentnost:</strong> Moraš jasno objasniti koje kolačiće koristiš (analitički, marketinški, nužni, itd.), što rade i koliko dugo ih čuvaš.</li>
+<li class="my-0"><strong>Pristanak:</strong> Ne smiješ automatski postavljati kolačiće osim nužnih prije nego korisnik pristane.</li>
+<li class="my-0"><strong>Mogućnost odbijanja:</strong> Korisnik mora moći odbiti kolačiće jednako lako kao što ih može prihvatiti.</li>
+<li class="my-0"><strong>Dokumentacija pristanka:</strong> Moraš moći dokazati da si dobio pristanak (logiranje, timestamp, itd.).</li>
+</ul>
+<p> </p>
 <h2 data-start="1143" data-end="1166">🔥 GDJE SVI GRIJEŠE?</h2>
 <h3 data-start="1168" data-end="1221">❌ 1. "Informacijski" banner bez mogućnosti izbora</h3>
 <blockquote data-start="1223" data-end="1282">
@@ -79,6 +87,9 @@
 <p data-start="3072" data-end="3396">Bannere koji samo izgledaju zakonito, ali u pozadini šalju podatke čim se otvori stranica.</p>
 <p data-start="3072" data-end="3396">Najčešći uzrok?</p>
 <p data-start="3072" data-end="3396">Ugrađeni tracking kodovi u <code data-start="3308" data-end="3316">&lt;head&gt;</code> bez kontrole aktivacije.<br data-start="3341" data-end="3344">Rješenje? Tag Manager + condition + consent trigger.</p>
+<h2 id="to-ako-ignoriram-ove-zahtjeve" class="mb-2 mt-6 text-lg font-[500] first:mt-0 dark:font-[475]">Što ako ignoriram ove zahtjeve?</h2>
+<p class="my-0">Osim potencijalnih kazni (koje mogu doseći i do <strong>20 milijuna eura ili 4% godišnjeg prometa</strong>), riskirate i gubitak povjerenja korisnika. U doba kada je privatnost sve važnija tema, korisnici cijene transparentnost.</p>
+<p class="my-0">Moje iskustvo s klijentima koji su implementirali kvalitetne sustave za upravljanje kolačićima pokazuje da to zapravo može povećati povjerenje korisnika i konverzije. Jedan moj klijent je nakon implementacije transparentnog sustava za upravljanje kolačićima zabilježio <strong>povećanje stope konverzije</strong>!</p>
 <h2 data-start="3403" data-end="3431">📝 CHECKLISTA ZA KOLAČIĆE</h2>
 <p data-start="3433" data-end="3725">✅ Imaš li funkcionalan banner prije postavljanja bilo kojeg nenužnog kolačića?<br data-start="3511" data-end="3514">✅ Imaš li jasne kategorije + opise?<br data-start="3549" data-end="3552">✅ Imaš li “Odbij sve” opciju?<br data-start="3581" data-end="3584">✅ Bilježiš li sve privole (i odbijanja)?<br data-start="3624" data-end="3627">✅ Može li korisnik kasnije promijeniti izbor?<br data-start="3672" data-end="3675">✅ Imaš li politiku kolačića dostupnu i razumljivu?</p>
 <p data-start="3727" data-end="3769">Ako bilo što od ovoga fali, nisi usklađen.</p>
