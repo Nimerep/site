@@ -3,7 +3,7 @@
     <title>Goran&#x27;s Personal Site</title>
     <link href="https://nimerep.github.io/site/feed.xml" rel="self" />
     <link href="https://nimerep.github.io/site" />
-    <updated>2025-05-18T11:53:27+02:00</updated>
+    <updated>2025-05-18T13:46:40+02:00</updated>
     <author>
         <name>Goran Peremin</name>
     </author>
@@ -434,7 +434,7 @@ sintetičke_vrijednosti = np.random.normal(loc=170, scale=10, size=1000)  # 1000
                     <p><img src="https://nimerep.github.io/site/media/posts/4/Ekonometrija-u-marketingu.jpg" class="type:primaryImage" alt="Ekonometrija u marketingu" /></p>
                 <p class="my-0">Marketing bez ekonometrije je kao rock koncert bez pojačala – svi trube, ali nitko ne čuje poruku. Evo kako integrirati modele u strategiju, a da ne postaneš rob tablica i formula.</p>
 <h2 class="mb-xs mt-5 text-base font-[500] first:mt-0 dark:font-[475]">1. <strong>Ubij "zombie metriku" – fokusiraj se na pažnju, ne impresije</strong></h2>
-<p class="my-0">Forget CTR i doseg. <strong>Ekonometrija pažnje</strong> (izvor<a target="_blank" rel="nofollow noopener" class="citation ml-xs inline" data-state="closed" aria-label="Ekonometrija pažnje: Kako će nova znanost promijeniti marketing?" href="https://mamager.hr/business/ekonometrija-paznje-kako-ce-nova-znanost-promijeniti-marketing/"><span class="relative select-none align-middle undefined -top-px font-sans text-base text-textMain dark:text-textMainDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"><span class="hover:bg-super dark:hover:bg-superDark dark:hover:text-backgroundDark min-w-[1rem] rounded-[0.3125rem] px-[0.3rem] text-center align-middle font-mono text-[0.6rem] tabular-nums hover:text-white py-[0.1875rem] border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-offsetPlus dark:bg-offsetPlusDark">2</span></span></a>) pokazuje da je ključno <em>koliko dugo</em> korisnik zaustavlja pogled na oglasu, a ne koliko puta ga je vidio.</p>
+<p class="my-0">Forget CTR i doseg. <strong>Ekonometrija pažnje</strong> pokazuje da je ključno <em>koliko dugo</em> korisnik zaustavlja pogled na oglasu, a ne koliko puta ga je vidio.</p>
 <ul>
 <li class="my-0"><strong>Primjer:</strong> Ako 90% korisnika preskoči tvoj video oglas u prve 2 sekunde, tvoj CPM je bacanje novca.</li>
 <li class="my-0"><strong>Rješenje:</strong> Koristi eye-tracking podatke i AI analitiku da mjeriš <em>stvarnu</em> pažnju (ne samo "viewability").</li>
