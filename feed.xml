@@ -3,12 +3,173 @@
     <title>Goran&#x27;s Personal Site</title>
     <link href="https://nimerep.github.io/site/feed.xml" rel="self" />
     <link href="https://nimerep.github.io/site" />
-    <updated>2025-05-18T13:46:40+02:00</updated>
+    <updated>2025-05-18T14:47:59+02:00</updated>
     <author>
         <name>Goran Peremin</name>
     </author>
     <id>https://nimerep.github.io/site</id>
 
+    <entry>
+        <title>GDPR Checklist za E-commerce Web Shopove</title>
+        <author>
+            <name>Goran Peremin</name>
+        </author>
+        <link href="https://nimerep.github.io/site/gdpr-checklista-za-e-commerce-bez-gluposti-samo-ono-sto-ti-zapravo-treba/"/>
+        <id>https://nimerep.github.io/site/gdpr-checklista-za-e-commerce-bez-gluposti-samo-ono-sto-ti-zapravo-treba/</id>
+
+        <updated>2025-05-18T14:44:44+02:00</updated>
+            <summary>
+                <![CDATA[
+                    🔹 1. POLITIKA PRIVATNOSTI Što je to: Dokument koji objašnjava korisnicima koje njihove podatke skupljaš, zašto, koliko dugo i tko im sve pristupa. Mora sadržavati:&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h3 data-start="269" data-end="301">🔹 1. POLITIKA PRIVATNOSTI</h3>
+<p data-start="302" data-end="428"><strong data-start="302" data-end="316">Što je to:</strong> Dokument koji objašnjava korisnicima koje njihove podatke skupljaš, zašto, koliko dugo i tko im sve pristupa.</p>
+<p data-start="430" data-end="452"><strong data-start="430" data-end="450">Mora sadržavati:</strong></p>
+<ul>
+<li data-start="455" data-end="505">Tko si ti (naziv, kontakt, OIB, DPO ako postoji)</li>
+<li data-start="508" data-end="570">Koje podatke skupljaš (ime, adresa, e-mail, IP, kolačići...)</li>
+<li data-start="573" data-end="629">Zašto ih skupljaš (npr. dostava, analitika, marketing)</li>
+<li data-start="632" data-end="678">Koliko ih čuvaš (npr. 2 godine nakon kupnje)</li>
+<li data-start="681" data-end="748">Koji je pravni temelj (ugovor, zakon, privola, legitimni interes)</li>
+<li data-start="751" data-end="794">Tko ima pristup (dostava, CRM, Google...)</li>
+<li data-start="797" data-end="847">Prava korisnika (pristup, brisanje, prigovor...)</li>
+<li data-start="850" data-end="878">Kako mogu kontaktirati DPO-a</li>
+</ul>
+<p data-start="880" data-end="936"><strong data-start="880" data-end="899">Gdje mora biti:</strong> Vidljiv link u footeru web stranice.</p>
+<hr data-start="938" data-end="941">
+<h3 data-start="943" data-end="972">🔹 2. POLITIKA KOLAČIĆA</h3>
+<p data-start="973" data-end="1046"><strong data-start="973" data-end="987">Što je to:</strong> Dokument koji objašnjava koje kolačiće koristiš i zašto.</p>
+<p data-start="1048" data-end="1066"><strong data-start="1048" data-end="1064">Moraš imati:</strong></p>
+<p data-start="1069" data-end="1110">Cookie banner koji korisniku omogućuje:</p>
+<ul>
+<li data-start="1115" data-end="1144"><strong data-start="1115" data-end="1142">Prihvatiti sve kolačiće</strong></li>
+<li data-start="1149" data-end="1177"><strong data-start="1149" data-end="1175">Odbiti sve osim nužnih</strong></li>
+<li data-start="1182" data-end="1231"><strong data-start="1182" data-end="1229">Upravljač (detaljan prikaz po kategorijama)</strong></li>
+</ul>
+<p data-start="1233" data-end="1356"><strong data-start="1233" data-end="1248">Ne vrijedi:</strong> “Nastavkom korištenja pristajete…”</p>
+<hr data-start="1358" data-end="1361">
+<h3 data-start="1363" data-end="1401">🔹 3. NEWSLETTER / PROMO MAILOVI</h3>
+<p data-start="1402" data-end="1439"><strong data-start="1402" data-end="1437">Šalješ li e-mailove s ponudama?</strong></p>
+<ul>
+<li data-start="1442" data-end="1515">Ako da, moraš imati <strong data-start="1462" data-end="1473">privolu</strong> (opt-in) ako korisnik nije već kupovao.</li>
+<li data-start="1518" data-end="1609">Ako je kupovao, možeš koristiti <strong data-start="1550" data-end="1571">legitimni interes</strong>, ali napravi <strong data-start="1585" data-end="1606">test razmjernosti</strong>.</li>
+</ul>
+<p data-start="1611" data-end="1624"><strong data-start="1611" data-end="1622">Uvjeti:</strong></p>
+<ul>
+<li data-start="1627" data-end="1678">Svaki mail mora imati vidljiv <strong data-start="1657" data-end="1675">link za odjavu</strong>.</li>
+<li data-start="1681" data-end="1751">Moraš voditi <strong data-start="1694" data-end="1723">dokaz da si dobio privolu</strong> (log, checkbox, timestamp).</li>
+</ul>
+<hr data-start="1753" data-end="1756">
+<h3 data-start="1758" data-end="1798">🔹 4. EVIDENCIJA AKTIVNOSTI OBRADE</h3>
+<p data-start="1799" data-end="1818"><strong data-start="1799" data-end="1816">Obavezna ako:</strong></p>
+<ul>
+<li data-start="1821" data-end="1844">Obrada nije povremena</li>
+<li data-start="1847" data-end="1928">Uključuje rizik za korisnika (profiliranje, online kupnje, marketinški sustavi)</li>
+</ul>
+<p data-start="1930" data-end="1944"><strong data-start="1930" data-end="1942">Sadržaj:</strong></p>
+<ul>
+<li data-start="1947" data-end="1970">Naziv i kontakt firme</li>
+<li data-start="1973" data-end="2014">Svrhe obrade (npr. isporuka, analitika)</li>
+<li data-start="2017" data-end="2063">Vrste podataka (npr. ime, adresa, e-mail...)</li>
+<li data-start="2066" data-end="2098">Primatelji (dostava, software)</li>
+<li data-start="2101" data-end="2130">Rok pohrane (npr. 2 godine)</li>
+<li data-start="2133" data-end="2176">Mjere zaštite (HTTPS, lozinke, backup...)</li>
+</ul>
+<p data-start="2178" data-end="2239"><strong data-start="2178" data-end="2189">Format:</strong> Excel tablica. Po mogućnosti prema ARC predlošku.</p>
+<hr data-start="2241" data-end="2244">
+<h3 data-start="2246" data-end="2278">🔹 5. PRAVNA OSNOVA OBRADE</h3>
+<p data-start="2279" data-end="2361"><strong data-start="2279" data-end="2334">Moraš imati barem jednu osnovu za svaki tip obrade.</strong><br data-start="2334" data-end="2337">Šest osnova iz GDPR-a:</p>
+<ol>
+<li data-start="2365" data-end="2406"><strong data-start="2365" data-end="2376">Privola</strong> – korisnik klikom potvrđuje</li>
+<li data-start="2410" data-end="2453"><strong data-start="2410" data-end="2420">Ugovor</strong> – npr. obrada za isporuku robe</li>
+<li data-start="2457" data-end="2502"><strong data-start="2457" data-end="2476">Zakonska obveza</strong> – npr. izdavanje računa</li>
+<li data-start="2506" data-end="2556"><strong data-start="2506" data-end="2526">Zaštita interesa</strong> – hitne situacije (rijetko)</li>
+<li data-start="2560" data-end="2618"><strong data-start="2560" data-end="2589">Zadaća od javnog interesa</strong> – ne vrijedi za e-commerce</li>
+<li data-start="2622" data-end="2678"><strong data-start="2622" data-end="2643">Legitimni interes</strong> – npr. sigurnost, direct marketing</li>
+</ol>
+<hr data-start="2680" data-end="2683">
+<h3 data-start="2685" data-end="2713">🔹 6. PRAVA ISPITANIKA</h3>
+<p data-start="2714" data-end="2747">Moraš omogućiti korisnicima da:</p>
+<ul>
+<li data-start="2750" data-end="2776">Zatraže pristup podacima</li>
+<li data-start="2779" data-end="2795">Traže ispravak</li>
+<li data-start="2798" data-end="2843">Zatraže brisanje (ako nije zakonski vezano)</li>
+<li data-start="2846" data-end="2863">Ograniče obradu</li>
+<li data-start="2866" data-end="2883">Prenesu podatke</li>
+<li data-start="2886" data-end="2902">Ulože prigovor</li>
+<li data-start="2905" data-end="2942">Povuku privolu (ako je bila osnova)</li>
+</ul>
+<p data-start="2944" data-end="3024"><strong data-start="2944" data-end="2953">Kako:</strong> kontakt forma, e-mail, jasno opisana procedura u politici privatnosti.</p>
+<hr data-start="3026" data-end="3029">
+<h3 data-start="3031" data-end="3075">🔹 7. DOSTAVA PODATAKA TREĆIM STRANAMA</h3>
+<p data-start="3076" data-end="3143"><strong data-start="3076" data-end="3141">Svaki sustav kojem daješ podatke korisnika mora biti naveden.</strong></p>
+<ul>
+<li data-start="3146" data-end="3225">Primjeri: GLS, Hrvatska pošta, Google Analytics, e-mail marketing alati, CRM.</li>
+<li data-start="3228" data-end="3367">Ako podatke šalješ izvan EU (npr. Meta, Google), moraš koristiti <strong data-start="3293" data-end="3324">odgovarajuće zaštitne mjere</strong> (npr. SCC – standardne ugovorne klauzule).</li>
+</ul>
+<p> </p>
+<hr data-start="3369" data-end="3372">
+<h3 data-start="3374" data-end="3414">🔹 8. UGOVOR S IZVRŠITELJEM OBRADE</h3>
+<p data-start="3415" data-end="3522"><strong data-start="3415" data-end="3463">Ako netko drugi u tvoje ime obrađuje podatke</strong>, moraš imati <strong data-start="3477" data-end="3507">ugovor prema čl. 28 GDPR-a</strong>.<br data-start="3508" data-end="3511">Primjeri:</p>
+<ul>
+<li data-start="3525" data-end="3542">dostavna služba</li>
+<li data-start="3545" data-end="3558">web hosting</li>
+<li data-start="3561" data-end="3573">CRM sustav</li>
+<li data-start="3576" data-end="3615">email marketing alat (npr. Mailchimp)</li>
+</ul>
+<p data-start="3617" data-end="3641">Ugovor mora pokrivati:</p>
+<ul>
+<li data-start="3644" data-end="3658">svrhu obrade</li>
+<li data-start="3661" data-end="3676">mjere zaštite</li>
+<li data-start="3679" data-end="3725">zabranu korištenja podataka u vlastite svrhe</li>
+<li data-start="3728" data-end="3743">podugovaratelje</li>
+</ul>
+<hr data-start="3745" data-end="3748">
+<h3 data-start="3750" data-end="3792">🔹 9. POVREDA PODATAKA (DATA BREACH)</h3>
+<p data-start="3793" data-end="3840"><strong data-start="3793" data-end="3830">Ako dođe do sigurnosnog incidenta</strong>, moraš:</p>
+<ul>
+<li data-start="3843" data-end="3880">prijaviti AZOP-u <strong data-start="3860" data-end="3878">unutar 72 sata</strong></li>
+<li data-start="3883" data-end="3948">ako postoji visok rizik za korisnike, moraš obavijestiti i njih</li>
+</ul>
+<p data-start="3950" data-end="3963"><strong data-start="3950" data-end="3961">Sadrži:</strong></p>
+<ul>
+<li data-start="3966" data-end="3993">datum i vrijeme incidenta</li>
+<li data-start="3996" data-end="4018">broj pogođenih osoba</li>
+<li data-start="4021" data-end="4042">kategorije podataka</li>
+<li data-start="4045" data-end="4068">mjere koje si poduzeo</li>
+</ul>
+<p data-start="4070" data-end="4184"><strong data-start="4070" data-end="4099">Prijavljuje se na e-mail:</strong> <a data-start="4100" data-end="4117" class="cursor-pointer" rel="noopener">incidenti@azop.hr</a><br data-start="4117" data-end="4120"><strong data-start="4120" data-end="4132">Obrazac:</strong> <a href="https://azop.hr/wp-content/uploads/2021/04/izvjesce_o_povredi_osobnih_podataka-1.rtf" title="izvjesce_o_povredi_osobnih_podataka-1 (1).rtf" rel="nofollow">imaš predložak <span class="text-token-text-secondary inline-flex items-center rounded-full bg-[#f4f4f4] select-none dark:bg-token-main-surface-secondary  h-[22px] px-2 text-[0.5em] font-medium ms-1" title="izvjesce_o_povredi_osobnih_podataka-1 (1).rtf">izvjesce_o_povredi_osob</span><span class="text-token-text-secondary inline-flex items-center rounded-full bg-[#f4f4f4] select-none dark:bg-token-main-surface-secondary  h-[22px] px-2 text-[0.5em] font-medium ms-1" title="izvjesce_o_povredi_osobnih_podataka-1 (1).rtf">…</span></a></p>
+<hr data-start="4186" data-end="4189">
+<h3 data-start="4191" data-end="4226">🔹 10. DPIA (PROCJENA UČINKA)</h3>
+<p data-start="4227" data-end="4246"><strong data-start="4227" data-end="4244">Obavezna ako:</strong></p>
+<ul>
+<li data-start="4249" data-end="4319">koristiš tehnologije koje prate korisnika (profiliranje, biometrija)</li>
+<li data-start="4322" data-end="4368">obrađuješ osjetljive podatke (npr. zdravlje)</li>
+<li data-start="4371" data-end="4411">postoji visok rizik za prava korisnika</li>
+</ul>
+<p data-start="4413" data-end="4426"><strong data-start="4413" data-end="4424">Koraci:</strong></p>
+<ol>
+<li data-start="4430" data-end="4444">Opiši obradu</li>
+<li data-start="4448" data-end="4481">Procijeni nužnost i razmjernost</li>
+<li data-start="4485" data-end="4503">Procijeni rizike</li>
+<li data-start="4507" data-end="4520">Uvedi mjere</li>
+<li data-start="4524" data-end="4540">Dokumentiraj sve</li>
+</ol>
+<hr data-start="4542" data-end="4545">
+<h3 data-start="4547" data-end="4592">🔹 11. SNIMANJE DOGAĐAJA / VIDEO NADZOR</h3>
+<p data-start="4593" data-end="4631"><strong data-start="4593" data-end="4629">Ako snimaš ljude (fotke, video):</strong></p>
+<ul>
+<li data-start="4634" data-end="4667">Moraš ih unaprijed obavijestiti</li>
+<li data-start="4670" data-end="4727">Moraš imati pravni temelj (najčešće: legitimni interes)</li>
+<li data-start="4730" data-end="4763">Moraš omogućiti pravo na prigovor</li>
+</ul>
+<p data-start="4765" data-end="4869"><strong data-start="4765" data-end="4806">Obavijest mora biti fizički vidljiva.</strong><br data-start="4806" data-end="4809"><strong data-start="4809" data-end="4823">Predložak:</strong> <a href="https://azop.hr/wp-content/uploads/2020/12/9-obavijestvideonazdor-1.png" rel="nofollow">dostupan</a></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Sintetički podaci u istraživanjima: Genijalnost ili samo lijenost?</title>
         <author>
