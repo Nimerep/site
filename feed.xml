@@ -3,7 +3,7 @@
     <title>Goran&#x27;s Personal Site</title>
     <link href="https://nimerep.github.io/site/feed.xml" rel="self" />
     <link href="https://nimerep.github.io/site" />
-    <updated>2025-05-18T14:47:59+02:00</updated>
+    <updated>2025-05-18T14:57:20+02:00</updated>
     <author>
         <name>Goran Peremin</name>
     </author>
@@ -20,12 +20,13 @@
         <updated>2025-05-18T14:44:44+02:00</updated>
             <summary>
                 <![CDATA[
-                    🔹 1. POLITIKA PRIVATNOSTI Što je to: Dokument koji objašnjava korisnicima koje njihove podatke skupljaš, zašto, koliko dugo i tko im sve pristupa. Mora sadržavati:&hellip;
+                    Ako vodiš webshop, onda skupljaš osobne podatke. Ako skupljaš osobne podatke, onda moraš poštivati GDPR. Nema filozofije – ovo je tvoj vodič kroz GDPR džunglu.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <h3 data-start="269" data-end="301">🔹 1. POLITIKA PRIVATNOSTI</h3>
+                <p data-start="269" data-end="301">Ako vodiš webshop, onda skupljaš osobne podatke. Ako skupljaš osobne podatke, onda moraš poštivati GDPR. Nema filozofije – ovo je tvoj vodič kroz GDPR džunglu. Kratak. </p>
+<h3 data-start="269" data-end="301">1. POLITIKA PRIVATNOSTI</h3>
 <p data-start="302" data-end="428"><strong data-start="302" data-end="316">Što je to:</strong> Dokument koji objašnjava korisnicima koje njihove podatke skupljaš, zašto, koliko dugo i tko im sve pristupa.</p>
 <p data-start="430" data-end="452"><strong data-start="430" data-end="450">Mora sadržavati:</strong></p>
 <ul>
@@ -40,7 +41,7 @@
 </ul>
 <p data-start="880" data-end="936"><strong data-start="880" data-end="899">Gdje mora biti:</strong> Vidljiv link u footeru web stranice.</p>
 <hr data-start="938" data-end="941">
-<h3 data-start="943" data-end="972">🔹 2. POLITIKA KOLAČIĆA</h3>
+<h3 data-start="943" data-end="972">2. POLITIKA KOLAČIĆA</h3>
 <p data-start="973" data-end="1046"><strong data-start="973" data-end="987">Što je to:</strong> Dokument koji objašnjava koje kolačiće koristiš i zašto.</p>
 <p data-start="1048" data-end="1066"><strong data-start="1048" data-end="1064">Moraš imati:</strong></p>
 <p data-start="1069" data-end="1110">Cookie banner koji korisniku omogućuje:</p>
@@ -51,7 +52,7 @@
 </ul>
 <p data-start="1233" data-end="1356"><strong data-start="1233" data-end="1248">Ne vrijedi:</strong> “Nastavkom korištenja pristajete…”</p>
 <hr data-start="1358" data-end="1361">
-<h3 data-start="1363" data-end="1401">🔹 3. NEWSLETTER / PROMO MAILOVI</h3>
+<h3 data-start="1363" data-end="1401">3. NEWSLETTER</h3>
 <p data-start="1402" data-end="1439"><strong data-start="1402" data-end="1437">Šalješ li e-mailove s ponudama?</strong></p>
 <ul>
 <li data-start="1442" data-end="1515">Ako da, moraš imati <strong data-start="1462" data-end="1473">privolu</strong> (opt-in) ako korisnik nije već kupovao.</li>
@@ -63,7 +64,7 @@
 <li data-start="1681" data-end="1751">Moraš voditi <strong data-start="1694" data-end="1723">dokaz da si dobio privolu</strong> (log, checkbox, timestamp).</li>
 </ul>
 <hr data-start="1753" data-end="1756">
-<h3 data-start="1758" data-end="1798">🔹 4. EVIDENCIJA AKTIVNOSTI OBRADE</h3>
+<h3 data-start="1758" data-end="1798">4. EVIDENCIJA AKTIVNOSTI OBRADE</h3>
 <p data-start="1799" data-end="1818"><strong data-start="1799" data-end="1816">Obavezna ako:</strong></p>
 <ul>
 <li data-start="1821" data-end="1844">Obrada nije povremena</li>
@@ -80,7 +81,7 @@
 </ul>
 <p data-start="2178" data-end="2239"><strong data-start="2178" data-end="2189">Format:</strong> Excel tablica. Po mogućnosti prema ARC predlošku.</p>
 <hr data-start="2241" data-end="2244">
-<h3 data-start="2246" data-end="2278">🔹 5. PRAVNA OSNOVA OBRADE</h3>
+<h3 data-start="2246" data-end="2278">5. PRAVNA OSNOVA OBRADE</h3>
 <p data-start="2279" data-end="2361"><strong data-start="2279" data-end="2334">Moraš imati barem jednu osnovu za svaki tip obrade.</strong><br data-start="2334" data-end="2337">Šest osnova iz GDPR-a:</p>
 <ol>
 <li data-start="2365" data-end="2406"><strong data-start="2365" data-end="2376">Privola</strong> – korisnik klikom potvrđuje</li>
@@ -91,7 +92,7 @@
 <li data-start="2622" data-end="2678"><strong data-start="2622" data-end="2643">Legitimni interes</strong> – npr. sigurnost, direct marketing</li>
 </ol>
 <hr data-start="2680" data-end="2683">
-<h3 data-start="2685" data-end="2713">🔹 6. PRAVA ISPITANIKA</h3>
+<h3 data-start="2685" data-end="2713">6. PRAVA ISPITANIKA</h3>
 <p data-start="2714" data-end="2747">Moraš omogućiti korisnicima da:</p>
 <ul>
 <li data-start="2750" data-end="2776">Zatraže pristup podacima</li>
@@ -104,7 +105,7 @@
 </ul>
 <p data-start="2944" data-end="3024"><strong data-start="2944" data-end="2953">Kako:</strong> kontakt forma, e-mail, jasno opisana procedura u politici privatnosti.</p>
 <hr data-start="3026" data-end="3029">
-<h3 data-start="3031" data-end="3075">🔹 7. DOSTAVA PODATAKA TREĆIM STRANAMA</h3>
+<h3 data-start="3031" data-end="3075">7. DOSTAVA PODATAKA TREĆIM STRANAMA</h3>
 <p data-start="3076" data-end="3143"><strong data-start="3076" data-end="3141">Svaki sustav kojem daješ podatke korisnika mora biti naveden.</strong></p>
 <ul>
 <li data-start="3146" data-end="3225">Primjeri: GLS, Hrvatska pošta, Google Analytics, e-mail marketing alati, CRM.</li>
@@ -112,7 +113,7 @@
 </ul>
 <p> </p>
 <hr data-start="3369" data-end="3372">
-<h3 data-start="3374" data-end="3414">🔹 8. UGOVOR S IZVRŠITELJEM OBRADE</h3>
+<h3 data-start="3374" data-end="3414">8. UGOVOR S IZVRŠITELJEM OBRADE</h3>
 <p data-start="3415" data-end="3522"><strong data-start="3415" data-end="3463">Ako netko drugi u tvoje ime obrađuje podatke</strong>, moraš imati <strong data-start="3477" data-end="3507">ugovor prema čl. 28 GDPR-a</strong>.<br data-start="3508" data-end="3511">Primjeri:</p>
 <ul>
 <li data-start="3525" data-end="3542">dostavna služba</li>
@@ -128,7 +129,7 @@
 <li data-start="3728" data-end="3743">podugovaratelje</li>
 </ul>
 <hr data-start="3745" data-end="3748">
-<h3 data-start="3750" data-end="3792">🔹 9. POVREDA PODATAKA (DATA BREACH)</h3>
+<h3 data-start="3750" data-end="3792">9. POVREDA PODATAKA (DATA BREACH)</h3>
 <p data-start="3793" data-end="3840"><strong data-start="3793" data-end="3830">Ako dođe do sigurnosnog incidenta</strong>, moraš:</p>
 <ul>
 <li data-start="3843" data-end="3880">prijaviti AZOP-u <strong data-start="3860" data-end="3878">unutar 72 sata</strong></li>
@@ -143,7 +144,7 @@
 </ul>
 <p data-start="4070" data-end="4184"><strong data-start="4070" data-end="4099">Prijavljuje se na e-mail:</strong> <a data-start="4100" data-end="4117" class="cursor-pointer" rel="noopener">incidenti@azop.hr</a><br data-start="4117" data-end="4120"><strong data-start="4120" data-end="4132">Obrazac:</strong> <a href="https://azop.hr/wp-content/uploads/2021/04/izvjesce_o_povredi_osobnih_podataka-1.rtf" title="izvjesce_o_povredi_osobnih_podataka-1 (1).rtf" rel="nofollow">imaš predložak <span class="text-token-text-secondary inline-flex items-center rounded-full bg-[#f4f4f4] select-none dark:bg-token-main-surface-secondary  h-[22px] px-2 text-[0.5em] font-medium ms-1" title="izvjesce_o_povredi_osobnih_podataka-1 (1).rtf">izvjesce_o_povredi_osob</span><span class="text-token-text-secondary inline-flex items-center rounded-full bg-[#f4f4f4] select-none dark:bg-token-main-surface-secondary  h-[22px] px-2 text-[0.5em] font-medium ms-1" title="izvjesce_o_povredi_osobnih_podataka-1 (1).rtf">…</span></a></p>
 <hr data-start="4186" data-end="4189">
-<h3 data-start="4191" data-end="4226">🔹 10. DPIA (PROCJENA UČINKA)</h3>
+<h3 data-start="4191" data-end="4226">10. DPIA (PROCJENA UČINKA)</h3>
 <p data-start="4227" data-end="4246"><strong data-start="4227" data-end="4244">Obavezna ako:</strong></p>
 <ul>
 <li data-start="4249" data-end="4319">koristiš tehnologije koje prate korisnika (profiliranje, biometrija)</li>
@@ -159,7 +160,7 @@
 <li data-start="4524" data-end="4540">Dokumentiraj sve</li>
 </ol>
 <hr data-start="4542" data-end="4545">
-<h3 data-start="4547" data-end="4592">🔹 11. SNIMANJE DOGAĐAJA / VIDEO NADZOR</h3>
+<h3 data-start="4547" data-end="4592">11. SNIMANJE DOGAĐAJA / VIDEO NADZOR</h3>
 <p data-start="4593" data-end="4631"><strong data-start="4593" data-end="4629">Ako snimaš ljude (fotke, video):</strong></p>
 <ul>
 <li data-start="4634" data-end="4667">Moraš ih unaprijed obavijestiti</li>
