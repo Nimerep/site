@@ -3,7 +3,7 @@
     <title>Goran&#x27;s Personal Site</title>
     <link href="https://nimerep.github.io/site/feed.xml" rel="self" />
     <link href="https://nimerep.github.io/site" />
-    <updated>2025-05-18T20:44:03+02:00</updated>
+    <updated>2025-05-18T20:47:25+02:00</updated>
     <author>
         <name>Goran Peremin</name>
     </author>
@@ -84,7 +84,7 @@
 <li class="my-0">Prikaži "prije i poslije" fotografije</li>
 <li class="my-0">Koristi video koji pokazuju proizvod u akciji</li>
 </ul>
-<p class="my-0">Moj favorit? Blendtec i njihova "Will It Blend?" serija gdje blendaju iPhone. Ludo? Da. Učinkovito? Prodaja im je skočila 700%.</p>
+<p class="my-0">Moj favorit? Blendtec i njihova <a href="https://www.youtube.com/watch?v=qg1ckCkm8YI" rel="nofollow">"Will It Blend?"</a> serija gdje blendaju iPhone. Ludo? Da. Učinkovito? Prodaja im je skočila 700%.</p>
 <h2 id="6-drutveni-dokaz---snaga-mase" class="mb-2 mt-6 text-lg font-[500] first:mt-0 dark:font-[475]">6. Društveni dokaz - snaga mase</h2>
 <p class="my-0">Ljudi žele pripadati grupi. Pokaži im da nisu sami u kupnji tvog proizvoda.</p>
 <p class="my-0"><strong>Kako implementirati:</strong></p>
