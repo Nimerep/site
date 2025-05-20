@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://nimerep.github.io/site/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://www.peremin.com/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
-<loc>https://nimerep.github.io/site/</loc>
+<loc>https://www.peremin.com/</loc>
 </url>
 <url>
-<loc>https://nimerep.github.io/site/7-najefikasnijih-proof-elemenata-za-povecanje-povjerenja-u-web-shopu/</loc>
+<loc>https://www.peremin.com/7-najefikasnijih-proof-elemenata-za-povecanje-povjerenja-u-web-shopu/</loc>
 <lastmod>2025-05-18T20:47:25+02:00</lastmod>
 <image:image>
-<image:loc>https://nimerep.github.io/site/media/posts/9/7-Najefikasnijih-Proof-Elemenata-za-Povecanje-Povjerenja-u-Web-Shopu.jpg</image:loc>
+<image:loc>https://www.peremin.com/media/posts/9/7-Najefikasnijih-Proof-Elemenata-za-Povecanje-Povjerenja-u-Web-Shopu.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://nimerep.github.io/site/brand-kampanje-istina-mitovi-i-zasto-vecina-marketinskog-svijeta-jos-uvijek-ne-kuzi-igru-copy/</loc>
+<loc>https://www.peremin.com/about-me/</loc>
+<lastmod>2025-05-20T19:16:29+02:00</lastmod>
+<image:image>
+<image:loc>https://www.peremin.com/media/posts/10/Goran-Peremin.jpg</image:loc>
+<image:title><![CDATA[Goran Peremin photo]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://www.peremin.com/media/posts/10/Untitled-3.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://www.peremin.com/brand-kampanje-istina-mitovi-i-zasto-vecina-marketinskog-svijeta-jos-uvijek-ne-kuzi-igru-copy/</loc>
 <lastmod>2025-05-18T11:53:27+02:00</lastmod>
 </url>
 <url>
-<loc>https://nimerep.github.io/site/ekonometrija-u-marketingu-kako-pretvoriti-brojke-u-oruzje/</loc>
+<loc>https://www.peremin.com/ekonometrija-u-marketingu-kako-pretvoriti-brojke-u-oruzje/</loc>
 <lastmod>2025-05-18T13:46:40+02:00</lastmod>
 <image:image>
-<image:loc>https://nimerep.github.io/site/media/posts/4/Ekonometrija-u-marketingu.jpg</image:loc>
+<image:loc>https://www.peremin.com/media/posts/4/Ekonometrija-u-marketingu.jpg</image:loc>
 <image:title><![CDATA[Ekonometrija u marketingu]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://nimerep.github.io/site/gdpr-checklista-za-e-commerce-bez-gluposti-samo-ono-sto-ti-zapravo-treba/</loc>
+<loc>https://www.peremin.com/gdpr-checklista-za-e-commerce-bez-gluposti-samo-ono-sto-ti-zapravo-treba/</loc>
 <lastmod>2025-05-18T14:57:20+02:00</lastmod>
 </url>
 <url>
-<loc>https://nimerep.github.io/site/kolacici-uskladi-se-s-gdpr-om-i-eprivacy-direktivom/</loc>
+<loc>https://www.peremin.com/kolacici-uskladi-se-s-gdpr-om-i-eprivacy-direktivom/</loc>
 <lastmod>2025-05-18T15:28:25+02:00</lastmod>
 </url>
 <url>
-<loc>https://nimerep.github.io/site/page/2/</loc>
+<loc>https://www.peremin.com/page/2/</loc>
 </url>
 <url>
-<loc>https://nimerep.github.io/site/roi-nije-jedan-broj-kako-povezati-metrike-modele-i-zdrav-razum-u-marketingu/</loc>
+<loc>https://www.peremin.com/roi-nije-jedan-broj-kako-povezati-metrike-modele-i-zdrav-razum-u-marketingu/</loc>
 <lastmod>2025-05-18T09:45:38+02:00</lastmod>
 <image:image>
-<image:loc>https://nimerep.github.io/site/media/posts/5/ROI-nije-jedan-broj.jpg</image:loc>
+<image:loc>https://www.peremin.com/media/posts/5/ROI-nije-jedan-broj.jpg</image:loc>
 <image:title><![CDATA[ROI nije jedan broj]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://nimerep.github.io/site/sinteticki-podaci-u-istrazivanjima-genijalnost-ili-samo-lijenost/</loc>
+<loc>https://www.peremin.com/sinteticki-podaci-u-istrazivanjima-genijalnost-ili-samo-lijenost/</loc>
 <lastmod>2025-05-18T08:08:04+02:00</lastmod>
 <image:image>
-<image:loc>https://nimerep.github.io/site/media/posts/6/Synthetic-Data-in-Research-by-Goran-Peremin.jpg</image:loc>
+<image:loc>https://www.peremin.com/media/posts/6/Synthetic-Data-in-Research-by-Goran-Peremin.jpg</image:loc>
 <image:title><![CDATA[Sintetički podaci u istraživanjima: Genijalnost ili?]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://nimerep.github.io/site/who-is-goran-peremin/</loc>
-<lastmod>2025-05-19T21:15:04+02:00</lastmod>
-<image:image>
-<image:loc>https://nimerep.github.io/site/media/posts/1/Goran-Peremin.jpg</image:loc>
-<image:title><![CDATA[Goran Peremin photo]]></image:title>
-</image:image>
-<image:image>
-<image:loc>https://nimerep.github.io/site/media/posts/1/Untitled-3.jpg</image:loc>
-<image:title><![CDATA[]]></image:title>
-</image:image>
-</url>
-<url>
-<loc>https://nimerep.github.io/site/zasto-brendovi-rastu-i-zasto-vas-mozda-stagnira/</loc>
+<loc>https://www.peremin.com/zasto-brendovi-rastu-i-zasto-vas-mozda-stagnira/</loc>
 <lastmod>2025-05-18T11:51:57+02:00</lastmod>
 </url>
 </urlset>

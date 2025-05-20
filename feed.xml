@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>Goran&#x27;s Personal Site</title>
-    <link href="https://nimerep.github.io/site/feed.xml" rel="self" />
-    <link href="https://nimerep.github.io/site" />
+    <link href="https://www.peremin.com/feed.xml" rel="self" />
+    <link href="https://www.peremin.com" />
     <updated>2025-05-18T20:47:25+02:00</updated>
     <author>
         <name>Goran Peremin</name>
     </author>
-    <id>https://nimerep.github.io/site</id>
+    <id>https://www.peremin.com</id>
 
     <entry>
         <title>7 Najefikasnijih Proof Elemenata za Povećanje Povjerenja u Web Shopu</title>
         <author>
             <name>Goran Peremin</name>
         </author>
-        <link href="https://nimerep.github.io/site/7-najefikasnijih-proof-elemenata-za-povecanje-povjerenja-u-web-shopu/"/>
-        <id>https://nimerep.github.io/site/7-najefikasnijih-proof-elemenata-za-povecanje-povjerenja-u-web-shopu/</id>
-        <media:content url="https://nimerep.github.io/site/media/posts/9/7-Najefikasnijih-Proof-Elemenata-za-Povecanje-Povjerenja-u-Web-Shopu.jpg" medium="image" />
+        <link href="https://www.peremin.com/7-najefikasnijih-proof-elemenata-za-povecanje-povjerenja-u-web-shopu/"/>
+        <id>https://www.peremin.com/7-najefikasnijih-proof-elemenata-za-povecanje-povjerenja-u-web-shopu/</id>
+        <media:content url="https://www.peremin.com/media/posts/9/7-Najefikasnijih-Proof-Elemenata-za-Povecanje-Povjerenja-u-Web-Shopu.jpg" medium="image" />
 
         <updated>2025-05-18T20:01:52+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://nimerep.github.io/site/media/posts/9/7-Najefikasnijih-Proof-Elemenata-za-Povecanje-Povjerenja-u-Web-Shopu.jpg" alt="" />
+                        <img src="https://www.peremin.com/media/posts/9/7-Najefikasnijih-Proof-Elemenata-za-Povecanje-Povjerenja-u-Web-Shopu.jpg" alt="" />
                     Znaš onaj osjećaj kad uđeš u web shop i misliš si: "Hmm, je li ovo legit ili će mi netko maznuti podatke s kartice i&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://nimerep.github.io/site/media/posts/9/7-Najefikasnijih-Proof-Elemenata-za-Povecanje-Povjerenja-u-Web-Shopu.jpg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://www.peremin.com/media/posts/9/7-Najefikasnijih-Proof-Elemenata-za-Povecanje-Povjerenja-u-Web-Shopu.jpg" class="type:primaryImage" alt="" /></p>
                 <p class="my-0">Znaš onaj osjećaj kad uđeš u web shop i misliš si: "Hmm, je li ovo legit ili će mi netko maznuti podatke s kartice i kupiti jahtu na Karibima?"</p>
 <p class="my-0">E pa, nisi jedini.</p>
 <p class="my-0">Tvoji kupci osjećaju isto. Svaki dan. I zato mnogi od njih napuste tvoj shop prije nego što kažeš "konverzija".</p>
@@ -119,8 +119,8 @@
         <author>
             <name>Goran Peremin</name>
         </author>
-        <link href="https://nimerep.github.io/site/kolacici-uskladi-se-s-gdpr-om-i-eprivacy-direktivom/"/>
-        <id>https://nimerep.github.io/site/kolacici-uskladi-se-s-gdpr-om-i-eprivacy-direktivom/</id>
+        <link href="https://www.peremin.com/kolacici-uskladi-se-s-gdpr-om-i-eprivacy-direktivom/"/>
+        <id>https://www.peremin.com/kolacici-uskladi-se-s-gdpr-om-i-eprivacy-direktivom/</id>
 
         <updated>2025-05-18T15:14:16+02:00</updated>
             <summary>
@@ -209,8 +209,8 @@
         <author>
             <name>Goran Peremin</name>
         </author>
-        <link href="https://nimerep.github.io/site/gdpr-checklista-za-e-commerce-bez-gluposti-samo-ono-sto-ti-zapravo-treba/"/>
-        <id>https://nimerep.github.io/site/gdpr-checklista-za-e-commerce-bez-gluposti-samo-ono-sto-ti-zapravo-treba/</id>
+        <link href="https://www.peremin.com/gdpr-checklista-za-e-commerce-bez-gluposti-samo-ono-sto-ti-zapravo-treba/"/>
+        <id>https://www.peremin.com/gdpr-checklista-za-e-commerce-bez-gluposti-samo-ono-sto-ti-zapravo-treba/</id>
 
         <updated>2025-05-18T14:44:44+02:00</updated>
             <summary>
@@ -371,20 +371,20 @@
         <author>
             <name>Goran Peremin</name>
         </author>
-        <link href="https://nimerep.github.io/site/sinteticki-podaci-u-istrazivanjima-genijalnost-ili-samo-lijenost/"/>
-        <id>https://nimerep.github.io/site/sinteticki-podaci-u-istrazivanjima-genijalnost-ili-samo-lijenost/</id>
-        <media:content url="https://nimerep.github.io/site/media/posts/6/Synthetic-Data-in-Research-by-Goran-Peremin.jpg" medium="image" />
+        <link href="https://www.peremin.com/sinteticki-podaci-u-istrazivanjima-genijalnost-ili-samo-lijenost/"/>
+        <id>https://www.peremin.com/sinteticki-podaci-u-istrazivanjima-genijalnost-ili-samo-lijenost/</id>
+        <media:content url="https://www.peremin.com/media/posts/6/Synthetic-Data-in-Research-by-Goran-Peremin.jpg" medium="image" />
 
         <updated>2025-05-17T13:37:18+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://nimerep.github.io/site/media/posts/6/Synthetic-Data-in-Research-by-Goran-Peremin.jpg" alt="Sintetički podaci u istraživanjima: Genijalnost ili?" />
+                        <img src="https://www.peremin.com/media/posts/6/Synthetic-Data-in-Research-by-Goran-Peremin.jpg" alt="Sintetički podaci u istraživanjima: Genijalnost ili?" />
                     Vrijeme je da otvoreno progovorimo: jesu li sintetički podaci u istraživanjima briljantna inovacija ili samo još jedan shortcut za one koji ne žele prljati ruke&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://nimerep.github.io/site/media/posts/6/Synthetic-Data-in-Research-by-Goran-Peremin.jpg" class="type:primaryImage" alt="Sintetički podaci u istraživanjima: Genijalnost ili?" /></p>
+                    <p><img src="https://www.peremin.com/media/posts/6/Synthetic-Data-in-Research-by-Goran-Peremin.jpg" class="type:primaryImage" alt="Sintetički podaci u istraživanjima: Genijalnost ili?" /></p>
                 <section id="h.32333c6be2655faf_41" class="yaqOZd">
 <div class="mYVXT">
 <div class="LS81yb VICjCf j5pSsc db35Fc" tabindex="-1">
@@ -716,20 +716,20 @@ sintetičke_vrijednosti = np.random.normal(loc=170, scale=10, size=1000)  # 1000
         <author>
             <name>Goran Peremin</name>
         </author>
-        <link href="https://nimerep.github.io/site/roi-nije-jedan-broj-kako-povezati-metrike-modele-i-zdrav-razum-u-marketingu/"/>
-        <id>https://nimerep.github.io/site/roi-nije-jedan-broj-kako-povezati-metrike-modele-i-zdrav-razum-u-marketingu/</id>
-        <media:content url="https://nimerep.github.io/site/media/posts/5/ROI-nije-jedan-broj.jpg" medium="image" />
+        <link href="https://www.peremin.com/roi-nije-jedan-broj-kako-povezati-metrike-modele-i-zdrav-razum-u-marketingu/"/>
+        <id>https://www.peremin.com/roi-nije-jedan-broj-kako-povezati-metrike-modele-i-zdrav-razum-u-marketingu/</id>
+        <media:content url="https://www.peremin.com/media/posts/5/ROI-nije-jedan-broj.jpg" medium="image" />
 
         <updated>2025-05-17T13:35:50+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://nimerep.github.io/site/media/posts/5/ROI-nije-jedan-broj.jpg" alt="ROI nije jedan broj" />
+                        <img src="https://www.peremin.com/media/posts/5/ROI-nije-jedan-broj.jpg" alt="ROI nije jedan broj" />
                     Uvod: Marketing ROI – sveti gral ili mit? Ah, ROI. Magični broj koji menadžeri žele, a marketinški timovi mrze. Svi pričaju o njemu, ali rijetko&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://nimerep.github.io/site/media/posts/5/ROI-nije-jedan-broj.jpg" class="type:primaryImage" alt="ROI nije jedan broj" /></p>
+                    <p><img src="https://www.peremin.com/media/posts/5/ROI-nije-jedan-broj.jpg" class="type:primaryImage" alt="ROI nije jedan broj" /></p>
                 <p class="my-0"><strong>Uvod: Marketing ROI – sveti gral ili mit?</strong><br>Ah, ROI. Magični broj koji menadžeri žele, a marketinški timovi mrze. Svi pričaju o njemu, ali rijetko tko zna što zapravo znači. Je li ROI samo još jedan broj u Excelu ili je to priča o tome kako cijeli marketing orkestar svira zajedno? Vrijeme je da razbijemo mitove, spojimo znanost i zdrav razum – i to bez dosadnih tablica.</p>
 <h2 class="mb-xs mt-5 text-base font-[500] first:mt-0 dark:font-[475]">1. Marketing je luda kuća metrika</h2>
 <p class="my-0">Imate svijest o brendu, prodaju, klikove, lajkove, recenzije... Sve to zvuči kao reality show u kojem svatko vuče na svoju stranu. Problem? Svi ti brojevi često nemaju veze jedan s drugim koliko i prosječan reality show ima s Oscarima.<br><strong>Hanssens (2014)</strong> pokazuje kako ekonometrika pomaže povezati uzroke i posljedice – tko je kriv kad prodaja padne, a svi tvrde da su dali sve od sebe<span class="whitespace-nowrap">.</span></p>
@@ -775,20 +775,20 @@ sintetičke_vrijednosti = np.random.normal(loc=170, scale=10, size=1000)  # 1000
         <author>
             <name>Goran Peremin</name>
         </author>
-        <link href="https://nimerep.github.io/site/ekonometrija-u-marketingu-kako-pretvoriti-brojke-u-oruzje/"/>
-        <id>https://nimerep.github.io/site/ekonometrija-u-marketingu-kako-pretvoriti-brojke-u-oruzje/</id>
-        <media:content url="https://nimerep.github.io/site/media/posts/4/Ekonometrija-u-marketingu.jpg" medium="image" />
+        <link href="https://www.peremin.com/ekonometrija-u-marketingu-kako-pretvoriti-brojke-u-oruzje/"/>
+        <id>https://www.peremin.com/ekonometrija-u-marketingu-kako-pretvoriti-brojke-u-oruzje/</id>
+        <media:content url="https://www.peremin.com/media/posts/4/Ekonometrija-u-marketingu.jpg" medium="image" />
 
         <updated>2025-05-17T13:34:27+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://nimerep.github.io/site/media/posts/4/Ekonometrija-u-marketingu.jpg" alt="Ekonometrija u marketingu" />
+                        <img src="https://www.peremin.com/media/posts/4/Ekonometrija-u-marketingu.jpg" alt="Ekonometrija u marketingu" />
                     Marketing bez ekonometrije je kao rock koncert bez pojačala – svi trube, ali nitko ne čuje poruku. Evo kako integrirati modele u strategiju, a da&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://nimerep.github.io/site/media/posts/4/Ekonometrija-u-marketingu.jpg" class="type:primaryImage" alt="Ekonometrija u marketingu" /></p>
+                    <p><img src="https://www.peremin.com/media/posts/4/Ekonometrija-u-marketingu.jpg" class="type:primaryImage" alt="Ekonometrija u marketingu" /></p>
                 <p class="my-0">Marketing bez ekonometrije je kao rock koncert bez pojačala – svi trube, ali nitko ne čuje poruku. Evo kako integrirati modele u strategiju, a da ne postaneš rob tablica i formula.</p>
 <h2 class="mb-xs mt-5 text-base font-[500] first:mt-0 dark:font-[475]">1. <strong>Ubij "zombie metriku" – fokusiraj se na pažnju, ne impresije</strong></h2>
 <p class="my-0">Forget CTR i doseg. <strong>Ekonometrija pažnje</strong> pokazuje da je ključno <em>koliko dugo</em> korisnik zaustavlja pogled na oglasu, a ne koliko puta ga je vidio.</p>
@@ -851,8 +851,8 @@ sintetičke_vrijednosti = np.random.normal(loc=170, scale=10, size=1000)  # 1000
         <author>
             <name>Goran Peremin</name>
         </author>
-        <link href="https://nimerep.github.io/site/zasto-brendovi-rastu-i-zasto-vas-mozda-stagnira/"/>
-        <id>https://nimerep.github.io/site/zasto-brendovi-rastu-i-zasto-vas-mozda-stagnira/</id>
+        <link href="https://www.peremin.com/zasto-brendovi-rastu-i-zasto-vas-mozda-stagnira/"/>
+        <id>https://www.peremin.com/zasto-brendovi-rastu-i-zasto-vas-mozda-stagnira/</id>
 
         <updated>2025-05-17T13:06:31+02:00</updated>
             <summary>
@@ -935,8 +935,8 @@ sintetičke_vrijednosti = np.random.normal(loc=170, scale=10, size=1000)  # 1000
         <author>
             <name>Goran Peremin</name>
         </author>
-        <link href="https://nimerep.github.io/site/brand-kampanje-istina-mitovi-i-zasto-vecina-marketinskog-svijeta-jos-uvijek-ne-kuzi-igru-copy/"/>
-        <id>https://nimerep.github.io/site/brand-kampanje-istina-mitovi-i-zasto-vecina-marketinskog-svijeta-jos-uvijek-ne-kuzi-igru-copy/</id>
+        <link href="https://www.peremin.com/brand-kampanje-istina-mitovi-i-zasto-vecina-marketinskog-svijeta-jos-uvijek-ne-kuzi-igru-copy/"/>
+        <id>https://www.peremin.com/brand-kampanje-istina-mitovi-i-zasto-vecina-marketinskog-svijeta-jos-uvijek-ne-kuzi-igru-copy/</id>
 
         <updated>2025-05-17T13:05:26+02:00</updated>
             <summary>
