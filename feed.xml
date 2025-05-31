@@ -3,7 +3,7 @@
     <title>Goran&#x27;s Personal Site</title>
     <link href="https://www.peremin.com/feed.xml" rel="self" />
     <link href="https://www.peremin.com" />
-    <updated>2025-05-31T15:02:38+02:00</updated>
+    <updated>2025-05-31T18:25:40+02:00</updated>
     <author>
         <name>Goran Peremin</name>
     </author>
@@ -67,27 +67,27 @@
 <p data-start="1765" data-end="2073">Ključno pitanje za svaki predictive model je: <strong data-start="2022" data-end="2073">koga uopće želimo pretvoriti u kupca – i zašto?</strong></p>
 </blockquote>
 <p data-start="2075" data-end="2394">Prema <a href="https://cxl.com/blog/propensity-modeling/?utm_source=chatgpt.com" target="_new" rel="nofollow">CXL</a>, posjetitelji koji pokazuju snažnu kupovnu namjeru – npr. pregled proizvoda, dodavanje u košaricu, provjera informacija o dostavi – imaju značajno veću vjerojatnost konverzije. Njih identificiramo kao posjetitelje s visokom sklonosti kupnji.</p>
-<table style="border-collapse: collapse; width: 109.117%;" border="1">
+<table style="border-collapse: collapse; width: 96.8661%;" border="1">
 <tbody>
 <tr>
-<td class="align-center" style="width: 27.3203%;"><strong>Segment    </strong></td>
-<td class="align-center" style="width: 39.7381%;"><strong>Ponašanje</strong></td>
-<td class="align-center" style="width: 32.811%;"><strong>Akcija</strong></td>
+<td class="align-center" style="width: 27.4854%;"><strong>Segment    </strong></td>
+<td class="align-center" style="width: 39.9123%;"><strong>Ponašanje</strong></td>
+<td class="align-center" style="width: 32.6023%;"><strong>Akcija</strong></td>
 </tr>
 <tr>
-<td style="width: 27.3203%;">Visoka namjera</td>
-<td style="width: 39.7381%;">Aktivno istražuju proizvod, dodaju u wishlist, provode 10+ min na PDP</td>
-<td style="width: 32.811%;">Remarketing, mail unutar 2 sata, pop-up</td>
+<td style="width: 27.4854%;">Visoka namjera</td>
+<td style="width: 39.9123%;">Aktivno istražuju proizvod, dodaju u wishlist, provode 10+ min na PDP</td>
+<td style="width: 32.6023%;">Remarketing, mail unutar 2 sata, pop-up</td>
 </tr>
 <tr>
-<td style="width: 27.3203%;">Srednja namjera</td>
-<td style="width: 39.7381%;">Višekratni posjeti, otvaranje emailova, angažman na društvenim mrežama</td>
-<td style="width: 32.811%;">Edukativni sadržaji, vodiči, UGC recenzije</td>
+<td style="width: 27.4854%;">Srednja namjera</td>
+<td style="width: 39.9123%;">Višekratni posjeti, otvaranje emailova, angažman na društvenim mrežama</td>
+<td style="width: 32.6023%;">Edukativni sadržaji, vodiči, UGC recenzije</td>
 </tr>
 <tr>
-<td style="width: 27.3203%;">Niska namjera</td>
-<td style="width: 39.7381%;">Kratki posjeti s bounce rateom &gt;80%, bez interakcije</td>
-<td style="width: 32.811%;">Edukativni blogovi, newsletter signup</td>
+<td style="width: 27.4854%;">Niska namjera</td>
+<td style="width: 39.9123%;">Kratki posjeti s bounce rateom &gt;80%, bez interakcije</td>
+<td style="width: 32.6023%;">Edukativni blogovi, newsletter signup</td>
 </tr>
 </tbody>
 </table>
