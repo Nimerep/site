@@ -77,9 +77,11 @@ Ključno pitanje za svaki predictive model je: **koga uopće želimo pretvoriti 
 
 Prema [CXL](https://cxl.com/blog/propensity-modeling/?utm_source=chatgpt.com), posjetitelji koji pokazuju snažnu kupovnu namjeru – npr. pregled proizvoda, dodavanje u košaricu, provjera informacija o dostavi – imaju značajno veću vjerojatnost konverzije. Njih identificiramo kao posjetitelje s visokom sklonosti kupnji.
 
-[Table from original article preserved for manual cleanup]
-
- **Segment ** **Ponašanje** **Akcija** Visoka namjera Aktivno istražuju proizvod, dodaju u wishlist, provode 10+ min na PDP Remarketing, mail unutar 2 sata, pop-up Srednja namjera Višekratni posjeti, otvaranje emailova, angažman na društvenim mrežama Edukativni sadržaji, vodiči, UGC recenzije Niska namjera Kratki posjeti s bounce rateom >80%, bez interakcije Edukativni blogovi, newsletter signup
+| Segment | Ponašanje | Akcija |
+| --- | --- | --- |
+| Visoka namjera | Aktivno istražuju proizvod, dodaju u wishlist, provode 10+ min na PDP | Remarketing, mail unutar 2 sata, pop-up |
+| Srednja namjera | Višekratni posjeti, otvaranje emailova, angažman na društvenim mrežama | Edukativni sadržaji, vodiči, UGC recenzije |
+| Niska namjera | Kratki posjeti s bounce rateom >80%, bez interakcije | Edukativni blogovi, newsletter signup |
 
 Prema [BigCommerce](https://www.bigcommerce.com/articles/ecommerce/ecommerce-predictive-analytics/), personalizacija po ovim segmentima donosi **15–30 % veću konverziju**, dok generički pristupi često demotiviraju korisnike.
 
@@ -130,11 +132,9 @@ Pravilo:
 
 **Izvor:** CMS (newsletter platforma), Google Analytics (GA4 eventi), ERP (korišteni kuponi)
 
--
-
 Polja: `campaign_clicks`, `coupon_use_rate`, `avg_discount_percent`, `email_open_rate`
 
-``Detekcija:
+Detekcija:
 
 - Otvorili ≥ 50% kampanja u zadnja 3 mjeseca
 - Iskoristili kupon do max. 2× mjesečno
@@ -149,8 +149,6 @@ Polja: `campaign_clicks`, `coupon_use_rate`, `avg_discount_percent`, `email_open
 
 **Izvor:** CMS (blog/share plugin), Google Analytics, Referral modul u ERP-u/loyalty sustavu
 
--
-
 Polja: `referral_code_usage`, `social_shares`, `influencer_id`, `session_referrer`
 
 Detekcija:
@@ -160,8 +158,6 @@ Detekcija:
 - Parametar `ref=` u linkovima koji donose konverzije
 
 **GA4 primjer publike:**
-
--
 
 `event_name = share` AND `event_count ≥ 2`
 
@@ -298,9 +294,14 @@ rf.fit(X_train, y_train)
 
 Evo par PA alata:
 
-[Table from original article preserved for manual cleanup]
-
- **Alat** **Primjena** Google Analytics 4 AI-driven predictive metrics, churn, purchase HubSpot Lead scoring, personalizacija, automation Salesforce Einstein Enterprise-grade AI, personalizacija Adobe Analytics Advanced segmentation, propensity modeling Altair AI Studio Data mining, model deployment H2O Driverless AI Automated ML, explainability
+| Alat | Primjena |
+| --- | --- |
+| Google Analytics 4 | AI-driven predictive metrics, churn, purchase |
+| HubSpot | Lead scoring, personalizacija, automation |
+| Salesforce Einstein | Enterprise-grade AI, personalizacija |
+| Adobe Analytics | Advanced segmentation, propensity modeling |
+| Altair AI Studio | Data mining, model deployment |
+| H2O Driverless AI | Automated ML, explainability |
 
 **Google Analytics 4** nudi ugrađene predictive metrics – vjerojatnost kupnje, churn-a i prihoda u sljedećih 7 ili 28 dana.
 **HubSpot** i **Salesforce Einstein** omogućuju personalizirano ciljanje i automatizaciju kampanja.

@@ -25,9 +25,11 @@ Za pokretanje virtualnog laboratorija potreban je Python 3.7 ili noviji te stabi
 
 Ako još nemaš GenAgents:
 
-` git clone https://github.com/joonspk-research/genagents`
-` cd genagents`
-` pip install -r requirements.txt`
+```bash
+git clone https://github.com/joonspk-research/genagents
+cd genagents
+pip install -r requirements.txt
+```
 
 ## Kako dizajnirati vjerodostojne simulacije (napredno)
 
@@ -40,12 +42,14 @@ Primijeni ovaj princip kroz sljedeće korake:
 
 Primjer napredne refleksije u JSON obliku:
 
-`{`
-` "id": 512,`
-` "response": "Privlači me popust, ali iskustvo govori da takve ponude često znače lošiju kvalitetu.",`
-` "refleksija": "Moja povijest s popustima je mješovita – neke su bile izvrsne prilike, a druge prevara. S obzirom na nisku cijenu, sklon sam oprezu.",`
-` "sentiment": "Neutralan s dozom skepticizma"`
-`}`
+```json
+{
+  "id": 512,
+  "response": "Privlači me popust, ali iskustvo govori da takve ponude često znače lošiju kvalitetu.",
+  "refleksija": "Moja povijest s popustima je mješovita - neke su bile izvrsne prilike, a druge prevara. S obzirom na nisku cijenu, sklon sam oprezu.",
+  "sentiment": "Neutralan s dozom skepticizma"
+}
+```
 
 ## 2. Dizajniranje varijanti
 
@@ -54,34 +58,39 @@ Pripremi A/B varijante u JSON formatu u `config/ab_test.json.`
 Svaka varijanta sadrži:
 naziv, tekst oglasa, skup pitanja na koja agenti odgovaraju (npr. "Bi li kliknuo/la?", "Zašto?").
 
-`{`
-` "varijante": [`
-` {`
-` "naziv": "BesplatnaDostava",`
-` "oglas": "LED kišobran s BESPLATNOM DOSTAVOM za 24h!",`
-` "pitanja": ["Bi li kliknuo/la?", "Zašto bi odabrao/la ovu opciju?"]`
-` },`
-` {`
-` "naziv": "20PostoPopusta",`
-` "oglas": "LED kišobran -20% POPUSTA za prvu kupnju!",`
-` "pitanja": ["Bi li kliknuo/la?", "Što te više privlači: popust ili brzina?"]`
-` }`
-` ]`
-`}`
+```json
+{
+  "varijante": [
+    {
+      "naziv": "BesplatnaDostava",
+      "oglas": "LED kišobran s BESPLATNOM DOSTAVOM za 24h!",
+      "pitanja": ["Bi li kliknuo/la?", "Zašto bi odabrao/la ovu opciju?"]
+    },
+    {
+      "naziv": "20PostoPopusta",
+      "oglas": "LED kišobran -20% POPUSTA za prvu kupnju!",
+      "pitanja": ["Bi li kliknuo/la?", "Što te više privlači: popust ili brzina?"]
+    }
+  ]
+}
+```
 
 ## 3. Pokretanje simulacije
 
-`# Varijanta A`
-`python simulate.py --scenario "ab_test/BesplatnaDostava" --output results_free.json`
+```bash
+# Varijanta A
+python simulate.py --scenario "ab_test/BesplatnaDostava" --output results_free.json
 
-`# Varijanta B`
-`python simulate.py --scenario "ab_test/20PostoPopusta" --output results_discount.json`
+# Varijanta B
+python simulate.py --scenario "ab_test/20PostoPopusta" --output results_discount.json
+```
 
 ## 4. Analiza rezultata
 
-[Table from original article preserved for manual cleanup]
-
- **Metrika** **Besplatna dostava** **20% popusta Komentari** Komentari "Volim brzinu..." "Ne kupujem po punoj cijeni" Share rate 12% 18%
+| Metrika | Besplatna dostava | 20% popusta |
+| --- | --- | --- |
+| Komentari | "Volim brzinu..." | "Ne kupujem po punoj cijeni" |
+| Share rate | 12% | 18% |
 
 Tumačenje:
 
@@ -96,8 +105,10 @@ Tumačenje:
 
 **Balansiranje biasa** - Odgovori se dinamički kalibriraju prema interesima:
 
-`if user_interest == "outdoor" and ad_variant == "BesplatnaDostava":`
-` adjust_confidence(0.7) # Smanji vjerodostojnost kod planinara`
+```python
+if user_interest == "outdoor" and ad_variant == "BesplatnaDostava":
+    adjust_confidence(0.7)  # Smanji vjerodostojnost kod planinara
+```
 
 **Ekonomija testa** - Vrijeme: 15 minuta (ne tjedni ili više tjedni) Cijena: ~$0.27 (API poziv), u usporedbi s $500 za Meta A/B kampanju
 
@@ -109,11 +120,13 @@ Tumačenje:
 
 ## Bonus: Uvid u razmišljanje jednog agenta
 
-`{`
-` "id": 42,`
-` "response": "Kliknuo bih na popust jer sam student, al vjerujem da će kišobran biti loš ko i sve što je jeftino",`
-` "sentiment": "Negativan (ali zainteresiran)"`
-`}`
+```json
+{
+  "id": 42,
+  "response": "Kliknuo bih na popust jer sam student, al vjerujem da će kišobran biti loš ko i sve što je jeftino",
+  "sentiment": "Negativan (ali zainteresiran)"
+}
+```
 
 Ova razina uvida ne dolazi iz CTR-a ili heatmape. Dolazi iz refleksije i razrade agentovog stava.
 

@@ -23,11 +23,19 @@ Imaš ideju za novi proizvod – **kišobran s interaktivnim LED svjetlima**. Sa
 
 Prvi korak je postavljanje GenAgents sustava:
 
-`git clone https://github.com/joonspk-research/genagents cd genagents pip install -r requirements.txt `
+```bash
+git clone https://github.com/joonspk-research/genagents
+cd genagents
+pip install -r requirements.txt
+```
 
 Zatim konfiguriraj API ključ u `simulation_engine/settings.py`:
 
-`OPENAI_API_KEY = "TVOJ_OPENAI_KLJUČ" DEBUG = False LLM_VERS = "gpt-4o" `
+```python
+OPENAI_API_KEY = "TVOJ_OPENAI_KLJUČ"
+DEBUG = False
+LLM_VERS = "gpt-4o"
+```
 
 ## Korak 2: Generiranje realistične populacije
 
@@ -39,29 +47,47 @@ Prema istraživanju (Park et al., 2024), generativni agenti su kreirani temeljem
 
 Primjer definiranja agenta:
 
-`from genagents.genagents import GenerativeAgent agent = GenerativeAgent(agent_folder="agent_bank/populations/single_agent") agent.update_scratch({ "first_name": "Luka", "age": 29, "occupation": "konobar", "interests": ["tech", "moda", "urbani lifestyle"] }) `
+```python
+from genagents.genagents import GenerativeAgent
+
+agent = GenerativeAgent(agent_folder="agent_bank/populations/single_agent")
+agent.update_scratch({
+    "first_name": "Luka",
+    "age": 29,
+    "occupation": "konobar",
+    "interests": ["tech", "moda", "urbani lifestyle"]
+})
+```
 
 ## Korak 3: Simulacija reakcije na LED kišobran
 
 Postavimo simulaciju jasno i realistično:
 
-`prompt = "Would you click on an Instagram ad for a smart LED umbrella that changes colors and syncs with your phone?" response = agent.utterance([("Interviewer", prompt)]) print(response) `
+```python
+prompt = "Would you click on an Instagram ad for a smart LED umbrella that changes colors and syncs with your phone?"
+response = agent.utterance([("Interviewer", prompt)])
+print(response)
+```
 
 Realni odgovor jednog od agenta:
 
-`"Yeah, sounds cool, I'd definitely click. Seems useful for nights out in the city." `
+> "Yeah, sounds cool, I'd definitely click. Seems useful for nights out in the city."
 
 ## Korak 4: Skaliranje na 1.000 agenata
 
 GenAgents omogućuje paralelnu simulaciju tisuća korisnika pomoću iste arhitekture:
 
-`python simulate.py --input_data agents.csv --model gpt-4o --output results.json `
+```bash
+python simulate.py --input_data agents.csv --model gpt-4o --output results.json
+```
 
 Primjer agregiranog rezultata iz simulacije:
 
-[Table from original article preserved for manual cleanup]
-
- Reakcija Broj agenata Kliknuli 678 Komentirali 423 Podijelili 289
+| Reakcija | Broj agenata |
+| --- | ---: |
+| Kliknuli | 678 |
+| Komentirali | 423 |
+| Podijelili | 289 |
 
 ## Analiza rezultata
 
@@ -110,10 +136,12 @@ Koristio je refleksijski modul da skrati transkripte u jezgrovite bilješke.
 
 Primjer:
 
-`{`
-` "trust_issues": "Ne vjeruje institucijama nakon što mu se susjed tresao po covid potporama", `
-` "meme_affinity": "Spominje 'distracted boyfriend' u kontekstu ozbiljnih životnih odluka"`
-`}`
+```json
+{
+  "trust_issues": "Ne vjeruje institucijama nakon što mu se susjed tresao po covid potporama",
+  "meme_affinity": "Spominje 'distracted boyfriend' u kontekstu ozbiljnih životnih odluka"
+}
+```
 
 Ekspertne persone: GPT-4o je generirao 4 verzije svakog agenta – psiholog, ekonomist, politolog i demograf. Odabir ovisi o pitanju.
 
