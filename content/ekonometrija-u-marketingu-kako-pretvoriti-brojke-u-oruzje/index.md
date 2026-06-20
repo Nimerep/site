@@ -11,8 +11,6 @@ sourceURL: https://www.peremin.com/ekonometrija-u-marketingu-kako-pretvoriti-bro
 image: /media/posts/4/Ekonometrija-u-marketingu.jpg
 ---
 
-# Ekonometrija u marketingu: Umijeće pretvaranja podataka u rezultate
-
 Marketing bez ekonometrije je kao rock koncert bez pojačala – svi trube, ali nitko ne čuje poruku. Evo kako integrirati modele u strategiju, a da ne postaneš rob tablica i formula.
 
 ## 1. **Ubij "zombie metriku" – fokusiraj se na pažnju, ne impresije**

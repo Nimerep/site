@@ -11,8 +11,6 @@ sourceURL: https://www.peremin.com/7-najefikasnijih-proof-elemenata-za-povecanje
 image: /media/posts/9/7-Najefikasnijih-Proof-Elemenata-za-Povecanje-Povjerenja-u-Web-Shopu.jpg
 ---
 
-# 7 Najefikasnijih Proof Elemenata za Povećanje Povjerenja u Web Shopu
-
 Znaš onaj osjećaj kad uđeš u web shop i misliš si: "Hmm, je li ovo legit ili će mi netko maznuti podatke s kartice i kupiti jahtu na Karibima?"
 
 E pa, nisi jedini.

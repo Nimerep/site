@@ -10,11 +10,9 @@ tags: gdpr, ecommerce, privacy, compliance, webshop
 sourceURL: https://www.peremin.com/gdpr-checklista-za-e-commerce-bez-gluposti-samo-ono-sto-ti-zapravo-treba/
 ---
 
-# GDPR Checklist za E-commerce Web Shopove
-
 Ako vodiš webshop, onda skupljaš osobne podatke. Ako skupljaš osobne podatke, onda moraš poštivati GDPR. Nema filozofije – ovo je tvoj vodič kroz GDPR džunglu. Kratak.
 
-### 1. POLITIKA PRIVATNOSTI
+## 1. POLITIKA PRIVATNOSTI
 
 **Što je to:** Dokument koji objašnjava korisnicima koje njihove podatke skupljaš, zašto, koliko dugo i tko im sve pristupa.
 
@@ -31,7 +29,7 @@ Ako vodiš webshop, onda skupljaš osobne podatke. Ako skupljaš osobne podatke,
 
 **Gdje mora biti:** Vidljiv link u footeru web stranice.
 
-### 2. POLITIKA KOLAČIĆA
+## 2. POLITIKA KOLAČIĆA
 
 **Što je to:** Dokument koji objašnjava koje kolačiće koristiš i zašto.
 
@@ -45,7 +43,7 @@ Cookie banner koji korisniku omogućuje:
 
 **Ne vrijedi:** “Nastavkom korištenja pristajete…”
 
-### 3. NEWSLETTER
+## 3. NEWSLETTER
 
 **Šalješ li e-mailove s ponudama?**
 
@@ -57,7 +55,7 @@ Cookie banner koji korisniku omogućuje:
 - Svaki mail mora imati vidljiv **link za odjavu**.
 - Moraš voditi **dokaz da si dobio privolu** (log, checkbox, timestamp).
 
-### 4. EVIDENCIJA AKTIVNOSTI OBRADE
+## 4. EVIDENCIJA AKTIVNOSTI OBRADE
 
 **Obavezna ako:**
 
@@ -75,7 +73,7 @@ Cookie banner koji korisniku omogućuje:
 
 **Format:** Excel tablica. Po mogućnosti prema ARC predlošku.
 
-### 5. PRAVNA OSNOVA OBRADE
+## 5. PRAVNA OSNOVA OBRADE
 
 **Moraš imati barem jednu osnovu za svaki tip obrade.**
 Šest osnova iz GDPR-a:
@@ -87,7 +85,7 @@ Cookie banner koji korisniku omogućuje:
 5. **Zadaća od javnog interesa** – ne vrijedi za e-commerce
 6. **Legitimni interes** – npr. sigurnost, direct marketing
 
-### 6. PRAVA ISPITANIKA
+## 6. PRAVA ISPITANIKA
 
 Moraš omogućiti korisnicima da:
 
@@ -101,14 +99,14 @@ Moraš omogućiti korisnicima da:
 
 **Kako:** kontakt forma, e-mail, jasno opisana procedura u politici privatnosti.
 
-### 7. DOSTAVA PODATAKA TREĆIM STRANAMA
+## 7. DOSTAVA PODATAKA TREĆIM STRANAMA
 
 **Svaki sustav kojem daješ podatke korisnika mora biti naveden.**
 
 - Primjeri: GLS, Hrvatska pošta, Google Analytics, e-mail marketing alati, CRM.
 - Ako podatke šalješ izvan EU (npr. Meta, Google), moraš koristiti **odgovarajuće zaštitne mjere** (npr. SCC – standardne ugovorne klauzule).
 
-### 8. UGOVOR S IZVRŠITELJEM OBRADE
+## 8. UGOVOR S IZVRŠITELJEM OBRADE
 
 **Ako netko drugi u tvoje ime obrađuje podatke**, moraš imati **ugovor prema čl. 28 GDPR-a**.
 Primjeri:
@@ -125,7 +123,7 @@ Ugovor mora pokrivati:
 - zabranu korištenja podataka u vlastite svrhe
 - podugovaratelje
 
-### 9. POVREDA PODATAKA (DATA BREACH)
+## 9. POVREDA PODATAKA (DATA BREACH)
 
 **Ako dođe do sigurnosnog incidenta**, moraš:
 
@@ -142,7 +140,7 @@ Ugovor mora pokrivati:
 **Prijavljuje se na e-mail:** incidenti@azop.hr
 **Obrazac:** [imaš predložak izvjesce_o_povredi_osob…](https://azop.hr/wp-content/uploads/2021/04/izvjesce_o_povredi_osobnih_podataka-1.rtf)
 
-### 10. DPIA (PROCJENA UČINKA)
+## 10. DPIA (PROCJENA UČINKA)
 
 **Obavezna ako:**
 
@@ -158,7 +156,7 @@ Ugovor mora pokrivati:
 4. Uvedi mjere
 5. Dokumentiraj sve
 
-### 11. SNIMANJE DOGAĐAJA / VIDEO NADZOR
+## 11. SNIMANJE DOGAĐAJA / VIDEO NADZOR
 
 **Ako snimaš ljude (fotke, video):**
 

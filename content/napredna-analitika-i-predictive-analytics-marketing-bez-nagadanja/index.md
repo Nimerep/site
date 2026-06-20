@@ -11,8 +11,6 @@ sourceURL: https://www.peremin.com/napredna-analitika-i-predictive-analytics-mar
 image: /media/posts/15/Napredna-analitika-i-predictive-analytics.jpg
 ---
 
-# Napredna analitika i predictive analytics: Marketing bez nagađanja
-
 Ako i dalje šalješ iste kampanje svima, iskreno – nisi više u marketingu, već u spam-biznisu. Kupac ti šalje jasnu poruku: "Daj mi ono što želim, i to sada!" **Prediktivna analitika **omogućuje ti upravo to – jasne, precizne, algoritmima vođene kampanje koje znaju tko, što i kada želi.
 
 ## Što je predictive analytics (PA)?
@@ -29,19 +27,19 @@ Dodatno, **istraživanje objavljeno u [International Journal of Computer Applica
 
 Evo nekoliko ključnih primjena PA u eCommerce marketingu:
 
-#### Personalizacija ponuda i preporuka proizvoda
+### Personalizacija ponuda i preporuka proizvoda
 
 Analizom prethodnih kupnji i ponašanja korisnika, PA omogućuje trgovcima da preporuče proizvode koji su najrelevantniji za pojedinog kupca, čime se povećava vjerojatnost konverzije. **[Sephora](https://www.bigcommerce.com/articles/ecommerce/ecommerce-predictive-analytics/)** je svojim personaliziranim preporukama povećala prodaju i zadržala kupce dugoročno. Amazon i Netflix koriste PA za dinamičke preporuke koje su toliko precizne da izgledaju kao da čitaju misli.
 
-#### Prognoziranje potražnje i upravljanje zalihama
+### Prognoziranje potražnje i upravljanje zalihama
 
 PA pomaže u predviđanju buduće potražnje za proizvodima, omogućujući trgovcima da optimiziraju zalihe i izbjegnu prekomjerno skladištenje ili nestašice. **Amazon** je čak patentirao "anticipatory shipping" – sustav koji predviđa što će kupac naručiti prije nego što to i učini, čime smanjuje vrijeme.
 
-#### Identifikacija rizika od odustajanja (churn)
+### Identifikacija rizika od odustajanja (churn)
 
 PA može identificirati kupce koji pokazuju znakove odustajanja, omogućujući trgovcima da poduzmu proaktivne mjere za njihovo zadržavanje. **Netflix** koristi PA za predviđanje churn-a i ciljanje korisnika personaliziranim ponudama. Jedna SaaS kompanija je smanjila churn s 8% na 4.2% samo zahvaljujući PA modelima i proaktivnim kampanjama.
 
-#### Optimizacija marketinških kampanja
+### Optimizacija marketinških kampanja
 
 Analizom podataka o prethodnim kampanjama i ponašanju korisnika, PA omogućuje trgovcima da prilagode svoje marketinške strategije kako bi postigli bolje rezultate. **[Macy’s](https://www.mytotalretail.com/article/macys-uses-predictive-analytics-grow-customer-spend/all/)** je implementirao SAP InfiniteInsight i postigao gotovo 12% rast online prodaje zahvaljujući personaliziranim.
 

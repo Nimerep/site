@@ -11,8 +11,6 @@ sourceURL: https://www.peremin.com/koristenje-genagents-simulacija-u-predvidanju
 image: /media/posts/11/Koristenje-GenAgents-simulacija-u-predvidanju-trzisnog-uspjeha-novih-e-commerce-proizvoda.jpg
 ---
 
-# Korištenje GenAgents simulacija u predviđanju tržišnog uspjeha novih e-commerce proizvoda
-
 ## Uvod u GenAgents: Virtualni kupci koji ne lažu
 
 Imaš ideju za novi proizvod – **kišobran s interaktivnim LED svjetlima**. Savršeno za Instagram, cool za TikTok, ali pitanje je: hoće li ga ljudi kupiti?

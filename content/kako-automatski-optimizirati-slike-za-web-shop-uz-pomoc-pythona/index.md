@@ -11,8 +11,6 @@ sourceURL: https://www.peremin.com/kako-automatski-optimizirati-slike-za-web-sho
 image: /media/posts/12/Kako-Automatski-Optimizirati-Slike-za-Web-Shop-Uz-Pomoc-Pythona.jpg
 ---
 
-# Kako Automatski Optimizirati Slike za Web Shop Uz Pomoć Pythona
-
 Ako vodite web shop, već znate koliko je brzina učitavanja stranice ključna za uspjeh.
 
 Brža stranica znači zadovoljnije korisnike, bolju SEO poziciju i, naravno, više prodaje. Jedan od ključnih koraka u optimizaciji brzine je pravilna optimizacija slika, a .webp format je tu neprikosnoveni prvak.
@@ -21,7 +19,7 @@ U ovom vodiču pokazat ću vam kako automatizirati proces optimizacije slika.
 
 Skripta će resizeati slike na 1000x1000 piksela, komprimirati ih tako da zadrže kvalitetu, a zatim ih pretvoriti u .webp format, koji je posebno prilagođen za brzi web.
 
-### Zašto koristiti .webp format?
+## Zašto koristiti .webp format?
 
 **.webp je Googleov format slika dizajniran za web. **
 
@@ -31,7 +29,7 @@ Njegove prednosti su:
 - Brže učitavanje: Manje datoteke znače brže učitavanje stranice.
 - Podrška za transparentnost i animacije: Poput PNG-a i GIF-a, ali optimiziranije.
 
-### Skripta za optimizaciju slika
+## Skripta za optimizaciju slika
 
 Skripta koju ćemo koristiti obrađuje slike posebno prilagođene za proizvode (1:1 omjer) i automatski ih priprema za korištenje na web shopu.
 
@@ -41,7 +39,7 @@ Koraci:
 - Komprimira sliku kako bi zadržala vizualnu kvalitetu.
 - Pretvara sliku u .webp format.
 
-### Potrebni alati
+## Potrebni alati
 
 Prije nego počnemo, osigurajte da imate instalirane sljedeće alate:
 
@@ -49,13 +47,12 @@ Python: Instalirajte Python 3.8 ili noviju verziju s python.org.
 
 Knjižnice: Instalirajte potrebne knjižnice s: `pip install pillow`
 
-### Kod za optimizaciju slika
+## Kod za optimizaciju slika
 
 ```python
 from PIL import Image
 import os
 from pathlib import Path
-
 
 def optimize_image(input_folder):
     output_folder = os.path.join(input_folder, "optimized")
@@ -81,7 +78,6 @@ def optimize_image(input_folder):
         except Exception as e:
             print(f"Greška pri obradi {filename}: {e}")
 
-
 if __name__ == "__main__":
     input_folder = input("Unesite put do mape sa slikama: ").strip()
     if not os.path.exists(input_folder):
@@ -91,18 +87,18 @@ if __name__ == "__main__":
         print("\nOptimizacija slika je završena! Provjerite 'optimized' mapu.")
 ```
 
-### Kako pokrenuti skriptu?
+## Kako pokrenuti skriptu?
 
 1. Pripremite slike: Stavite sve slike proizvoda u jednu mapu.
 2. Pokrenite skriptu: Unesite put do mape kad vas skripta pita.
 3. Provjerite rezultate: Optimizirane slike nalazit će se u mapi optimized.
 
-### Što je važno napomenuti?
+## Što je važno napomenuti?
 
 - Format slike: Skripta radi samo s 1:1 slikama (kvadratni format). Za ostale omjere, trebate dodatne prilagodbe.
 - Kvaliteta: Kompresija je postavljena na quality=85, što balansira kvalitetu i veličinu. Ako trebate još manju veličinu, možete smanjiti taj broj, ali pazite na vizualni izgled.
 
-### Prednosti automatizacije
+## Prednosti automatizacije
 
 Ova skripta štedi sate rada i omogućava vam da brzo optimizirate sve slike za svoj web shop.
 

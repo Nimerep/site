@@ -10,8 +10,6 @@ tags: gdpr, cookies, privacy, ecommerce, consent mode
 sourceURL: https://www.peremin.com/kolacici-uskladi-se-s-gdpr-om-i-eprivacy-direktivom/
 ---
 
-# Kolačići - uskladi se s GDPR-om i ePrivacy Direktivom
-
 Znaš onu poruku kad dođeš na webshop i iskače ti "Ova stranica koristi kolačiće kako bi poboljšala iskustvo korisnika"?
 
 Super. Samo što to **nije ni blizu dovoljno da budeš usklađen s GDPR-om i ePrivacy Direktivom. ****U ovom blogu neću ti prodavat template. Nego ti točno pišem što trebaš znati i što napraviti da ne dobiješ kaznu.**

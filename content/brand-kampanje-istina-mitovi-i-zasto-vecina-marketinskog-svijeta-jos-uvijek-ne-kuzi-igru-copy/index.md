@@ -10,8 +10,6 @@ tags: brand campaigns, marketing strategy, marketing effectiveness, growth
 sourceURL: https://www.peremin.com/brand-kampanje-istina-mitovi-i-zasto-vecina-marketinskog-svijeta-jos-uvijek-ne-kuzi-igru-copy/
 ---
 
-# Brand kampanje: Istina, mitovi i zašto većina marketinškog svijeta još uvijek ne kuži igru
-
 Dosta je bilo bajki o brand kampanjama. Svi ih hvale, agencije ih prodaju kao sveti gral, a konferencije ih dižu u nebesa. Ali kad maknemo PR maglu i pogledamo stvarne brojke, što nam ostaje? Evo moje mišljenje.
 
 ## Brand kampanje su precijenjene. Točka.

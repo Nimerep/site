@@ -359,15 +359,25 @@ img {
 .page-prose h2,
 .article-body h2,
 .related-posts h2 {
-  margin-top: 2.2rem;
+  margin: 2.4rem 0 0.85rem;
   color: var(--ink);
   font-size: clamp(1.55rem, 3vw, 2.15rem);
   line-height: 1.12;
 }
 
+.article-body h2 {
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+}
+
+.article-body h2:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
 .page-prose h3,
 .article-body h3 {
-  margin-top: 1.8rem;
+  margin: 1.8rem 0 0.55rem;
   color: var(--ink);
   font-size: 1.25rem;
   line-height: 1.2;
@@ -714,6 +724,22 @@ img {
 .page-prose li {
   color: #263b37;
   font-size: 1.03rem;
+}
+
+.article-body p,
+.article-body ul,
+.article-body ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.article-body ul,
+.article-body ol {
+  padding-left: 1.35rem;
+}
+
+.article-body li + li {
+  margin-top: 0.35rem;
 }
 
 .article-shell {

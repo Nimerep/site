@@ -11,8 +11,6 @@ sourceURL: https://www.peremin.com/besplatno-ab-testiranje-s-umjetnom-inteligenc
 image: /media/posts/13/Besplatno-AB-testiranje-s-umjetnom-inteligencijom-AI-LLM.jpg
 ---
 
-# Besplatno A/B testiranje s umjetnom inteligencijom (AI + LLM)
-
 Testirao sam nešto što klasični marketing nikad ne bi odobrio – **besplatno A/B testiranje s umjetnom inteligencijom (AI + LLM)**
 
 U ovom postupku koristimo generativne agente (**GenAgents**) **temeljene na istraživanjima sa Stanforda**, koji simuliraju ponašanje korisnika s visokim stupnjem podudarnosti sa stvarnim odlukama (do 85%).

@@ -11,8 +11,6 @@ sourceURL: https://www.peremin.com/roi-nije-jedan-broj-kako-povezati-metrike-mod
 image: /media/posts/5/ROI-nije-jedan-broj.jpg
 ---
 
-# ROI nije jedan broj: Kako povezati metrike, modele i zdrav razum u marketingu
-
 **Uvod: Marketing ROI – sveti gral ili mit?**
 Ah, ROI. Magični broj koji menadžeri žele, a marketinški timovi mrze. Svi pričaju o njemu, ali rijetko tko zna što zapravo znači. Je li ROI samo još jedan broj u Excelu ili je to priča o tome kako cijeli marketing orkestar svira zajedno? Vrijeme je da razbijemo mitove, spojimo znanost i zdrav razum – i to bez dosadnih tablica.
 
