@@ -14,13 +14,20 @@ With more than a decade of work across eCommerce, paid media, content marketing,
 
 [About Goran](/about-me/)
 
-## Core topics
-
-- Growth marketing
-- eCommerce performance
-- SEO and technical SEO
-- Conversion rate optimization
-- Marketing analytics and attribution
-- AI simulations and synthetic research
-- GDPR, cookie consent and privacy operations
-- Brand strategy and marketing effectiveness
+<section class="topic-lab" aria-labelledby="core-topics">
+  <div class="topic-lab-copy">
+    <p class="section-kicker">Core topics</p>
+    <h2 id="core-topics">Where the work compounds</h2>
+    <p>Practical marketing topics mapped as a living system: acquisition, conversion, measurement, trust and long-term brand effects.</p>
+  </div>
+  <div class="topic-constellation" aria-label="Core topics">
+    <a href="/tags/growth-marketing/" style="--i:0">Growth marketing</a>
+    <a href="/tags/ecommerce/" style="--i:1">eCommerce performance</a>
+    <a href="/tags/seo/" style="--i:2">SEO and technical SEO</a>
+    <a href="/tags/cro/" style="--i:3">Conversion rate optimization</a>
+    <a href="/tags/analytics/" style="--i:4">Marketing analytics and attribution</a>
+    <a href="/tags/ai/" style="--i:5">AI simulations and synthetic research</a>
+    <a href="/tags/gdpr/" style="--i:6">GDPR, cookie consent and privacy operations</a>
+    <a href="/tags/brand-strategy/" style="--i:7">Brand strategy and marketing effectiveness</a>
+  </div>
+</section>

@@ -63,7 +63,7 @@
             <section class="latest-section" aria-labelledby="latest-title">
               <div class="section-kicker">Fresh thinking</div>
               <h2 id="latest-title">Najnoviji članci</h2>
-              <ul class="post-grid">
+              <ul class="post-grid is-collapsed" data-post-grid data-batch-size="6">
                 {{#site.latestPosts}}
                   <li class="post-card">
                     <a class="post-thumb" href="{{ url }}">{{#heroImage}}{{{ thumbnailHTML }}}{{/heroImage}}</a>
@@ -76,6 +76,12 @@
                   </li>
                 {{/site.latestPosts}}
               </ul>
+              <div class="post-loader" data-post-loader>
+                <button type="button" data-load-more>Prikaži još članaka</button>
+                <span data-load-status aria-live="polite"></span>
+              </div>
+              <div class="post-scroll-sentinel" data-post-sentinel aria-hidden="true"></div>
+              <noscript><style>.post-grid.is-collapsed .post-card:nth-child(n+7){display:grid}</style></noscript>
             </section>
           {{/site.hasLatestPosts}}
         {{/page.latest}}
@@ -142,6 +148,55 @@
 
   {{#page.assets.javascript}}<script>{{{ page.assets.javascript }}}</script>{{/page.assets.javascript}}
   <script>
+    (function () {
+      var grid = document.querySelector('[data-post-grid]');
+      if (!grid) return;
+
+      var cards = Array.prototype.slice.call(grid.querySelectorAll('.post-card'));
+      var batchSize = Number(grid.getAttribute('data-batch-size')) || 6;
+      var visibleCount = Math.min(batchSize, cards.length);
+      var button = document.querySelector('[data-load-more]');
+      var status = document.querySelector('[data-load-status]');
+      var sentinel = document.querySelector('[data-post-sentinel]');
+
+      function render() {
+        cards.forEach(function (card, index) {
+          card.hidden = index >= visibleCount;
+        });
+
+        var remaining = cards.length - visibleCount;
+        if (status) {
+          status.textContent = remaining > 0 ? remaining + ' još u arhivi' : 'Svi članci su prikazani';
+        }
+        if (button) {
+          button.hidden = remaining <= 0;
+        }
+      }
+
+      function revealNext() {
+        if (visibleCount >= cards.length) return;
+        visibleCount = Math.min(visibleCount + batchSize, cards.length);
+        grid.classList.remove('is-collapsed');
+        render();
+      }
+
+      render();
+
+      if (button) {
+        button.addEventListener('click', revealNext);
+      }
+
+      if ('IntersectionObserver' in window && sentinel) {
+        var observer = new IntersectionObserver(function (entries) {
+          if (entries.some(function (entry) { return entry.isIntersecting; })) {
+            revealNext();
+          }
+          if (visibleCount >= cards.length) observer.disconnect();
+        }, { rootMargin: '220px 0px' });
+        observer.observe(sentinel);
+      }
+    }());
+
     document.addEventListener('click', function (event) {
       var link = event.target.closest('[data-td-copy-permalink]');
       if (!link || !navigator.clipboard) return;
