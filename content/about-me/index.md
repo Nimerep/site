@@ -6,7 +6,6 @@ weight: 10
 image: /assets/goran-peremin.jpg
 date: 2025-05-20
 tags: growth marketing, ecommerce, seo, cro, marketing analytics, digital strategy, python, data science
-aboutPage: true
 ---
 
 # Tko je Goran Peremin?

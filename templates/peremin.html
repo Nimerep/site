@@ -58,7 +58,8 @@
           </nav>
         {{/page.hasTags}}
 
-        {{#page.metadata.aboutPage}}
+        {{^page.latest}}
+        {{^page.postList}}
           <section class="about-proof" aria-labelledby="about-proof-title">
             <div>
               <div class="section-kicker">Operating range</div>
@@ -149,7 +150,8 @@
               <a href="https://skillshop.exceedlms.com/student/award/B5PBzN8A46BdfNWwMuCnXJhR"><strong>Google Ads Measurement</strong><span>Google Skillshop</span></a>
             </div>
           </section>
-        {{/page.metadata.aboutPage}}
+        {{/page.postList}}
+        {{/page.latest}}
 
         {{#page.latest}}
           <section class="core-topics" aria-labelledby="core-topics-title">
