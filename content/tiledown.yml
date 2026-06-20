@@ -1,0 +1,23 @@
+title: Goran Peremin
+subtitle: Growth marketing, SEO, CRO, eCommerce analytics
+baseURL: https://www.peremin.com
+layout: top-nav
+theme: system
+theme.light.accent: "#0f766e"
+theme.dark.accent: "#5eead4"
+rss: true
+rssPath: feed.xml
+shareLinks: true
+articlePDF: false
+social.github: https://github.com/Nimerep
+social.linkedin: https://www.linkedin.com/in/peremin/
+static.CNAME: deployment/CNAME
+static..nojekyll: deployment/.nojekyll
+static.robots.txt: robots.txt
+static.llms.txt: llms.txt
+static.humans.txt: humans.txt
+static.goran-peremin.person.schema.json: goran-peremin.person.schema.json
+static.assets: assets
+static.media: media
+notFoundRedirect.exact./who-is-goran-peremin/: /about-me/
+notFoundRedirect.exact./authors/goran-peremin/: /about-me/

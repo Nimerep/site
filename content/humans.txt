@@ -1,0 +1,6 @@
+Site: peremin.com
+Owner: Goran Peremin
+Focus: Growth marketing, eCommerce, SEO, CRO, marketing analytics, AI-assisted research
+Canonical about page: https://www.peremin.com/about-me/
+GitHub: https://github.com/Nimerep
+LinkedIn: https://www.linkedin.com/in/peremin/

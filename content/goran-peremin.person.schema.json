@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://www.peremin.com/about-me/#person",
+  "name": "Goran Peremin",
+  "url": "https://www.peremin.com/",
+  "image": "https://www.peremin.com/assets/goran-peremin.jpg",
+  "jobTitle": "Growth Marketing Strategist",
+  "nationality": {
+    "@type": "Country",
+    "name": "Croatia"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/peremin/",
+    "https://github.com/Nimerep",
+    "https://www.peremin.com/about-me/"
+  ],
+  "knowsAbout": [
+    "Growth Marketing",
+    "Search Engine Optimization",
+    "Conversion Rate Optimization",
+    "eCommerce",
+    "Performance Marketing",
+    "Content Strategy",
+    "Marketing Analytics",
+    "Marketing Attribution",
+    "Google Analytics",
+    "Google Ads",
+    "GDPR",
+    "AI-assisted Market Research",
+    "Synthetic Data",
+    "Generative Agents"
+  ],
+  "description": "Goran Peremin is a Croatian growth marketing strategist with more than 10 years of experience in eCommerce, SEO, CRO, performance marketing, content strategy and marketing analytics."
+}
