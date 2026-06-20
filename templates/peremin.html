@@ -59,10 +59,28 @@
         {{/page.hasTags}}
 
         {{#page.latest}}
+          <section class="core-topics" aria-labelledby="core-topics-title">
+            <div class="core-topics-copy">
+              <div class="section-kicker">Core topics</div>
+              <h2 id="core-topics-title">Where growth work gets measurable</h2>
+              <p>Eight connected disciplines for building eCommerce growth systems that can be tested, explained and improved.</p>
+            </div>
+            <div class="core-topic-grid" aria-label="Core topics">
+              <a href="/tags/growth-marketing/"><span>01</span>Growth marketing</a>
+              <a href="/tags/ecommerce/"><span>02</span>eCommerce performance</a>
+              <a href="/tags/seo/"><span>03</span>SEO and technical SEO</a>
+              <a href="/tags/cro/"><span>04</span>Conversion rate optimization</a>
+              <a href="/tags/marketing-analytics/"><span>05</span>Marketing analytics and attribution</a>
+              <a href="/tags/ai/"><span>06</span>AI simulations and synthetic research</a>
+              <a href="/tags/gdpr/"><span>07</span>GDPR, cookie consent and privacy operations</a>
+              <a href="/tags/brand-strategy/"><span>08</span>Brand strategy and marketing effectiveness</a>
+            </div>
+          </section>
+
           {{#site.hasLatestPosts}}
             <section class="latest-section" aria-labelledby="latest-title">
               <div class="section-kicker">Fresh thinking</div>
-              <h2 id="latest-title">Najnoviji članci</h2>
+              <h2 id="latest-title">Najnoviji &ccaron;lanci</h2>
               <ul class="post-grid is-collapsed" data-post-grid data-batch-size="6">
                 {{#site.latestPosts}}
                   <li class="post-card">
@@ -77,7 +95,7 @@
                 {{/site.latestPosts}}
               </ul>
               <div class="post-loader" data-post-loader>
-                <button type="button" data-load-more>Prikaži još članaka</button>
+                <button type="button" data-load-more>Prika&zcaron;i jo&scaron; &ccaron;lanaka</button>
                 <span data-load-status aria-live="polite"></span>
               </div>
               <div class="post-scroll-sentinel" data-post-sentinel aria-hidden="true"></div>
@@ -166,7 +184,7 @@
 
         var remaining = cards.length - visibleCount;
         if (status) {
-          status.textContent = remaining > 0 ? remaining + ' još u arhivi' : 'Svi članci su prikazani';
+          status.textContent = remaining > 0 ? remaining + ' jo\u0161 u arhivi' : 'Svi \u010dlanci su prikazani';
         }
         if (button) {
           button.hidden = remaining <= 0;
