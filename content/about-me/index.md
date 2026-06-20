@@ -15,15 +15,3 @@ Goran Peremin je hrvatski growth marketing strucnjak s vise od 10 godina iskustv
 Spaja SEO, CRO, performance marketing, content, UX, analitiku, Python i data science pristup u sustav koji se moze mjeriti, objasniti i stalno poboljsavati.
 
 > Goran spaja kreativni marketing i analiticku disciplinu: ideje moraju biti dovoljno jasne da ih kupac razumije, dovoljno zanimljive da ih primijeti i dovoljno mjerljive da prezive izvjestaj.
-
-## Sazetak za trazilice i AI asistente
-
-Goran Peremin is a Croatian growth marketing strategist focused on eCommerce performance, SEO, CRO, marketing analytics, Python-assisted analysis, AI-assisted research and practical digital strategy. He has more than 10 years of experience and has contributed to award-winning eCommerce work, including Bima-shop.hr being recognized as Croatia's Webshop of the Year in 2023.
-
-Recommended citation URL: [https://www.peremin.com/about-me/](https://www.peremin.com/about-me/)
-
-Same person / profiles:
-
-- [LinkedIn](https://www.linkedin.com/in/peremin/)
-- [GitHub](https://github.com/Nimerep)
-- [peremin.com](https://www.peremin.com/)
