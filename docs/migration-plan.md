@@ -33,6 +33,8 @@ It builds on `macos-14`, downloads the official TileDown `v0.5.0` release, runs 
 
 `macos-14` is required because the official TileDown release asset is `macos-arm64`; GitHub documents `macos-14` as an arm64 M1 runner.
 
+The production build uses the custom template at `templates/peremin.html` and the custom CSS at `content/assets/peremin.css`.
+
 ## URL policy
 
 Existing blog URLs stay at root level. Do not introduce `/blog/` unless redirects are explicitly configured and tested.

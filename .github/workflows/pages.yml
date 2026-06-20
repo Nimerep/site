@@ -34,7 +34,7 @@ jobs:
         run: tiledown doctor --publish content/
 
       - name: Build site
-        run: tiledown build-site content/ dist/
+        run: tiledown build-site content/ templates/peremin.html dist/
 
       - name: Inspect deploy output
         run: |
