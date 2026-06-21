@@ -16,6 +16,114 @@
   {{#site.feedPath}}<link rel="alternate" type="application/rss+xml" href="{{ site.feedPath }}">{{/site.feedPath}}
   {{#site.stylesheetPath}}<link rel="stylesheet" href="{{ site.stylesheetPath }}">{{/site.stylesheetPath}}
   <link rel="stylesheet" href="/assets/peremin.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://www.peremin.com/about-me/#person",
+        "name": "Goran Peremin",
+        "url": "https://www.peremin.com/",
+        "image": "https://www.peremin.com/assets/goran-peremin.jpg",
+        "jobTitle": "Growth Marketing Strategist",
+        "nationality": {
+          "@type": "Country",
+          "name": "Croatia"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/peremin/",
+          "https://github.com/Nimerep",
+          "https://www.peremin.com/about-me/"
+        ],
+        "knowsAbout": [
+          "Growth Marketing",
+          "Search Engine Optimization",
+          "Technical SEO",
+          "Conversion Rate Optimization",
+          "eCommerce Performance",
+          "Performance Marketing",
+          "Content Strategy",
+          "Marketing Analytics",
+          "Marketing Attribution",
+          "Google Analytics",
+          "Google Ads",
+          "GDPR",
+          "Cookie Consent",
+          "Python",
+          "Data Science",
+          "AI-assisted Market Research",
+          "Synthetic Data",
+          "Generative Agents"
+        ],
+        "award": [
+          "Responsible contributor to Croatian Webshop of the Year 2023",
+          "Commerce 2021 Content category win",
+          "Multiple silver medals in SEO, CRO and analytics at eCommerce Croatia competitions",
+          "Gold medals in eCommerce Croatia competition categories"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Python Developer Certification",
+            "recognizedBy": "University of Algebra"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Technical SEO course with Bastian Grimm",
+            "recognizedBy": "Semrush"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Marketing Analytics: Setting and Measuring KPIs",
+            "recognizedBy": "LinkedIn Learning"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Marketing Attribution and Mix Modeling",
+            "recognizedBy": "LinkedIn Learning"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Google Analytics Individual Qualification",
+            "recognizedBy": "Google Skillshop"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Google Ads Measurement Certification",
+            "recognizedBy": "Google Skillshop"
+          }
+        ],
+        "description": "Goran Peremin is a Croatian growth marketing strategist with more than 10 years of experience in eCommerce, SEO, CRO, performance marketing, content strategy, Python, data science and marketing analytics."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.peremin.com/#website",
+        "url": "https://www.peremin.com/",
+        "name": "Goran Peremin",
+        "description": "Growth marketing, SEO, CRO, eCommerce analytics and AI-assisted market research.",
+        "publisher": {
+          "@id": "https://www.peremin.com/about-me/#person"
+        },
+        "inLanguage": "hr"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "{{ page.metadata.canonicalURL }}#webpage",
+        "url": "{{ page.metadata.canonicalURL }}",
+        "name": "{{ page.metadata.title }}",
+        {{#page.metadata.description}}"description": "{{ page.metadata.description }}",{{/page.metadata.description}}
+        "isPartOf": {
+          "@id": "https://www.peremin.com/#website"
+        },
+        "author": {
+          "@id": "https://www.peremin.com/about-me/#person"
+        },
+        "inLanguage": "hr"
+      }
+    ]
+  }
+  </script>
   {{#site.analyticsHead}}{{{ site.analyticsHead }}}{{/site.analyticsHead}}
 </head>
 <body>
@@ -265,7 +373,7 @@
     <nav aria-label="Footer links">
       {{#site.socialLinks}}<a href="{{ url }}"{{#rel}} rel="{{ rel }}"{{/rel}}>{{ label }}</a>{{/site.socialLinks}}
       {{#site.feedPath}}<a href="{{ site.feedPath }}">RSS</a>{{/site.feedPath}}
-      <a href="/llms.txt">llms.txt</a>
+      <a href="/sitemap.xml">Sitemap</a>
     </nav>
   </footer>
 

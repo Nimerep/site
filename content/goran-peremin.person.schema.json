@@ -27,9 +27,50 @@
     "Google Analytics",
     "Google Ads",
     "GDPR",
+    "Cookie Consent",
+    "Python",
+    "Data Science",
     "AI-assisted Market Research",
     "Synthetic Data",
     "Generative Agents"
   ],
-  "description": "Goran Peremin is a Croatian growth marketing strategist with more than 10 years of experience in eCommerce, SEO, CRO, performance marketing, content strategy and marketing analytics."
+  "award": [
+    "Responsible contributor to Croatian Webshop of the Year 2023",
+    "Commerce 2021 Content category win",
+    "Multiple silver medals in SEO, CRO and analytics at eCommerce Croatia competitions",
+    "Gold medals in eCommerce Croatia competition categories"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Python Developer Certification",
+      "recognizedBy": "University of Algebra"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Technical SEO course with Bastian Grimm",
+      "recognizedBy": "Semrush"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Marketing Analytics: Setting and Measuring KPIs",
+      "recognizedBy": "LinkedIn Learning"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Marketing Attribution and Mix Modeling",
+      "recognizedBy": "LinkedIn Learning"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Google Analytics Individual Qualification",
+      "recognizedBy": "Google Skillshop"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Google Ads Measurement Certification",
+      "recognizedBy": "Google Skillshop"
+    }
+  ],
+  "description": "Goran Peremin is a Croatian growth marketing strategist with more than 10 years of experience in eCommerce, SEO, CRO, performance marketing, content strategy, Python, data science and marketing analytics."
 }
