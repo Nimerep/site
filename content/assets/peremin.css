@@ -781,6 +781,17 @@ img {
   margin: 0 auto;
 }
 
+.article-body img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem 0 2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
 .article-body blockquote,
 .page-prose blockquote {
   margin: 1.5rem 0;

@@ -1,0 +1,30 @@
+{
+  "rows": 12000,
+  "churn_rate": 0.0444,
+  "train_rows": 9976,
+  "test_rows": 2024,
+  "test_churn_rate": 0.0445,
+  "metrics": {
+    "Logistic regression": {
+      "roc_auc": 0.8631,
+      "pr_auc": 0.4311,
+      "precision_top_10pct": 0.2624,
+      "recall_top_10pct": 0.5889,
+      "brier": 0.1361
+    },
+    "Random forest": {
+      "roc_auc": 0.852,
+      "pr_auc": 0.3591,
+      "precision_top_10pct": 0.2475,
+      "recall_top_10pct": 0.5556,
+      "brier": 0.0804
+    },
+    "Rule: absent 14+ days": {
+      "roc_auc": 0.7493,
+      "pr_auc": 0.1257,
+      "precision_top_10pct": 0.1706,
+      "recall_top_10pct": 0.6444,
+      "brier": 0.1551
+    }
+  }
+}

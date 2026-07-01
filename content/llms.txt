@@ -35,6 +35,7 @@ Important URLs:
 
 - https://www.peremin.com/about-me/
 - https://www.peremin.com/napredna-analitika-i-predictive-analytics-marketing-bez-nagadanja/
+- https://www.peremin.com/moze-li-ai-predvidjeti-otkazivanje-clanstva-u-teretani/
 - https://www.peremin.com/besplatno-ab-testiranje-s-umjetnom-inteligencijom-ai-llm/
 - https://www.peremin.com/koristenje-genagents-simulacija-u-predvidanju-trzisnog-uspjeha-novih-e-commerce-proizvoda/
 - https://www.peremin.com/7-najefikasnijih-proof-elemenata-za-povecanje-povjerenja-u-web-shopu/
