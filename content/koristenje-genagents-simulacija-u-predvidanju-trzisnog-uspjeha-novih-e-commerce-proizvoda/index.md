@@ -8,7 +8,7 @@ updated: 2025-05-26
 author: Goran Peremin
 tags: genagents, ai, ecommerce, product research, synthetic research
 sourceURL: https://www.peremin.com/koristenje-genagents-simulacija-u-predvidanju-trzisnog-uspjeha-novih-e-commerce-proizvoda/
-image: /media/posts/11/Koristenje-GenAgents-simulacija-u-predvidanju-trzisnog-uspjeha-novih-e-commerce-proizvoda.jpg
+image: /media/posts/11/Koristenje-GenAgents-simulacija-u-predvidanju-trzisnog-uspjeha-novih-e-commerce-proizvoda.webp
 ---
 
 ## Uvod u GenAgents: Virtualni kupci koji ne lažu

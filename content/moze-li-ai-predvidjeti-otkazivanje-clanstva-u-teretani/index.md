@@ -145,7 +145,7 @@ Logistička regresija je namjerno uključena. Objašnjiva je, brza i dosadna. To
 
 Random forest je fleksibilniji i može uhvatiti nelinearne odnose. Ali “kompleksniji” nije poslovni KPI.
 
-![Usporedba churn modela](/media/posts/16/model-comparison.png)
+![Usporedba churn modela](/media/posts/16/model-comparison.webp)
 
 | Model | ROC-AUC | PR-AUC | Precision u top 10% | Recall u top 10% |
 | --- | ---: | ---: | ---: | ---: |
@@ -184,7 +184,7 @@ To je koristan ranking. Još uvijek nije retention strategija.
 
 Članove sam podijelio u deset grupa prema predviđenom riziku. Prvi decil ima najniži rizik, deseti najviši.
 
-![Churn stopa kroz risk decile](/media/posts/16/risk-deciles.png)
+![Churn stopa kroz risk decile](/media/posts/16/risk-deciles.webp)
 
 Ako se stvarna churn stopa ne povećava prema višim decilima, model nema stabilan ranking. Može imati finu metriku, ali neće dati dobru listu prioriteta.
 
@@ -210,7 +210,7 @@ Zaštitni signali bili su:
 - treninzi s osobnim trenerom
 - doveden prijatelj
 
-![Najjači churn signali](/media/posts/16/top-signals.png)
+![Najjači churn signali](/media/posts/16/top-signals.webp)
 
 Ovo nisu kauzalne istine. Koeficijent ne znači da će slanje čovjeka na onboarding automatski poništiti churn. Znači da je u našem generatoru i modelu taj signal povezan s manjim rizikom kada ostale varijable držimo pod kontrolom.
 
@@ -218,7 +218,7 @@ U stvarnom datasetu rezultat može biti drugačiji. Možda problem nije onboardi
 
 ## Pad dolazaka je signal. Nije dijagnoza
 
-![Prosječan pad dolazaka prije churn-a](/media/posts/16/attendance-drop.png)
+![Prosječan pad dolazaka prije churn-a](/media/posts/16/attendance-drop.webp)
 
 Članovi koji će otkazati u sintetičkim podacima u prosjeku pokazuju pad dolazaka. To ima intuitivnog smisla i poklapa se s idejom da ponašanje često oslabi prije formalnog odlaska.
 

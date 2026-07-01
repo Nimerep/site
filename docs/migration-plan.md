@@ -10,7 +10,7 @@
 
 ## Build target
 
-TileDown release: `v0.5.0`
+TileDown release: `v0.6.3`
 
 Build command:
 
@@ -29,7 +29,7 @@ tiledown serve --port 8765 content/
 
 GitHub Pages workflow is defined in `.github/workflows/pages.yml`.
 
-It builds on `macos-14`, downloads the official TileDown `v0.5.0` release, runs `doctor --publish`, builds `dist/`, checks deploy-critical root files, and deploys via GitHub Pages.
+It builds on `macos-14`, downloads and verifies the official TileDown `v0.6.3` release, runs `doctor --publish`, builds `dist/`, checks deploy-critical root files, and deploys via GitHub Pages.
 
 `macos-14` is required because the official TileDown release asset is `macos-arm64`; GitHub documents `macos-14` as an arm64 M1 runner.
 

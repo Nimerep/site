@@ -8,7 +8,7 @@ updated: 2025-05-18
 author: Goran Peremin
 tags: ecommerce, cro, trust, conversion optimization, webshop
 sourceURL: https://www.peremin.com/7-najefikasnijih-proof-elemenata-za-povecanje-povjerenja-u-web-shopu/
-image: /media/posts/9/7-Najefikasnijih-Proof-Elemenata-za-Povecanje-Povjerenja-u-Web-Shopu.jpg
+image: /media/posts/9/7-Najefikasnijih-Proof-Elemenata-za-Povecanje-Povjerenja-u-Web-Shopu.webp
 ---
 
 Znaš onaj osjećaj kad uđeš u web shop i misliš si: "Hmm, je li ovo legit ili će mi netko maznuti podatke s kartice i kupiti jahtu na Karibima?"

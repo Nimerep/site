@@ -45,7 +45,7 @@ Realnost? Suprotno.
 
 Koen Pauwels and Oliver Koll examine the complex relationship between consumers’ attitudes toward a brand and its market outcomes. An analysis of more than 150 brands in five countries reveals the intricate reciprocal connections between customer perceptions and behaviors, brand differentiation, and market penetration in both stable and emerging markets.
 
-![Koen Pauwels and Oliver Koll - Effects of Differentiation on the other studied metrics](/C:/Users/nimerep/Documents/Publii/sites/goran-peremin/input/media/posts/3/media.png)
+![Koen Pauwels and Oliver Koll - Effects of Differentiation on the other studied metrics](/media/posts/3/media.webp)
 
 ### Istraživanje:
 

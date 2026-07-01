@@ -8,7 +8,7 @@ updated: 2025-05-18
 author: Goran Peremin
 tags: roi, marketing analytics, attribution, econometrics, marketing effectiveness
 sourceURL: https://www.peremin.com/roi-nije-jedan-broj-kako-povezati-metrike-modele-i-zdrav-razum-u-marketingu/
-image: /media/posts/5/ROI-nije-jedan-broj.jpg
+image: /media/posts/5/ROI-nije-jedan-broj.webp
 ---
 
 **Uvod: Marketing ROI – sveti gral ili mit?**

@@ -26,4 +26,4 @@ For publish checks:
 tiledown doctor --publish content/
 ```
 
-The GitHub Actions workflow installs TileDown `v0.5.0` on the arm64 `macos-14` runner and deploys `dist/` to GitHub Pages.
+The GitHub Actions workflow installs TileDown `v0.6.3` on the arm64 `macos-14` runner and deploys `dist/` to GitHub Pages.

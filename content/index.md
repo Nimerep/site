@@ -2,7 +2,7 @@
 title: Goran Peremin, Growth Marketing Expert
 description: Goran Peremin writes practical, data-driven guides about growth marketing, eCommerce, SEO, CRO, analytics, AI testing, GDPR and brand strategy.
 type: page
-image: /assets/goran-peremin.jpg
+image: /assets/goran-peremin.webp
 latest: true
 ---
 

@@ -8,7 +8,7 @@ updated: 2025-05-18
 author: Goran Peremin
 tags: econometrics, marketing analytics, roi, attribution, media mix modeling
 sourceURL: https://www.peremin.com/ekonometrija-u-marketingu-kako-pretvoriti-brojke-u-oruzje/
-image: /media/posts/4/Ekonometrija-u-marketingu.jpg
+image: /media/posts/4/Ekonometrija-u-marketingu.webp
 ---
 
 Marketing bez ekonometrije je kao rock koncert bez pojačala – svi trube, ali nitko ne čuje poruku. Evo kako integrirati modele u strategiju, a da ne postaneš rob tablica i formula.

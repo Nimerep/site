@@ -4,7 +4,7 @@
   "@id": "https://www.peremin.com/about-me/#person",
   "name": "Goran Peremin",
   "url": "https://www.peremin.com/",
-  "image": "https://www.peremin.com/assets/goran-peremin.jpg",
+  "image": "https://www.peremin.com/assets/goran-peremin.webp",
   "jobTitle": "Growth Marketing Strategist",
   "nationality": {
     "@type": "Country",
