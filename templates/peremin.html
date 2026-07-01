@@ -120,28 +120,7 @@
           "@id": "https://www.peremin.com/about-me/#person"
         },
         "inLanguage": "hr"
-      }{{#page.article}},
-      {
-        "@type": "BlogPosting",
-        "@id": "{{ page.metadata.canonicalURL }}#article",
-        "url": "{{ page.metadata.canonicalURL }}",
-        "headline": "{{ page.metadata.title }}",
-        {{#page.metadata.description}}"description": "{{ page.metadata.description }}",{{/page.metadata.description}}
-        {{#page.metadata.image}}"image": "https://www.peremin.com{{ page.metadata.image }}",{{/page.metadata.image}}
-        "datePublished": "{{ date }}",
-        "dateModified": "{{ date }}",
-        "mainEntityOfPage": {
-          "@id": "{{ page.metadata.canonicalURL }}#webpage"
-        },
-        "author": {
-          "@id": "https://www.peremin.com/about-me/#person"
-        },
-        "publisher": {
-          "@id": "https://www.peremin.com/#website"
-        },
-        "inLanguage": "hr"
       }
-      {{/page.article}}
     ]
   }
   </script>
