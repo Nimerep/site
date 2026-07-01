@@ -1,6 +1,6 @@
 ---
-title: "Može li AI predvidjeti tko će otkazati članstvo u teretani?"
-description: "Napravio sam churn model na 12.000 sintetičkih članova teretane. Evo što stvarno može predvidjeti, gdje vara i zašto visok rizik još nije retention strategija."
+title: Može li AI predvidjeti tko će otkazati članstvo u teretani?
+description: Napravio sam churn model na 12.000 sintetičkih članova teretane. Evo što stvarno može predvidjeti, gdje vara i zašto visok rizik još nije retention strategija.
 type: blog-post
 nav: false
 date: 2026-07-01
