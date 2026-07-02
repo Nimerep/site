@@ -55,7 +55,7 @@ $$P(Y_{u,p}=1 \mid H_u)$$
 
 Jednostavan baseline ne treba neuronsku mrežu. Za proizvod i segment stanja može se procijeniti:
 
-$$\hat p_h = \frac{n_h}{n_e}$$
+$$p_h = \frac{n_h}{n_e}$$
 
 `h` je vremenski horizont. “Prihvatljiv slučaj” znači da korisnik ima dovoljno budućeg vremena u podacima da bismo vidjeli ishod. Ako u uzorak ubaciš korisnike promatrane samo dva dana, a meta je kupnja unutar 30 dana, stvorio si lažne negativne primjere.
 
