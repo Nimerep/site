@@ -792,6 +792,21 @@ img {
   box-shadow: var(--shadow);
 }
 
+.article-body .td-math-display {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.article-body .td-math-display > svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.article-body .td-math-a11y {
+  overflow: hidden !important;
+}
+
 .article-body blockquote,
 .page-prose blockquote {
   margin: 1.5rem 0;
