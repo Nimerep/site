@@ -55,7 +55,7 @@ $$P(Y_{u,p}=1 \mid H_u)$$
 
 Jednostavan baseline ne treba neuronsku mrežu. Za proizvod i segment stanja može se procijeniti:
 
-$$\hat p_h = \frac{N_{reorder,h}}{N_{eligible}}$$
+$$\hat p_h = \frac{n_h}{n_e}$$
 
 `h` je vremenski horizont. “Prihvatljiv slučaj” znači da korisnik ima dovoljno budućeg vremena u podacima da bismo vidjeli ishod. Ako u uzorak ubaciš korisnike promatrane samo dva dana, a meta je kupnja unutar 30 dana, stvorio si lažne negativne primjere.
 
@@ -77,13 +77,13 @@ Zato “kupci koji su kupili A kupili su i B” nije dokaz da će prikazivanje B
 
 Web shop obično prikazuje `K` preporuka. Recall@K mjeri koliko smo stvarno kupljenih proizvoda uspjeli staviti u tih `K` mjesta:
 
-$$Recall_K = \frac{|R_u \cap \hat R_u^K|}{|R_u|}$$
+$$Recall_K = \frac{h_K}{r}$$
 
-`R_u` je skup proizvoda koje je korisnik stvarno kupio u ciljnom prozoru, a `\hat R_u^K` skup prvih `K` preporuka.
+`hK` je broj pogođenih proizvoda među prvih `K` preporuka, a `r` broj proizvoda koje je korisnik stvarno kupio u ciljnom prozoru.
 
 Precision@K okreće nazivnik:
 
-$$Precision_K = \frac{|R_u \cap \hat R_u^K|}{K}$$
+$$Precision_K = \frac{h_K}{K}$$
 
 Recall nagrađuje pokrivanje stvarnih kupnji. Precision kažnjava zatrpavanje korisnika kandidatima. Ako korisnik kupi dva proizvoda, a model među prvih pet pogodi jedan, `Recall@5 = 1/2`, a `Precision@5 = 1/5`.
 
