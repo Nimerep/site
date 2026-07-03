@@ -29,9 +29,9 @@ tiledown serve --port 8765 content/
 
 GitHub Pages workflow is defined in `.github/workflows/pages.yml`.
 
-It builds on `macos-14`, builds TileDown `v0.6.4` from Codeberg, runs `doctor --publish`, builds `dist/`, checks deploy-critical root files, and deploys via GitHub Pages.
+It builds on `macos-15`, builds TileDown `v0.6.4` from Codeberg, runs `doctor --publish`, builds `dist/`, checks deploy-critical root files, and deploys via GitHub Pages.
 
-`macos-14` matches TileDown's macOS target and provides the Swift toolchain required to compile it.
+`macos-15` matches TileDown's macOS target and provides the Swift 6 toolchain required to compile it.
 
 The production build uses the custom template at `templates/peremin.html` and the custom CSS at `content/assets/peremin.css`.
 
