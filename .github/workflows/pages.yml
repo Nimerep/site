@@ -23,7 +23,12 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Install TileDown
-        run: brew install tiledown/tap/tiledown
+        run: |
+          git clone --depth 1 --branch v0.6.4 https://codeberg.org/TileDownHQ/tile-down.git "$RUNNER_TEMP/tile-down"
+          swift build --configuration release --package-path "$RUNNER_TEMP/tile-down/Packages" --product tiledown
+          mkdir -p "$HOME/.local/bin"
+          cp "$RUNNER_TEMP/tile-down/Packages/.build/release/tiledown" "$HOME/.local/bin/tiledown"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
       - name: Check TileDown content
         run: tiledown doctor --publish content/

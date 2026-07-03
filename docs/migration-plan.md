@@ -10,7 +10,7 @@
 
 ## Build target
 
-TileDown: official Homebrew tap
+TileDown: pinned `v0.6.4` source from Codeberg
 
 Build command:
 
@@ -29,9 +29,9 @@ tiledown serve --port 8765 content/
 
 GitHub Pages workflow is defined in `.github/workflows/pages.yml`.
 
-It builds on `macos-14`, installs TileDown from the official Homebrew tap, runs `doctor --publish`, builds `dist/`, checks deploy-critical root files, and deploys via GitHub Pages.
+It builds on `macos-14`, builds TileDown `v0.6.4` from Codeberg, runs `doctor --publish`, builds `dist/`, checks deploy-critical root files, and deploys via GitHub Pages.
 
-`macos-14` is required because the official TileDown release asset is `macos-arm64`; GitHub documents `macos-14` as an arm64 M1 runner.
+`macos-14` matches TileDown's macOS target and provides the Swift toolchain required to compile it.
 
 The production build uses the custom template at `templates/peremin.html` and the custom CSS at `content/assets/peremin.css`.
 

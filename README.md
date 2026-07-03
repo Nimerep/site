@@ -26,4 +26,4 @@ For publish checks:
 tiledown doctor --publish content/
 ```
 
-The GitHub Actions workflow installs TileDown from its official Homebrew tap on the arm64 `macos-14` runner and deploys `dist/` to GitHub Pages.
+The GitHub Actions workflow builds the pinned TileDown `v0.6.4` source from Codeberg on the arm64 `macos-14` runner and deploys `dist/` to GitHub Pages.
