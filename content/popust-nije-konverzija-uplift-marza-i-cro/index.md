@@ -8,6 +8,7 @@ updated: 2024-11-21
 author: Goran Peremin
 tags: ecommerce, cro, uplift modeling, marketing analytics, profit, experimentation
 sourceURL: https://www.peremin.com/popust-nije-konverzija-uplift-marza-i-cro/
+image: /media/posts/18/popust-nije-konverzija.webp
 ---
 
 Popust je najbrži način da conversion rate izgleda bolje na sastanku.
