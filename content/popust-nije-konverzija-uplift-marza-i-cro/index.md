@@ -51,11 +51,7 @@ $$\tau = P(Y=1 \mid T=1) - P(Y=1 \mid T=0)$$
 
 To nije rast od 0,65%. Relativni rast iznosi približno 18,31%, jer se 0,65 dijeli s početnih 3,55. Miješanje postotaka i postotnih bodova proizvodi vrlo kreativne prezentacije i vrlo loše budžete.
 
-Modeliranje po korisniku pokušava procijeniti uvjetni učinak:
-
-$$\tau(x) = E[Y \mid T=1, X=x] - E[Y \mid T=0, X=x]$$
-
-`X=x` znači da uspoređujemo korisnike s istim promatranim karakteristikama. Kod randomiziranog testa dodjela tretmana daje nam čvrstu osnovu za tu usporedbu. Kod običnih povijesnih kampanja pretpostavke su teže: korisnici koji su dobili kupon često nisu nasumično odabrani, pa razlika može biti posljedica selekcije, a ne ponude.
+Kasnije možemo tražiti segmente koji reagiraju bolje ili lošije: nove kupce, stare kupce, lovce na popuste ili ljude koji već mjesecima nisu kupili. Ali baza mora ostati ista — nasumično odabrana kontrolna skupina. Kod običnih povijesnih kampanja korisnici s kuponom često nisu usporedivi s onima bez kupona, pa razlika može biti posljedica načina odabira, a ne same ponude.
 
 ## Konverzija raste, profit pada
 
@@ -63,25 +59,14 @@ Uzmimo transparentan radni primjer. Nije rezultat Criteovih podataka, nego mali 
 
 U tretmanu imamo 10.000 korisnika i 420 kupnji. U kontroli također imamo 10.000 korisnika i 355 kupnji. Doprinosna marža prije kupona iznosi 24,50 eura po narudžbi, a kupon 7 eura.
 
-Profit tretmana:
-
-$$\Pi_1 = 420 \times (24{,}50 - 7) = 7.350$$
-
-Profit kontrole:
-
-$$\Pi_0 = 355 \times 24{,}50 = 8.697{,}50$$
-
-Inkrementalni profit:
-
-$$\Delta\Pi = \Pi_1 - \Pi_0 = -1.347{,}50$$
+| skupina | kupnje | marža po kupnji | ukupna marža |
+|---|---:|---:|---:|
+| kupon | 420 | 17,50 € | 7.350,00 € |
+| kontrola | 355 | 24,50 € | 8.697,50 € |
 
 Dobili smo 65 dodatnih narudžbi i izgubili 1.347,50 eura doprinosa. Razlog nije skriven u nekom sofisticiranom modelu. Kupon smo platili na svih 420 tretiranih kupnji, uključujući 355 kupnji koje kontrolna skupina sugerira da bi se dogodile i bez njega.
 
-Isti račun može se zapisati po ciljanoj osobi:
-
-$$\Delta\Pi = N\left[p_1(m-d)-p_0m-c\right]$$
-
-`N` je broj ciljanih korisnika, `p1` i `p0` stope konverzije, `m` doprinosna marža prije popusta, `d` popust po konverziji, a `c` trošak kontakta po ciljanoj osobi. Formula vrijedi za ovaj jasno definirani model troška; nije univerzalni zakon za svaku promociju.
+Račun je neugodno jednostavan: dodatna marža od novih kupnji mora biti veća od popusta koji smo podijelili na sve kupnje. Ako nije, conversion rate je narastao, a posao se smanjio.
 
 :::chart
 type: bar
@@ -116,11 +101,7 @@ Klasični A/B test često završava na stopi kupnje ili prihodu po posjetitelju.
 | `payment_and_fulfilment_cost` | varijabilni trošak narudžbe |
 | `returned_amount` | prihod izgubljen povratom |
 
-Doprinosna marža tada nije ukrasni KPI:
-
-$$CM = R - COGS - D - V - F$$
-
-`R` je prihod, `D` popust, `V` ostali varijabilni troškovi, a `F` vrijednost povrata.
+Doprinosna marža tada nije ukrasni KPI. Od prihoda oduzmemo trošak robe, popust, varijabilne troškove plaćanja i dostave te povrate. Ono što ostane uspoređujemo između tretmana i kontrole.
 
 Prije testa treba odrediti vremenski prozor. Ako kupnju brojimo sedam dana nakon kupona, isti prozor mora vrijediti za tretman i kontrolu. Ako promocija samo pomakne kupnju iz sljedećeg tjedna u ovaj tjedan, kratki prozor može prijaviti pobjedu tamo gdje se samo promijenio datum.
 

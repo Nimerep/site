@@ -8,6 +8,7 @@ updated: 2025-12-11
 author: Goran Peremin
 tags: ecommerce, recommendation systems, cltv, retention, machine learning, analytics
 sourceURL: https://www.peremin.com/sto-ce-kupac-sljedece-kupiti-recommendations-i-cltv/
+image: /media/posts/17/sto-ce-kupac-sljedece-kupiti.webp
 ---
 
 Većina preporuka u web shopu nije preporuka.
@@ -43,61 +44,41 @@ Za osnovni model dovoljna je ova struktura:
 
 Vlastiti web shop treba dodati cijenu, COGS, popust, povrat, dostupnost, kanal i vrijeme prikaza preporuke. Bez toga možeš predviđati proizvod, ali teško možeš dokazati vrijednost.
 
-## Sljedeći proizvod je uvjetna vjerojatnost
+## Sljedeći proizvod je procjena, ne proročanstvo
 
-Za korisnika `u`, proizvod `p` i njegovu povijest `H_u`, model procjenjuje:
-
-$$P(Y_{u,p}=1 \mid H_u)$$
-
-`Y=1` znači da će proizvod biti kupljen u unaprijed definiranom prozoru, primjerice u sljedećoj narudžbi ili unutar 30 dana. `H_u` može sadržavati broj kupnji proizvoda, dane od zadnje kupnje, tipičan razmak ponovne kupnje, kategorije, sat i dan naručivanja.
+Za svaki proizvod model procjenjuje šansu da ga kupac uskoro kupi. U obzir može uzeti koliko ga je puta već kupio, koliko je dana prošlo od zadnje kupnje, tipičan razmak ponovne kupnje, kategoriju te uobičajeni dan i sat naručivanja.
 
 “Sljedeća narudžba” i “sljedećih 30 dana” nisu ista meta. Prva zanemaruje koliko dugo treba čekati. Druga korisnika bez kupnje nakon 30 dana tretira kao negativan primjer. Model i poslovna odluka moraju koristiti istu definiciju.
 
-Jednostavan baseline ne treba neuronsku mrežu. Za proizvod i segment stanja može se procijeniti:
+Jednostavan početak ne treba neuronsku mrežu. Ako je 240 od 1.000 kupaca ponovno kupilo isti proizvod unutar 30 dana, početna procjena je 24%. Zatim provjeravamo mijenja li se ta stopa prema broju prethodnih kupnji, sezoni i proteklom vremenu.
 
-$$p_h = \frac{n_h}{n_e}$$
-
-`h` je vremenski horizont. “Prihvatljiv slučaj” znači da korisnik ima dovoljno budućeg vremena u podacima da bismo vidjeli ishod. Ako u uzorak ubaciš korisnike promatrane samo dva dana, a meta je kupnja unutar 30 dana, stvorio si lažne negativne primjere.
+Važno je da svaki kupac ima puni prozor za promatranje. Ako imamo samo dva dana njegovih budućih podataka, ne možemo ga pošteno proglasiti negativnim primjerom za kupnju unutar 30 dana.
 
 ## Košarica otkriva veze, ali lift čuva obraz
 
-Za proizvode koji se kupuju zajedno mogu se koristiti support, confidence i lift.
+Za proizvode koji se kupuju zajedno može se koristiti lift. Recimo da 20% košarica sadrži proizvod A, 10% proizvod B, a 8% oba. Među kupcima proizvoda A njih 40% uzima i B. Budući da se B inače pojavljuje u samo 10% košarica, ta je kombinacija četiri puta češća od osnovne stope. Lift je 4.
 
-$$support(A \cup B)=\frac{N(A \cup B)}{N}$$
-
-$$confidence(A \rightarrow B)=\frac{support(A \cup B)}{support(A)}$$
-
-$$lift(A \rightarrow B)=\frac{confidence(A \rightarrow B)}{support(B)}$$
-
-Ako je lift veći od 1, `B` se pojavljuje uz `A` češće nego što bismo očekivali prema osnovnoj učestalosti proizvoda `B`. To još uvijek nije uzročni učinak preporuke. Možda se proizvodi prirodno kupuju zajedno i bez ikakvog modula.
+To još uvijek nije dokaz da je preporuka uzrokovala kupnju. Možda se proizvodi prirodno kupuju zajedno i bez ikakvog modula.
 
 Zato “kupci koji su kupili A kupili su i B” nije dokaz da će prikazivanje B povećati prodaju. To je kandidat za test.
 
 ## Model mora pogoditi listu, ne samo jedan proizvod
 
-Web shop obično prikazuje `K` preporuka. Recall@K mjeri koliko smo stvarno kupljenih proizvoda uspjeli staviti u tih `K` mjesta:
+Web shop obično prikazuje pet ili deset preporuka. Recall govori koliko je stvarno kupljenih proizvoda završilo na toj listi. Precision govori koliko je mjesta na listi bilo pogođeno.
 
-$$Recall_K = \frac{h_K}{r}$$
-
-`hK` je broj pogođenih proizvoda među prvih `K` preporuka, a `r` broj proizvoda koje je korisnik stvarno kupio u ciljnom prozoru.
-
-Precision@K okreće nazivnik:
-
-$$Precision_K = \frac{h_K}{K}$$
-
-Recall nagrađuje pokrivanje stvarnih kupnji. Precision kažnjava zatrpavanje korisnika kandidatima. Ako korisnik kupi dva proizvoda, a model među prvih pet pogodi jedan, `Recall@5 = 1/2`, a `Precision@5 = 1/5`.
+Ako korisnik kupi dva proizvoda, a model među prvih pet pogodi jedan, pronašli smo polovicu stvarnih kupnji. Istodobno je samo jedno od pet prikazanih mjesta bilo pogodak. Prvi pogled zvuči dobro, drugi malo manje. Zato trebamo oba.
 
 Podjelu za trening i test treba napraviti po vremenu. Model trenira na prošlosti i predviđa budućnost. Nasumično miješanje redaka može pustiti kasniju narudžbu istog korisnika u trening dok raniju pokušavamo predvidjeti. To nije predikcija. To je curenje s boljim marketingom.
 
 ## CLTV je buduća marža, ne povijesni promet
 
-Za konačni horizont `H`, očekivani CLTV može se zapisati kao diskontirana očekivana doprinosna marža umanjena za trošak korisnika:
+Najkraće rečeno:
 
-$$CLTV_H(u)=\sum_{t=1}^{H}\frac{E[M_{u,t}]}{(1+r)^t}-E[C_u]$$
+$$CLTV = M - C$$
 
-`M_{u,t}` je doprinosna marža korisnika u razdoblju `t`, `r` diskontna stopa po razdoblju, a `C_u` očekivani budući trošak zadržavanja i posluživanja. Horizont, stopa i uključeni troškovi moraju biti navedeni.
+`M` je očekivana buduća doprinosna marža, a `C` očekivani trošak zadržavanja i posluživanja kupca. Moramo navesti i razdoblje: CLTV za sljedećih 12 mjeseci nije isto što i vrijednost kroz cijeli odnos.
 
-Ovo je definicija financijskog cilja, ne tvrdnja da možemo savršeno vidjeti budućnost. Za kupce bez ugovornog churn događaja treba procijeniti hoće li ostati aktivni, koliko će transakcija napraviti i koliku će vrijednost imati transakcija. Pareto/NBD i srodni modeli jedan su provjeren pristup za broj budućih transakcija, ali nisu obavezni za prvi korak.
+Ovo nije tvrdnja da savršeno vidimo budućnost. Treba procijeniti hoće li kupac ostati aktivan, koliko će puta kupiti i kolika će biti marža tih kupnji. Složeniji modeli postoje, ali nisu obavezni za prvi korak.
 
 Najjednostavniji pošteni početak je ostvarena doprinosna marža u 90, 180 i 365 dana po akvizicijskoj kohorti.
 
@@ -127,11 +108,9 @@ Počeo bih s tri kandidata: proizvodi za ponovnu kupnju, proizvodi koji se čest
 
 Tek nakon toga model za rangiranje. Ulazne značajke trebaju imati poslovno značenje: frequency, recency, tipičan interval kupnje, afinitet prema kategoriji, trenutnu košaricu, cijenu i dostupnost. Rezultat modela nije konačni redoslijed ako ignorira maržu i ograničenja.
 
-Ne bih u jedan proizvoljni score zbrojio vjerojatnost kupnje, maržu i popularnost s težinama koje smo izmislili u petak popodne. Ako želimo optimizirati očekivanu kratkoročnu maržu, cilj može biti:
+Ne bih u jedan proizvoljni score zbrojio vjerojatnost kupnje, maržu i popularnost s težinama koje smo izmislili u petak popodne. Razumniji početak je procijenjenu šansu kupnje pomnožiti doprinosnom maržom proizvoda.
 
-$$E[CM_{u,p}] = P(Y_{u,p}=1 \mid H_u)\times CM_p$$
-
-To je jasno, ali i dalje pretpostavlja da prikaz preporuke ne mijenja druge kupnje. Za stvarni inkrementalni učinak treba eksperiment ili causal model.
+Ni to ne dokazuje da je prikaz preporuke stvorio kupnju. Za stvarni dodatni učinak i dalje treba kontrolna skupina.
 
 Preporuka je dobra tek kada pogodi relevantan proizvod, stigne u pravo vrijeme, ne pojede postojeću kupnju i ostavi više buduće marže nego kontrola.
 

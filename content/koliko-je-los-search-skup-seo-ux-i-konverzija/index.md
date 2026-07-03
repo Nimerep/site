@@ -63,17 +63,11 @@ Za vlastiti shop dovoljno je uzeti uzorak najčešćih upita, zero-result upita 
 
 Search mora pronaći relevantne proizvode i staviti ih dovoljno visoko. Zato običan postotak relevantnih rezultata nije dovoljan. Rezultat na poziciji 1 vrijedi više od istog rezultata na poziciji 20.
 
-Discounted Cumulative Gain za prvih `k` rezultata može se definirati ovako:
-
-$$DCG_k = \sum_{i=1}^{k}\frac{2^{rel_i}-1}{\log_2(i+1)}$$
-
-`rel_i` je numerička relevantnost rezultata na poziciji `i`. Logaritamski nazivnik smanjuje doprinos rezultata koji su niže na listi.
-
-Normalizirana vrijednost dijeli stvarni DCG idealnim poretkom:
+Najčešća metrika za to zove se nDCG. Ime zvuči kao nešto što se govori samo uz službenu akreditaciju, ali ideja je jednostavna: usporedi stvarni redoslijed s najboljim mogućim redoslijedom.
 
 $$nDCG_k = \frac{DCG_k}{IDCG_k}$$
 
-Rezultat je između 0 i 1 kada su ocjene nenegativne. Vrijednost 1 znači da je lista idealno poredana prema zadanim ocjenama.
+Rezultat je između 0 i 1. Vrijednost 1 znači da su najbolji odgovori na vrhu. Što relevantan proizvod gurnemo niže, rezultat više pada.
 
 Formula je standardna metrika rangiranja, opisana i u dokumentaciji za [`sklearn.metrics.ndcg_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.ndcg_score.html). Međutim, brojevi koje pridružujemo ESCI oznakama nisu prirodni zakon. Moraju biti deklarirani.
 
@@ -92,25 +86,13 @@ Vrijednosti u grafu su demonstracijski primjer strukture izvještaja, ne univerz
 
 Nekoliko operativnih metrika brzo pokaže gdje search curi.
 
-Stopa pretraga bez rezultata:
+**Stopa pretraga bez rezultata** govori koliki udio svih pretraga vraća praznu stranicu. Ako je 800 od 10.000 pretraga prazno, stopa je 8%.
 
-$$ZRR = \frac{N_0}{N_s}$$
-
-`N0` je broj pretraga bez rezultata, a `Ns` broj svih pretraga.
-
-Stopa reformulacije:
-
-$$QRR = \frac{N_r}{N_s}$$
-
-`Nr` je broj search sesija s reformulacijom, a `Ns` broj svih sesija sa searchom.
+**Stopa reformulacije** govori koliko ljudi mora pokušati ponovno. Ako netko upiše `vodootporne tenisice`, ne klikne ništa i nakon minute upiše `goretex tenisice`, prvi rezultat očito nije odradio posao.
 
 Prozor mora biti naveden. “Novi upit unutar 120 sekundi bez klika na proizvod” jedna je moguća operativna definicija. Drugi tim može koristiti 60 sekundi. Oba su legitimna ako se definicija ne mijenja usred izvještaja.
 
-Najvažniji poslovni ishod nije sam search conversion rate nego inkrementalna vrijednost popravka. Ako A/B test nove tražilice ima `N` search sesija po varijanti, prosječnu doprinosnu maržu `CM1` u novoj i `CM0` u staroj verziji, tada:
-
-$$\Delta CM = N(CM_1-CM_0)$$
-
-U doprinosnu maržu ulaze prihod, trošak robe, popusti, varijabilni troškovi i povrati. Prihod može rasti dok marža pada ako novi ranking gura proizvode koji se prodaju samo na dubokom popustu.
+Najvažniji poslovni ishod nije sam search conversion rate nego vrijednost popravka. U A/B testu usporedimo prosječnu doprinosnu maržu po search sesiji. Razliku pomnožimo brojem sesija i dobijemo financijski učinak. Prihod može rasti dok marža pada ako novi ranking gura proizvode koji se prodaju samo na dubokom popustu.
 
 ## SEO sadržaj i interni search trebaju razgovarati
 
