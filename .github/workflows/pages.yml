@@ -23,13 +23,7 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Install TileDown
-        run: |
-          curl --fail --retry 3 --retry-all-errors -L https://github.com/TileDown/tile-down/releases/download/v0.6.3/tiledown-0.6.3-macos-arm64.tar.gz -o tiledown.tar.gz
-          echo "4b1eb9d2f0476c574ca066f3930681c093a369feeb80496c35065d8a73a859bd  tiledown.tar.gz" | shasum -a 256 -c -
-          mkdir -p "$HOME/.local/bin"
-          tar -xzf tiledown.tar.gz -C "$HOME/.local/bin"
-          chmod +x "$HOME/.local/bin/tiledown"
-          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+        run: brew install tiledown/tap/tiledown
 
       - name: Check TileDown content
         run: tiledown doctor --publish content/
