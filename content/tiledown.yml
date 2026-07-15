@@ -19,6 +19,7 @@ static.llms.txt: llms.txt
 static.humans.txt: humans.txt
 static.goran-peremin.person.schema.json: goran-peremin.person.schema.json
 static.assets: assets
+static.lab: lab
 static.media: media
 static.downloads: downloads
 notFoundRedirect.exact./who-is-goran-peremin/: /about-me/

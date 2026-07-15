@@ -970,3 +970,12 @@ code {
     white-space: normal;
   }
 }
+.lab-callout {
+  margin-top: 1.25rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--line, #d8e0df);
+  border-radius: 0.8rem;
+  background: color-mix(in srgb, var(--accent, #0f766e) 8%, transparent);
+}
+
+.lab-callout a { white-space: nowrap; }

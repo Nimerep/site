@@ -137,6 +137,7 @@
     </a>
     <nav class="site-nav" aria-label="Main navigation">
       {{#site.sections}}<a href="{{ url }}"{{#isCurrent}} aria-current="page"{{/isCurrent}}>{{ title }}</a>{{/site.sections}}
+      <a href="/lab/hypeometar/">Hypeometar</a>
       {{#site.feedPath}}<a href="{{ site.feedPath }}">RSS</a>{{/site.feedPath}}
     </nav>
   </header>
@@ -288,6 +289,7 @@
               <a href="/tags/gdpr/"><span>07</span>GDPR, cookie consent and privacy operations</a>
               <a href="/tags/brand-strategy/"><span>08</span>Brand strategy and marketing effectiveness</a>
             </div>
+            <p class="lab-callout"><strong>Jesu li trendovi stvarni ili samo glasni?</strong> <a href="/lab/hypeometar/">Otvori Marketing Hypeometar &rarr;</a></p>
           </section>
 
           {{#site.hasLatestPosts}}
@@ -373,6 +375,7 @@
     <nav aria-label="Footer links">
       {{#site.socialLinks}}<a href="{{ url }}"{{#rel}} rel="{{ rel }}"{{/rel}}>{{ label }}</a>{{/site.socialLinks}}
       {{#site.feedPath}}<a href="{{ site.feedPath }}">RSS</a>{{/site.feedPath}}
+      <a href="/lab/hypeometar/">Hypeometar</a>
       <a href="/sitemap.xml">Sitemap</a>
     </nav>
   </footer>

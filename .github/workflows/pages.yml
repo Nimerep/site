@@ -47,6 +47,7 @@ jobs:
           test -f dist/humans.txt
           test -f dist/goran-peremin.person.schema.json
           test -d dist/assets
+          test -f dist/lab/hypeometar/index.html
           test -d dist/media
 
       - name: Upload artifact

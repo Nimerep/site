@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Marketing Hypeometar — Goran Peremin</title>
+  <meta name="description" content="Usporedi javnu pažnju i količinu novih istraživanja za aktualne marketinške teme.">
+  <link rel="canonical" href="https://www.peremin.com/lab/hypeometar/">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/peremin.css?v=20260715">
+  <link rel="stylesheet" href="/assets/hypeometar.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Goran Peremin home">
+      <span class="brand-mark">GP</span>
+      <span><span class="brand-title">Goran Peremin</span><span class="brand-subtitle">Growth marketing, SEO, CRO, eCommerce analytics</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Glavna navigacija"><a href="/about-me/">About Me</a><a href="/lab/hypeometar/" aria-current="page">Hypeometar</a><a href="/feed.xml">RSS</a></nav>
+  </header>
+
+  <main class="hype-shell">
+    <header class="hype-hero">
+      <div class="section-kicker">Peremin Lab · podaci se osvježavaju uživo</div>
+      <h1>Marketing Hypeometar</h1>
+      <p>Što trenutno gori — i postoji li išta iza dima? Wikipedia pokazuje pažnju publike, a Crossref koliko se o temi objavljuje istraživanja.</p>
+    </header>
+
+    <form class="hype-controls" id="hype-form">
+      <label for="topic">Odaberi temu</label>
+      <select id="topic" name="topic">
+        <option value="generative-ai">Generativni AI</option>
+        <option value="predictive-analytics">Predictive analytics</option>
+        <option value="marketing-mix">Marketing mix modeling</option>
+        <option value="synthetic-data">Sintetički podaci</option>
+        <option value="personalization">Personalizacija</option>
+        <option value="customer-lifetime-value">Customer lifetime value</option>
+      </select>
+      <button type="submit">Izmjeri signal</button>
+    </form>
+
+    <p class="hype-status" id="status" role="status" aria-live="polite">Dohvaćam svježe podatke…</p>
+
+    <section class="signal-grid" id="results" aria-label="Rezultati" hidden>
+      <article class="signal-card signal-card-main">
+        <span class="signal-label">Presuda</span>
+        <strong class="verdict" id="verdict"></strong>
+        <p id="verdict-copy"></p>
+      </article>
+      <article class="signal-card">
+        <span class="signal-label">Pažnja publike</span>
+        <strong><span id="attention-score">—</span><small>/100</small></strong>
+        <p id="attention-detail"></p>
+      </article>
+      <article class="signal-card">
+        <span class="signal-label">Istraživački signal</span>
+        <strong><span id="evidence-score">—</span><small>/100</small></strong>
+        <p id="evidence-detail"></p>
+      </article>
+    </section>
+
+    <section class="chart-card" id="chart-card" hidden>
+      <div><span class="signal-label">Wikipedia pažnja</span><h2>Zadnjih 90 dana</h2></div>
+      <svg id="attention-chart" viewBox="0 0 800 240" role="img" aria-label="Linijski graf dnevnih Wikipedia pregleda"></svg>
+    </section>
+
+    <aside class="related-card" id="related" hidden>
+      <span class="signal-label">Nastavi kopati</span>
+      <h2 id="related-title"></h2>
+      <p id="related-copy"></p>
+      <a id="related-link" href="/">Pročitaj povezani članak →</a>
+    </aside>
+
+    <p class="method-note">Hypeometar nije znanstveni indeks. To je brzi signal: relativna promjena Wikipedia pregleda i godišnja promjena broja Crossref zapisa. Rezultat služi za postavljanje boljeg pitanja, ne za automatsku odluku.</p>
+  </main>
+
+  <footer class="site-footer"><div><strong>Goran Peremin</strong><span>Growth marketing koji može preživjeti dashboard.</span></div><nav aria-label="Footer links"><a href="/">Članci</a><a href="/sitemap.xml">Sitemap</a></nav></footer>
+  <script src="/assets/hypeometar.js" defer></script>
+</body>
+</html>
