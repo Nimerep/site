@@ -24,10 +24,13 @@ jobs:
 
       - name: Install TileDown
         run: |
-          git clone --depth 1 --branch v0.6.4 https://codeberg.org/TileDownHQ/tile-down.git "$RUNNER_TEMP/tile-down"
-          swift build --configuration release --package-path "$RUNNER_TEMP/tile-down/Packages" --product tiledown
-          mkdir -p "$HOME/.local/bin"
-          cp "$RUNNER_TEMP/tile-down/Packages/.build/release/tiledown" "$HOME/.local/bin/tiledown"
+          archive="$RUNNER_TEMP/tiledown.tar.gz"
+          curl -fsSL https://codeberg.org/api/packages/TileDownHQ/generic/tiledown/0.6.4/tiledown-0.6.4-macos-arm64.tar.gz -o "$archive"
+          echo "76808188bc17fe67969cb05966f10ea93b2ebac846a1250e5174c762cd2a7fd2  $archive" | shasum -a 256 -c -
+          mkdir -p "$HOME/.local/bin" "$HOME/.local/libexec/tiledown"
+          tar -xzf "$archive" -C "$HOME/.local/libexec/tiledown"
+          printf '#!/bin/sh\nexec "$HOME/.local/libexec/tiledown/tiledown" "$@"\n' > "$HOME/.local/bin/tiledown"
+          chmod +x "$HOME/.local/bin/tiledown"
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
       - name: Check TileDown content
