@@ -3,8 +3,8 @@ title: "Kako Automatski Optimizirati Slike za Web Shop Uz Pomoć Pythona"
 description: "Ova skripta štedi sate rada i omogućava vam da brzo optimizirate sve slike za svoj web shop. Brža stranica znači zadovoljnije korisnike, bolju SEO poziciju"
 type: blog-post
 nav: false
-date: 2025-05-25
-updated: 2025-05-25
+date: 2025-02-06
+updated: 2025-02-06
 author: Goran Peremin
 tags: python, image optimization, ecommerce, web performance, seo
 sourceURL: https://www.peremin.com/kako-automatski-optimizirati-slike-za-web-shop-uz-pomoc-pythona/

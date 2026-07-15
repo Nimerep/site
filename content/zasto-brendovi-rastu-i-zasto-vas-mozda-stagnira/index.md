@@ -3,8 +3,8 @@ title: "Zašto brendovi rastu? ...i zašto vaš možda stagnira"
 description: "Uvod: Vrijeme je da pogledate istini u oči Ako ste ikad sjedili na marketinškom sastanku gdje se raspravlja o “emocionalnoj vezi s brendom”, vjerojatno ste"
 type: blog-post
 nav: false
-date: 2025-05-17
-updated: 2025-05-18
+date: 2024-06-18
+updated: 2024-06-18
 author: Goran Peremin
 tags: brand strategy, marketing effectiveness, growth, ecommerce
 sourceURL: https://www.peremin.com/zasto-brendovi-rastu-i-zasto-vas-mozda-stagnira/

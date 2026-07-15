@@ -3,8 +3,8 @@ title: "GDPR Checklist za E-commerce Web Shopove"
 description: "Ako vodiš webshop, onda skupljaš osobne podatke. Ako skupljaš osobne podatke, onda moraš poštivati GDPR. Nema filozofije – ovo je tvoj vodič kroz GDPR džun"
 type: blog-post
 nav: false
-date: 2025-05-18
-updated: 2025-05-18
+date: 2024-02-12
+updated: 2024-02-12
 author: Goran Peremin
 tags: gdpr, ecommerce, privacy, compliance, webshop
 sourceURL: https://www.peremin.com/gdpr-checklista-za-e-commerce-bez-gluposti-samo-ono-sto-ti-zapravo-treba/
