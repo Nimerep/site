@@ -1,10 +1,10 @@
 ---
-title: Korištenje GenAgents simulacija u predviđanju tržišnog uspjeha novih e-commerce proizvoda
-description: Uvod u GenAgents: Virtualni kupci koji ne lažu Imaš ideju za novi proizvod – kišobran s interaktivnim LED svjetlima. Savršeno za Instagram, cool za TikTok
+title: GenAgents: Može li AI predvidjeti uspjeh proizvoda?
+description: Kako generativni agenti simuliraju reakcije kupaca, gdje mogu pomoći pri istraživanju proizvoda i zašto sintetički kupac ipak nije tržište.
 type: blog-post
 nav: false
 date: 2025-07-14
-updated: 2025-07-14
+updated: 2026-07-18
 author: Goran Peremin
 tags: genagents, ai, ecommerce, product research, synthetic research
 sourceURL: https://www.peremin.com/koristenje-genagents-simulacija-u-predvidanju-trzisnog-uspjeha-novih-e-commerce-proizvoda/

@@ -1,13 +1,14 @@
 ---
 title: Ne predviđaj samo prodaju — pronađi signal koji je zaustavlja
-description: Sezonska prodaja ne završava kada grafikon padne. Završava ranije, kada nestane uvjet koji pokreće potražnju. Evo kako taj signal pronaći u podacima i pretvoriti ga u odluku o zalihama.
+description: Kako pronaći vanjski signal koji najavljuje kraj sezonske potražnje i pretvoriti ga u pravodobnu odluku o zalihama, nabavi i oglašavanju.
 type: blog-post
 nav: false
 date: 2026-07-04
-updated: 2026-07-04
+updated: 2026-07-18
 author: Goran Peremin
 tags: ecommerce, demand forecasting, inventory, predictive analytics, google trends, retail analytics
 sourceURL: https://www.peremin.com/ne-predvidaj-samo-prodaju-pronadi-signal-koji-je-zaustavlja/
+image: /media/posts/seo-covers/demand-signal.webp
 ---
 
 Prodaja sladoleda raste s temperaturom.

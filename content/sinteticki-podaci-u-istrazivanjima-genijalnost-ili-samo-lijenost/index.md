@@ -1,10 +1,10 @@
 ---
-title: Sintetički podaci u istraživanjima: Genijalnost ili samo lijenost?
-description: Vrijeme je da otvoreno progovorimo: jesu li sintetički podaci u istraživanjima briljantna inovacija ili samo još jedan shortcut za one koji ne žele prljati
+title: Sintetički podaci u istraživanjima: Genijalnost ili prečac?
+description: Sintetički podaci ubrzavaju istraživanje i štite privatnost, ali mogu uredno ponoviti pogrešne pretpostavke. Evo gdje pomažu, a gdje varaju.
 type: blog-post
 nav: false
 date: 2025-05-17
-updated: 2025-05-18
+updated: 2026-07-18
 author: Goran Peremin
 tags: synthetic data, ai, market research, privacy, marketing analytics
 sourceURL: https://www.peremin.com/sinteticki-podaci-u-istrazivanjima-genijalnost-ili-samo-lijenost/

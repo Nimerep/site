@@ -1,136 +1,158 @@
 ---
-title: Kolačići - uskladi se s GDPR-om i ePrivacy Direktivom
-description: Znaš onu poruku kad dođeš na webshop i iskače ti "Ova stranica koristi kolačiće kako bi poboljšala iskustvo korisnika"? Super. Samo što to nije ni…
+title: Kolačići i GDPR u Hrvatskoj: Što web shop mora imati
+description: Praktičan vodič kroz cookie bannere, privolu, Google Analytics, Meta Pixel i Consent Mode prema GDPR-u, ZEK-u i službenim uputama AZOP-a.
 type: blog-post
 nav: false
 date: 2025-05-18
-updated: 2025-05-18
+updated: 2026-07-18
 author: Goran Peremin
 tags: gdpr, cookies, privacy, ecommerce, consent mode
 sourceURL: https://www.peremin.com/kolacici-uskladi-se-s-gdpr-om-i-eprivacy-direktivom/
+image: /media/posts/seo-covers/kolacici-privola.webp
 ---
 
-Znaš onu poruku kad dođeš na webshop i iskače ti "Ova stranica koristi kolačiće kako bi poboljšala iskustvo korisnika"?
+Znaš onaj banner koji kaže: „Nastavkom korištenja stranice prihvaćate kolačiće”?
 
-Super. Samo što to **nije ni blizu dovoljno da budeš usklađen s GDPR-om i ePrivacy Direktivom. ****U ovom blogu neću ti prodavat template. Nego ti točno pišem što trebaš znati i što napraviti da ne dobiješ kaznu.**
+To nije privola. To je optimizam s obrubom i gumbom.
 
-## 🔍 ŠTO SU KOLAČIĆI?
+Ako vodiš web shop u Hrvatskoj, kolačići nisu samo pitanje GDPR-a. Primjenjuju se i hrvatski **Zakon o elektroničkim komunikacijama**, pravila o transparentnosti i privoli iz GDPR-a te praksa AZOP-a. Zato ćemo ovdje razdvojiti što zakon stvarno traži od onoga što cookie alat tvrdi da je „compliant by default”.
 
-Kolačići su male tekstualne datoteke koje tvoj site šalje na uređaj korisnika.
-Zvuči bezazleno, ali preko njih pratiš korisnike, skupljaš podatke i šibaš ih trećim stranama (npr. Meta, Google, TikTok...). To su mali komadići koda koji te prate po webu, skupljaju podatke o tvojim navikama, interesima, pa čak i lokaciji. I ne, nije to samo “za tvoje dobro” i “bolje korisničko iskustvo”. U stvarnosti, to je alat za praćenje i profiliranje korisnika – i tu prestaje šala.
+> Ovo je praktičan vodič, a ne individualni pravni savjet. Kod složenog praćenja, profiliranja ili prijenosa podataka izvan EGP-a uključi stručnjaka koji može pregledati stvarnu implementaciju, ne samo screenshot bannera.
 
-Kolačići se dijele u 3 grupe:
+## Koji se propisi primjenjuju?
 
-1. **Nužni kolačići** – bez njih site ne radi (npr. spremanje proizvoda u košaricu)
-2. **Statistički kolačići** – npr. Google Analytics
-3. **Marketinški kolačići** – npr. Facebook Pixel, remarketing, cross-site tracking
+Za hrvatski web shop najvažnija su tri sloja:
 
-## Što zakon stvarno traži?
+1. **Zakon o elektroničkim komunikacijama**, članak 43. stavak 4. — pohrana podataka ili pristup podacima na korisnikovu uređaju dopušteni su uz privolu nakon jasne i potpune obavijesti. Iznimka postoji za tehničku pohranu ili pristup koji su nužni za prijenos komunikacije ili uslugu koju je korisnik izričito zatražio. [ZEK, NN 76/22, s izmjenama 14/24 i 45/26](https://narodne-novine.nn.hr/clanci/sluzbeni/full/2022_07_76_1116.html)
+2. **GDPR**, članci 6., 7. i 13. — kada se identifikatori i drugi podaci mogu povezati s osobom, trebaš odgovarajuću pravnu osnovu, valjanu i dokazivu privolu te jasne informacije o obradi. [Službeni hrvatski tekst GDPR-a](https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=HR)
+3. **Praksa AZOP-a** — AZOP je kod kolačića utvrdio povrede članaka 6., 7. i 13. GDPR-a kada nije bilo pravne osnove, zasebnog izbora i odgovarajućih informacija o funkciji i trajanju kolačića. [AZOP: kazne zbog nezakonite obrade putem kolačića](https://azop.hr/upravne-novcane-kazne-zbog-neovlastene-obrade-osobnih-podataka-putem-kolacica/)
 
-- **Transparentnost:** Moraš jasno objasniti koje kolačiće koristiš (analitički, marketinški, nužni, itd.), što rade i koliko dugo ih čuvaš.
-- **Pristanak:** Ne smiješ automatski postavljati kolačiće osim nužnih prije nego korisnik pristane.
-- **Mogućnost odbijanja:** Korisnik mora moći odbiti kolačiće jednako lako kao što ih može prihvatiti.
-- **Dokumentacija pristanka:** Moraš moći dokazati da si dobio pristanak (logiranje, timestamp, itd.).
+Direktiva o e-privatnosti često se spominje u tekstovima i alatima, ali hrvatski web shop ne provodi direktivu iz PowerPointa. Za domaću primjenu gledaš pravilo preneseno u **članak 43. stavak 4. ZEK-a**, zajedno s GDPR-om.
 
-## 🔥 GDJE SVI GRIJEŠE?
+## Nije svaki kolačić isti
 
-### ❌ 1. "Informacijski" banner bez mogućnosti izbora
+Pravna podjela nije „Google kaže da je analytics pa je valjda u redu”. Bitno je što tehnologija stvarno radi i je li nužna za uslugu koju je korisnik zatražio.
 
->
+### Nužne tehnologije
 
-*“Nastavkom korištenja stranice pristajete na kolačiće.”*
+Primjeri mogu biti:
 
-Ne. To nije privola.
-To je tvoja želja da sve prođe ispod radara.
+- identifikator košarice
+- sigurnosna zaštita prijave
+- raspodjela opterećenja
+- spremanje korisnikova izbora privatnosti
+- autentifikacija tijekom aktivne sesije
 
-### ❌ 2. Prethodno učitavanje kolačića
+Za njih može vrijediti iznimka iz članka 43. stavka 4. ZEK-a ako su stvarno nužne. „Nama je marketing nužan za poslovanje” nije ta vrsta nužnosti. Lijep pokušaj, ali ne.
 
-Ako tvoj banner još nije ni kliknut, a kolačići se već šalju (pogledaj u Dev Tools → Application → Cookies), imaš problem.
+### Analitičke i marketinške tehnologije
 
-### ❌ 3. Sve ili ništa opcije
+Google Analytics, Meta Pixel, TikTok Pixel, session recording, atribucijski identifikatori i slične tehnologije u pravilu nisu potrebni da bi kupac otvorio stranicu, dodao proizvod u košaricu ili završio kupnju. Za njih treba provjeriti zahtjeve ZEK-a i GDPR-a prije aktivacije.
 
-Ne možeš nuditi “Prihvati sve” bez “Odbij sve”.
-GDPR traži ravnopravan izbor. Ako jedno dugme imaš istaknuto, drugo mora biti jednako dostupno.
+Pravilo se ne odnosi samo na datoteke koje se zovu cookies. Local Storage, SDK, fingerprinting, piksel ili drugi način pristupa informacijama na uređaju ne postaje nevidljiv zakonu zato što je tehnički moderniji.
 
-## ✅ KAKO TO IZGLEDA ISPRAVNO?
+## Kako mora izgledati stvaran izbor?
 
-### 1. **Banner prije ikakvog kolačića (osim nužnih)**
+Na prvom sloju bannera ponudi:
 
-Ništa se ne smije pokrenuti dok korisnik ne klikne “Prihvati”.
+- **Prihvati sve**
+- **Odbij sve osim nužnih**
+- **Postavke**
 
-### 2. **Jasne kategorije + upravljanje privolom**
+Opcija odbijanja treba biti jasna i dostupna bez lova na sivi link veličine fusnote. GDPR u članku 7. traži da povlačenje privole bude jednako jednostavno kao njezino davanje, a AZOP naglašava mogućnost zasebnog davanja i povlačenja privole prema vrstama kolačića.
 
-Npr.:
+Unaprijed označene kućice, šutnja, nastavak pregledavanja i banner bez izbora nisu valjana potvrda korisnikove volje. Definicija privole iz članka 4. točke 11. GDPR-a traži dobrovoljno, posebno, informirano i nedvosmisleno izražavanje volje jasnom potvrdnom radnjom.
 
-- ✅ Nužni
-- ⬜ Statistički
-- ⬜ Marketinški
-- link na detaljan prikaz (tko, što, koliko dugo)
+## Što mora pisati u obavijesti?
 
-### 3. **Odbij sve = obavezan gumb**
+Korisniku objasni:
 
-Moraš dati opciju da odbiju sve osim nužnih kolačića.
+- tko postavlja tehnologiju
+- naziv i funkciju
+- svrhu obrade
+- kategoriju
+- trajanje
+- prima li podatke treća strana
+- odvija li se prijenos izvan EGP-a
+- kako promijeniti ili povući izbor
+- gdje može pročitati cjelovitu politiku privatnosti
 
-### 4. **Privolu moraš moći dokazati**
+Članak 13. GDPR-a traži informacije o voditelju obrade, svrhama, pravnoj osnovi, primateljima, prijenosima, rokovima i pravima. Popis `cookie_123 — 90 dana` bez objašnjenja funkcije nije transparentnost. To je inventura bez prijevoda za ljude.
 
-IP, vrijeme, ID korisnika, odabrane postavke – sve moraš logirati. Nema toga “pa to je samo klik”.
+## Što se smije pokrenuti prije izbora?
 
-### 5. **Privolu moraš omogućiti za povlačenje**
+Prije izbora blokiraj sve što nije obuhvaćeno nužnom iznimkom:
 
-Link u footer: “Upravljaj kolačićima” ili “Promijeni postavke kolačića”. Uvijek dostupan.
+- marketinške piksele
+- remarketing oznake
+- nenužnu analitiku
+- session recording
+- personalizaciju oglasa
+- cross-site identifikatore
 
-## 📌 PRIMJER IZ PRAKSE: SLOVO ZAKONA
+Najčešća greška nije u tekstu bannera nego u redoslijedu učitavanja. Banner se nacrta nakon što su `page_view`, IP adresa, identifikator uređaja i marketinški događaj već poslani. U tom trenutku gumb „Odbij” više nije vremeplov.
 
-U **presudi iz Danske (2021., Datatilsynet)**, web trgovina je kažnjena jer su **učitavali analitičke kolačiće prije pristanka**. Nisu imali odvojene kategorije.
-Kazna: 100.000 DKK.
-Razlog? **Korisnik nije imao realan izbor.** Ništa nije bilo transparentno.
+## Google Consent Mode nije privola
 
-Isto se ponavlja u Italiji, Njemačkoj, Francuskoj.
+Consent Mode je tehnički način slanja signala Googleovim oznakama o korisnikovu izboru. Ne stvara privolu, ne piše politiku privatnosti i ne popravlja pogrešno konfigurirane oznake.
 
-## ⚙️ KOJI ALATI SU OK?
+Ako postaviš zadano stanje na `denied`, to još ne dokazuje da se nijedan drugi vendor nije pokrenuo. Provjeri mrežne zahtjeve, kolačiće i druge spremnike prije i nakon izbora.
 
-Ako ne znaš kako sve gore sprovesti tehnički, koristi neki od ovih alata:
+Isto vrijedi za Google Tag Manager: GTM je alat za upravljanje oznakama, a ne pravna osnova. Ako je trigger pogrešan, samo će brže i urednije pokrenuti pogrešnu obradu.
 
-- **Cookiebot** (freemium)
-- **Iubenda**
-- **Complianz** (za WordPress)
-- **CookieYes**
+## Kako dokazati privolu bez stvaranja nove baze problema?
 
-Ali – ne vjeruj da su automatski usklađeni. Moraš ih pravilno konfigurirati.
+Članak 7. stavak 1. GDPR-a stavlja teret dokazivanja privole na voditelja obrade. Zabilježi najmanje:
 
-## 🧠 MOJE ISKUSTVO (DPO perspektiva)
+- pseudonimni identifikator privole
+- datum i vrijeme
+- verziju bannera i politike
+- odabrane svrhe ili kategorije
+- verziju popisa vendora
+- povlačenje ili promjenu izbora
 
-U zadnjih godinu dana, više od 10 webshopova koje sam analizirao imalo je "fake" kolačić-bannere.
+Nije propisano da zbog dokaza moraš vječno čuvati punu IP adresu. Primijeni načelo smanjenja količine podataka iz članka 5. stavka 1. točke (c) GDPR-a i spremi ono što je potrebno da dokažeš događaj.
 
-Bannere koji samo izgledaju zakonito, ali u pozadini šalju podatke čim se otvori stranica.
+## Brzi tehnički audit
 
-Najčešći uzrok?
+1. Otvori stranicu u privatnom prozoru.
+2. Nemoj kliknuti banner.
+3. U DevToolsima pregledaj Network, Cookies, Local Storage i Session Storage.
+4. Potraži zahtjeve prema Googleu, Meti, TikToku, Hotjaru i drugim vendorima.
+5. Klikni „Odbij sve osim nužnih” i osvježi stranicu.
+6. Prihvati samo analitiku i provjeri pokreće li se samo dopuštena kategorija.
+7. Povuci privolu preko stalno dostupne poveznice i ponovi provjeru.
+8. Usporedi stvarno ponašanje s politikom kolačića.
 
-Ugrađeni tracking kodovi u `<head>` bez kontrole aktivacije.
-Rješenje? Tag Manager + condition + consent trigger.
+Audit ponovi nakon promjene teme, plugina, checkouta, GTM kontejnera ili marketinškog alata. Cookie popis nije tetovaža. Mijenja se čim netko u petak u 16:47 doda „samo jedan mali pixel”.
 
-## Što ako ignoriram ove zahtjeve?
+## Konkretno: AZOP-ove kazne od 20.000 i 30.000 eura
 
-Osim potencijalnih kazni (koje mogu doseći i do **20 milijuna eura ili 4% godišnjeg prometa**), riskirate i gubitak povjerenja korisnika. U doba kada je privatnost sve važnija tema, korisnici cijene transparentnost.
+AZOP je dvama trgovačkim društvima izrekao kazne od **20.000 i 30.000 eura**. Među utvrđenim povredama bile su obrada putem kolačića bez pravne osnove, nemogućnost odgovarajućeg davanja i povlačenja privole te nedostatne informacije o funkciji i trajanju kolačića.
 
-Moje iskustvo s klijentima koji su implementirali kvalitetne sustave za upravljanje kolačićima pokazuje da to zapravo može povećati povjerenje korisnika i konverzije. Jedan moj klijent je nakon implementacije transparentnog sustava za upravljanje kolačićima zabilježio **povećanje stope konverzije**!
+AZOP se u objavi konkretno pozvao na:
 
-## 📝 CHECKLISTA ZA KOLAČIĆE
+- članak 6. stavak 1. GDPR-a
+- članak 7. GDPR-a
+- članak 13. stavke 1. i 2. GDPR-a
 
-✅ Imaš li funkcionalan banner prije postavljanja bilo kojeg nenužnog kolačića?
-✅ Imaš li jasne kategorije + opise?
-✅ Imaš li “Odbij sve” opciju?
-✅ Bilježiš li sve privole (i odbijanja)?
-✅ Može li korisnik kasnije promijeniti izbor?
-✅ Imaš li politiku kolačića dostupnu i razumljivu?
+Drugim riječima, kazna nije došla zato što banner nije bio dovoljno lijep. Došla je zato što obrada, izbor i informacije nisu bili zakoniti i dokazivi.
 
-Ako bilo što od ovoga fali, nisi usklađen.
+## Cookie checklista za hrvatski web shop
 
-## 🎤 ZAKLJUČAK
+- [ ] Nenužne tehnologije blokirane su prije privole — članak 43. stavak 4. ZEK-a
+- [ ] Privola je dobrovoljna, posebna, informirana i nedvosmislena — članak 4. točka 11. GDPR-a
+- [ ] Privolu možeš dokazati — članak 7. stavak 1. GDPR-a
+- [ ] Povlačenje je jednako jednostavno kao davanje — članak 7. stavak 3. GDPR-a
+- [ ] Obavijest opisuje svrhe, primatelje i rokove — članak 13. GDPR-a
+- [ ] Korisnik može zasebno upravljati kategorijama
+- [ ] „Odbij sve osim nužnih” nije skriven
+- [ ] Consent Mode i svi drugi tagovi tehnički su testirani
+- [ ] Politika odgovara stvarnom stanju, uključujući vendore i trajanje
+- [ ] Nakon odbijanja i povlačenja ne nastavlja se nenužno praćenje
 
-Kolačići su postali prva točka GDPR inspekcija.
-Ne postoji "ali mi to svi tako radimo".
-Ako ti kolačići prate korisnika, ti si odgovoran. Točka.
+## Zaključak
 
-Uredi banner, kontroliraj kodove, dokumentiraj privole.
-Sve ostalo je riskiranje kazne.
+Dobar cookie banner nije onaj koji zauzima pola ekrana i ima sedam nijansi plave. Dobar banner zaustavlja nenužnu obradu, daje stvaran izbor, pamti ga u najmanjoj potrebnoj mjeri i omogućuje promjenu bez digitalne arheologije.
+
+Za širu sliku — newsletter, dobavljače, prava kupaca, incidente, zaposlenike i zaštitu potrošača — pročitaj [naprednu GDPR checklistu za web shopove](/gdpr-checklista-za-e-commerce-bez-gluposti-samo-ono-sto-ti-zapravo-treba/).

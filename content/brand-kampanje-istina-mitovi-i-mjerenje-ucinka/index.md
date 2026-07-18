@@ -1,13 +1,14 @@
 ---
-title: Brand kampanje: Istina, mitovi i zašto većina marketinškog svijeta još uvijek ne kuži igru
-description: Svi ih hvale, nitko ih ne kuži. Brand kampanje su skupi PR balon koji puca na dodir podataka. Evo zašto više ne igramo tu igru
+title: Brand kampanje: Istina, mitovi i mjerenje učinka
+description: Brand kampanja nije sveta krava ni skupi PR balon. Evo kako odvojiti mitove od stvarnog inkrementalnog učinka na prodaju i rast.
 type: blog-post
 nav: false
 date: 2025-05-17
-updated: 2025-05-18
+updated: 2026-07-18
 author: Goran Peremin
 tags: brand campaigns, marketing strategy, marketing effectiveness, growth
-sourceURL: https://www.peremin.com/brand-kampanje-istina-mitovi-i-zasto-vecina-marketinskog-svijeta-jos-uvijek-ne-kuzi-igru-copy/
+sourceURL: https://www.peremin.com/brand-kampanje-istina-mitovi-i-mjerenje-ucinka/
+image: /media/posts/seo-covers/brand-kampanje.webp
 ---
 
 Dosta je bilo bajki o brand kampanjama. Svi ih hvale, agencije ih prodaju kao sveti gral, a konferencije ih dižu u nebesa. Ali kad maknemo PR maglu i pogledamo stvarne brojke, što nam ostaje? Evo moje mišljenje.

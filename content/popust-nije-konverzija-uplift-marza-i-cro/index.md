@@ -1,10 +1,10 @@
 ---
 title: Popust nije konverzija — uplift, marža i CRO
-description: Kupon može podići conversion rate i istodobno pojesti profit. Uplift odvaja kupce koje je ponuda stvarno pomaknula od onih kojima smo samo platili kupnju koju bi ionako napravili.
+description: Kupon može podići konverziju i pojesti profit. Uplift pokazuje koje je kupce ponuda stvarno pomaknula, a koji bi kupili i bez popusta.
 type: blog-post
 nav: false
 date: 2024-11-21
-updated: 2024-11-21
+updated: 2026-07-18
 author: Goran Peremin
 tags: ecommerce, cro, uplift modeling, marketing analytics, profit, experimentation
 sourceURL: https://www.peremin.com/popust-nije-konverzija-uplift-marza-i-cro/

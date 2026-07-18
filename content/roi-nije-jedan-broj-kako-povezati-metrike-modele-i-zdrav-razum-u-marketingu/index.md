@@ -1,10 +1,10 @@
 ---
-title: ROI nije jedan broj: Kako povezati metrike, modele i zdrav razum u marketingu
-description: Uvod: Marketing ROI – sveti gral ili mit? Ah, ROI. Magični broj koji menadžeri žele, a marketinški timovi mrze. Svi pričaju o njemu, ali rijetko…
+title: Marketing ROI: Kako povezati metrike, modele i rezultat
+description: Marketing ROI nije broj iz jednog dashboarda. Evo kako povezati atribuciju, eksperimente, ekonometriju, maržu i zdrav poslovni razum.
 type: blog-post
 nav: false
 date: 2025-05-17
-updated: 2025-05-18
+updated: 2026-07-18
 author: Goran Peremin
 tags: roi, marketing analytics, attribution, econometrics, marketing effectiveness
 sourceURL: https://www.peremin.com/roi-nije-jedan-broj-kako-povezati-metrike-modele-i-zdrav-razum-u-marketingu/

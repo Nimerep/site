@@ -4,10 +4,11 @@ description: Kako Marketing Hypeometar uspoređuje pažnju publike i istraživa�
 type: blog-post
 nav: false
 date: 2026-07-15
-updated: 2026-07-15
+updated: 2026-07-18
 author: Goran Peremin
 tags: marketing analytics, growth marketing, AI, research, data visualization, experimentation
 sourceURL: https://www.peremin.com/marketing-hypeometar-kako-radi/
+image: /media/posts/seo-covers/marketing-hypeometar.webp
 ---
 
 Marketing svakih nekoliko mjeseci dobije novu temu koju svi moramo hitno razumjeti, implementirati i staviti u prezentaciju.

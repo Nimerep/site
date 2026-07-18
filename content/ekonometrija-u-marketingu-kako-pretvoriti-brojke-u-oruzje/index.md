@@ -1,10 +1,10 @@
 ---
-title: Ekonometrija u marketingu: Umijeće pretvaranja podataka u rezultate
-description: Marketing bez ekonometrije je kao rock koncert bez pojačala – svi trube, ali nitko ne čuje poruku. Evo kako integrirati modele u strategiju, a da…
+title: Ekonometrija u marketingu: Od podataka do rezultata
+description: Kako ekonometrijski modeli odvajaju korelaciju od učinka i pomažu povezati marketinške aktivnosti s prodajom, maržom i poslovnim rezultatom.
 type: blog-post
 nav: false
 date: 2024-10-22
-updated: 2024-10-22
+updated: 2026-07-18
 author: Goran Peremin
 tags: econometrics, marketing analytics, roi, attribution, media mix modeling
 sourceURL: https://www.peremin.com/ekonometrija-u-marketingu-kako-pretvoriti-brojke-u-oruzje/

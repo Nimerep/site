@@ -40,7 +40,9 @@ jobs:
         run: tiledown build-site content/ templates/peremin.html dist/
 
       - name: Apply and verify SEO output
-        run: python3 docs/postprocess_seo.py content/ dist/
+        run: |
+          ! grep -q 'site.latestPosts' templates/peremin.html
+          python3 docs/postprocess_seo.py content/ dist/
 
       - name: Inspect deploy output
         run: |
@@ -53,6 +55,8 @@ jobs:
           test -d dist/assets
           test -f dist/lab/hypeometar/index.html
           test -f dist/page/2/index.html
+          test -f dist/brand-kampanje-istina-mitovi-i-zasto-vecina-marketinskog-svijeta-jos-uvijek-ne-kuzi-igru-copy/index.html
+          test -f dist/authors/goran-peremin/page/2/index.html
           test ! -d dist/tags
           test -d dist/media
 

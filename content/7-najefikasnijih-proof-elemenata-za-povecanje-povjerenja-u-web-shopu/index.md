@@ -1,10 +1,10 @@
 ---
-title: 7 Najefikasnijih Proof Elemenata za Povećanje Povjerenja u Web Shopu
-description: Znaš onaj osjećaj kad uđeš u web shop i misliš si: "Hmm, je li ovo legit ili će mi netko maznuti podatke s kartice i…
+title: 7 elemenata povjerenja koji povećavaju prodaju web shopa
+description: Sedam konkretnih elemenata koji smanjuju sumnju kupca, grade povjerenje i povećavaju vjerojatnost kupnje u web shopu.
 type: blog-post
 nav: false
 date: 2024-09-16
-updated: 2024-09-16
+updated: 2026-07-18
 author: Goran Peremin
 tags: ecommerce, cro, trust, conversion optimization, webshop
 sourceURL: https://www.peremin.com/7-najefikasnijih-proof-elemenata-za-povecanje-povjerenja-u-web-shopu/

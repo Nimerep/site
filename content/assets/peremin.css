@@ -747,6 +747,21 @@ img {
   width: min(60rem, calc(100% - 2rem));
 }
 
+.breadcrumbs {
+  display: flex;
+  gap: 0.5rem;
+  max-width: var(--article);
+  margin: 0 auto 1.25rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.breadcrumbs span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .article-header {
   max-width: var(--article);
   margin: 0 auto 2rem;

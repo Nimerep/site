@@ -4,10 +4,11 @@ description: Loš eCommerce search nije samo UX smetnja. Može se mjeriti kroz r
 type: blog-post
 nav: false
 date: 2025-06-19
-updated: 2025-06-19
+updated: 2026-07-18
 author: Goran Peremin
 tags: ecommerce, site search, seo, ux, cro, information retrieval
 sourceURL: https://www.peremin.com/koliko-je-los-search-skup-seo-ux-i-konverzija/
+image: /media/posts/seo-covers/ecommerce-search.webp
 ---
 
 Kupac u search upiše `crne vodootporne tenisice 42`.

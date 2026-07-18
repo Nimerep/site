@@ -1,10 +1,10 @@
 ---
 title: Što će kupac sljedeće kupiti — recommendations i CLTV
-description: Preporuke nisu red proizvoda ispod košarice. Dobar sustav procjenjuje sljedeću kupnju, mjeri Recall@K i provjerava stvara li inkrementalnu doprinosnu maržu i CLTV.
+description: Kako predvidjeti sljedeću kupnju, mjeriti kvalitetu preporuka i provjeriti povećava li sustav stvarno doprinosnu maržu i životnu vrijednost kupca.
 type: blog-post
 nav: false
 date: 2025-01-21
-updated: 2025-01-21
+updated: 2026-07-18
 author: Goran Peremin
 tags: ecommerce, recommendation systems, cltv, retention, machine learning, analytics
 sourceURL: https://www.peremin.com/sto-ce-kupac-sljedece-kupiti-recommendations-i-cltv/

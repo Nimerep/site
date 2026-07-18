@@ -1,10 +1,10 @@
 ---
-title: Napredna analitika i predictive analytics: Marketing bez nagađanja
-description: Ako i dalje šalješ iste kampanje svima, iskreno – nisi više u marketingu, već u spam-biznisu. Kupac ti šalje jasnu poruku: "Daj mi ono što…
+title: Prediktivna analitika u eCommerceu: Vodič bez nagađanja
+description: Što je prediktivna analitika, kako predviđa kupnju, churn i vrijednost kupca te gdje modeli pomažu eCommerce marketingu, a gdje mogu prevariti.
 type: blog-post
 nav: false
 date: 2025-05-30
-updated: 2025-05-31
+updated: 2026-07-18
 author: Goran Peremin
 tags: ecommerce, predictive analytics, marketing analytics, cro, ai
 sourceURL: https://www.peremin.com/napredna-analitika-i-predictive-analytics-marketing-bez-nagadanja/

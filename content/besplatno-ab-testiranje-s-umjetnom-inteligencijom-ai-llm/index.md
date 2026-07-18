@@ -1,10 +1,10 @@
 ---
-title: Besplatno A/B testiranje s umjetnom inteligencijom (AI + LLM)
-description: Testirao sam nešto što klasični marketing nikad ne bi odobrio – besplatno A/B testiranje s umjetnom inteligencijom (AI + LLM) U ovom postupku koristimo gen
+title: A/B testiranje uz AI: Besplatan eksperiment s LLM-om
+description: Kako koristiti AI i LLM za brzu procjenu A/B varijanti, što takav eksperiment može otkriti i zašto ne može zamijeniti test na stvarnim kupcima.
 type: blog-post
 nav: false
 date: 2025-05-26
-updated: 2025-05-26
+updated: 2026-07-18
 author: Goran Peremin
 tags: ai, llm, ab testing, genagents, ecommerce
 sourceURL: https://www.peremin.com/besplatno-ab-testiranje-s-umjetnom-inteligencijom-ai-llm/

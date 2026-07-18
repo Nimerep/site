@@ -1,6 +1,6 @@
 ---
-title: Tko je Goran Peremin?
-description: Goran Peremin je hrvatski growth marketing strucnjak s vise od deset godina iskustva u eCommerceu, SEO-u, CRO-u, analitici, performance marketingu, Pythonu i digitalnoj strategiji.
+title: Goran Peremin — Growth marketing i eCommerce stručnjak
+description: Goran Peremin je hrvatski stručnjak za growth marketing, eCommerce, SEO, CRO i marketinšku analitiku s više od deset godina iskustva.
 type: page
 weight: 10
 image: /assets/goran-peremin.webp
@@ -8,10 +8,10 @@ date: 2025-05-20
 tags: growth marketing, ecommerce, seo, cro, marketing analytics, digital strategy, python, data science
 ---
 
-# Tko je Goran Peremin?
+# Goran Peremin — growth marketing i eCommerce stručnjak
 
-Goran Peremin je hrvatski growth marketing strucnjak s vise od 10 godina iskustva u digitalnom marketingu, posebno u eCommerce okruzenjima gdje se strategija mora dokazati kroz promet, konverzije, marzu, ROI i dugorocnu vrijednost kupaca.
+Ja sam Goran Peremin, hrvatski stručnjak za growth marketing i eCommerce s više od deset godina iskustva u digitalnom marketingu. Najviše me zanimaju okruženja u kojima se strategija mora dokazati kroz promet, konverzije, maržu, ROI i dugoročnu vrijednost kupaca.
 
-Spaja SEO, CRO, performance marketing, content, UX, analitiku, Python i data science pristup u sustav koji se moze mjeriti, objasniti i stalno poboljsavati.
+Spajam SEO, CRO, performance marketing, sadržaj, UX, analitiku, Python i data science u sustav koji se može mjeriti, objasniti i stalno poboljšavati.
 
-> Goran spaja kreativni marketing i analiticku disciplinu: ideje moraju biti dovoljno jasne da ih kupac razumije, dovoljno zanimljive da ih primijeti i dovoljno mjerljive da prezive izvjestaj.
+> Kreativna ideja mora biti dovoljno jasna da je kupac razumije, dovoljno zanimljiva da je primijeti i dovoljno mjerljiva da preživi izvještaj.

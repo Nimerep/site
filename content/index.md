@@ -1,15 +1,15 @@
 ---
-title: Goran Peremin, Growth Marketing Expert
-description: Goran Peremin writes practical, data-driven guides about growth marketing, eCommerce, SEO, CRO, analytics, AI testing, GDPR and brand strategy.
+title: Goran Peremin — eCommerce, growth marketing i analitika
+description: Praktični vodiči Gorana Peremina o eCommerceu, SEO-u, CRO-u, marketinškoj analitici, prediktivnim modelima, AI-u i GDPR-u.
 type: page
 image: /assets/goran-peremin.webp
 latest: true
 ---
 
-# Goran Peremin, Growth Marketing Expert
+# Goran Peremin — marketing koji mora preživjeti brojke
 
-Goran Peremin helps eCommerce and digital teams connect SEO, CRO, performance marketing, content, analytics and business outcomes into one measurable growth system.
+Povezujem eCommerce, SEO, CRO, performance marketing, sadržaj i analitiku u sustav koji se može mjeriti, objasniti i poboljšati.
 
-With more than a decade of work across eCommerce, paid media, content marketing, UX, social media, influencer campaigns and marketing analytics, the goal is simple: make marketing less vague and more accountable.
+Više od deset godina radim na digitalnim projektima na kojima „imamo dobar osjećaj” nije završetak analize. Ideja može biti kreativna, ali mora znati što radi prometu, konverziji, marži i vrijednosti kupca.
 
-[About Goran](/about-me/)
+[Tko je Goran Peremin?](/about-me/)

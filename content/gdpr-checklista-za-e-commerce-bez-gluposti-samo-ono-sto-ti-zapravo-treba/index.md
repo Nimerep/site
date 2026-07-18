@@ -1,13 +1,14 @@
 ---
-title: GDPR Checklist za eCommerce Web Shopove: Od bannera do stvarne usklađenosti
-description: Napredni GDPR vodič za webshopove: kolačići, newsletter, rokovi čuvanja, dobavljači, sigurnost, incidenti, prava kupaca, profiliranje i AI.
+title: GDPR za web shop: Napredna checklista za Hrvatsku
+description: GDPR vodič za hrvatske web shopove prema GDPR-u, AZOP-u, ZEK-u te zakonima o zaštiti potrošača, radu i zaštiti na radu.
 type: blog-post
 nav: false
 date: 2026-06-18
-updated: 2026-06-18
+updated: 2026-07-18
 author: Goran Peremin
 tags: gdpr, ecommerce, privacy, compliance, webshop, cookies, data security
 sourceURL: https://www.peremin.com/gdpr-checklista-za-e-commerce-bez-gluposti-samo-ono-sto-ti-zapravo-treba/
+image: /media/posts/seo-covers/gdpr-webshop.webp
 ---
 
 Ako vodiš webshop, obrađuješ osobne podatke.
@@ -35,6 +36,21 @@ Pitanje je možeš li dokazati:
 - što radiš kada podaci završe kod osobe koja ih nije smjela dobiti
 
 > Ovaj članak služi kao praktičan operativni vodič. Nije zamjena za individualni pravni savjet, posebno kod složenog profiliranja, posebnih kategorija podataka, obrade dječjih podataka ili međunarodnih prijenosa.
+
+## Koji se propisi primjenjuju u Hrvatskoj?
+
+GDPR nije jedini propis koji hrvatski web shop treba otvoriti prije nego što napiše politiku, postavi kameru ili uključi newsletter automatizaciju. Ovaj vodič, ažuriran 18. srpnja 2026., oslanja se na sljedeći okvir:
+
+| Propis | Što uređuje | Posebno važni članci |
+|---|---|---|
+| [Opća uredba o zaštiti podataka — GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=HR) | načela, pravne osnove, transparentnost, prava, sigurnost i nadzor | 5., 6., 7., 12.–14., 15.–22., 25., 28., 30., 32.–35. |
+| [Zakon o provedbi Opće uredbe o zaštiti podataka, NN 42/18](https://narodne-novine.nn.hr/clanci/sluzbeni/2018_05_42_805.html) | ovlasti AZOP-a te hrvatska pravila za biometriju i videonadzor | 22.–24. i 25.–31. |
+| [Zakon o elektroničkim komunikacijama, NN 76/22, 14/24 i 45/26](https://narodne-novine.nn.hr/clanci/sluzbeni/full/2022_07_76_1116.html) | kolačići i neželjene elektroničke komunikacije | 43. stavak 4. i 50. |
+| [Zakon o zaštiti potrošača, NN 19/22, 59/23 i 59/26](https://narodne-novine.nn.hr/clanci/sluzbeni/2026_06_59_728.html) | obavijesti kupcu, prigovori i ugovori na daljinu | 10., 60. i 79. |
+| [Zakon o radu, NN 93/14, 127/17, 98/19 i 151/22](https://narodne-novine.nn.hr/clanci/sluzbeni/2014_07_93_1872.html) | privatnost i osobni podaci radnika | 29. |
+| [Zakon o zaštiti na radu, NN 71/14 s izmjenama](https://narodne-novine.nn.hr/clanci/sluzbeni/2014_06_71_1334.html) | nadzorni uređaji kao sredstvo zaštite na radu | 43. |
+
+To nisu sinonimi. GDPR uređuje obradu osobnih podataka. Zakon o zaštiti potrošača uređuje odnos trgovca i kupca. Zakon o radu i Zakon o zaštiti na radu dodaju posebna pravila kada obrađuješ podatke zaposlenika. Jedan footer link ne rješava pet propisa. Bio bi to impresivan link, ali ipak samo link.
 
 ## Koliko GDPR pogreška stvarno košta?
 
@@ -118,7 +134,7 @@ Ako ne znaš gdje se podaci nalaze, ne možeš ih zaštititi, pronaći ni izbris
 
 ## 2. Ne biraj pravnu osnovu kao artikl s police
 
-Za svaku svrhu mora postojati odgovarajuća pravna osnova. GDPR poznaje privolu, ugovor, zakonsku obvezu, životno važne interese, javni interes i legitimni interes.
+Za svaku svrhu mora postojati odgovarajuća pravna osnova iz **članka 6. stavka 1. GDPR-a**. GDPR poznaje privolu, ugovor, zakonsku obvezu, životno važne interese, javni interes i legitimni interes.
 
 Webshop ne treba privolu za svaku obradu. Za adresu potrebnu za dostavu osnova je obično ugovor. Za čuvanje računa može biti zakonska obveza. Za sigurnosne logove i sprečavanje prijevara može se razmatrati legitimni interes, ali tek nakon testa nužnosti i ravnoteže interesa.
 
@@ -128,7 +144,7 @@ Legitimni interes nije naljepnica koju zalijepiš na sve za što ne želiš tra�
 
 Politika mora objasniti voditelja obrade, kontakte, DPO-a ako postoji, podatke, izvore, svrhe, pravne osnove, konkretne legitimne interese, primatelje, međunarodne prijenose, rokove, prava, pritužbu AZOP-u, obveznost davanja podataka te automatizirano odlučivanje i profiliranje.
 
-Ako podatke nisi dobio izravno od korisnika, navedi i njihov izvor. Zahtjevi proizlaze iz članaka 13. i 14. GDPR-a. [Službeni tekst GDPR-a](https://eur-lex.europa.eu/legal-content/EN/TXT/?toc=OJ%3AL%3A2016%3A119%3A&uri=uriserv%3AOJ.L_.2016.119.01.0001.01.ENG)
+Informacije moraju biti sažete, transparentne, razumljive i lako dostupne prema **članku 12. GDPR-a**. Ako podatke prikupljaš od osobe, primjenjuje se **članak 13.** Ako ih dobivaš iz drugog izvora, primjenjuje se **članak 14. GDPR-a** i trebaš navesti izvor podataka. [Službeni hrvatski tekst GDPR-a](https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=HR)
 
 Uz mjesto prikupljanja koristi kratku slojevitu obavijest, primjerice:
 
@@ -137,6 +153,8 @@ Uz mjesto prikupljanja koristi kratku slojevitu obavijest, primjerice:
 Link u footeru je potreban, ali nije dovoljan ako se važna obrada događa već na checkoutu.
 
 ## 4. Cookie banner nije ukras
+
+Za spremanje ili pristup podacima na korisnikovu uređaju ključno je pravilo iz **članka 43. stavka 4. Zakona o elektroničkim komunikacijama**. Privola mora zadovoljiti definiciju iz **članka 4. točke 11.** i uvjete iz **članka 7. GDPR-a**, a informacije o obradi **članak 13. GDPR-a**.
 
 Prije privole ne bi se smjeli aktivirati marketinški pikseli, remarketing oznake, nenužna analitika, session recording ni drugi nenužni identifikatori.
 
@@ -161,11 +179,15 @@ Ako banner kaže da je marketing odbijen, a Meta Pixel šalje događaj, pravni t
 
 Za dokaz privole spremi pseudonimni identifikator, vrijeme, verziju bannera i politike, dopuštene svrhe i vendore te povijest promjena. Privolu mora biti jednako jednostavno povući kao dati.
 
+Detaljan tehnički i pravni postupak nalazi se u vodiču [Kolačići i GDPR u Hrvatskoj: Što web shop mora imati](/kolacici-uskladi-se-s-gdpr-om-i-eprivacy-direktivom/).
+
 ## 5. Newsletter: kupnja nije doživotna dozvola
+
+Za izravnu promidžbu e-mailom, SMS-om i MMS-om polazno je pravilo prethodna privola iz **članka 50. stavka 1. Zakona o elektroničkim komunikacijama**.
 
 Za osobu koja nije kupac marketinški newsletter najčešće traži privolu. Ona mora biti dobrovoljna, specifična, informirana, nedvosmislena, dokaziva i odvojena od uvjeta kupnje.
 
-Za postojeće kupce postoji ograničena iznimka samo ako je adresa dobivena u kontekstu prodaje, promoviraju se vlastiti slični proizvodi, kupac je pri prikupljanju mogao odbiti marketing i svaka poruka ima jednostavnu besplatnu odjavu.
+Za postojeće kupce **članak 50. stavak 2. ZEK-a** propisuje ograničenu iznimku samo ako je adresa dobivena u kontekstu prodaje, promoviraju se vlastiti slični proizvodi ili usluge, kupac je pri prikupljanju mogao odbiti marketing i svaka poruka ima jednostavan besplatan prigovor. Kod izravnog marketinga kupac ima bezuvjetno pravo na prigovor prema **članku 21. stavku 2. GDPR-a**. [AZOP-ova preporuka o legitimnom interesu i izravnom marketingu](https://azop.hr/preporuka-za-provedbu-testa-legitimnog-interesa-prema-clanku-6-stavku-1-tocki-f-opce-uredbe-o-zastiti-podataka/)
 
 Spremi tekst i verziju privole, datum, izvor prijave, kontaktni identifikator, status double opt-ina ako se koristi te povijest povlačenja.
 
@@ -173,11 +195,13 @@ Spremi tekst i verziju privole, datum, izvor prijave, kontaktni identifikator, s
 
 Evidencija nije kopija politike. To je interni dokument s voditeljem i kontaktima, svrhama, kategorijama ispitanika i podataka, primateljima, međunarodnim prijenosima, rokovima i općim opisom sigurnosnih mjera.
 
-Može biti tablica ili GRC alat. GDPR ne propisuje Excel. Bitno je da je potpuna, ažurirana i povezana sa stvarnim sustavima.
+Sadržaj evidencije uređuje **članak 30. GDPR-a**. Može biti tablica ili GRC alat; GDPR ne propisuje Excel. Bitno je da je potpuna, ažurirana i povezana sa stvarnim sustavima.
 
 ## 7. Definiraj rokove čuvanja
 
 “Čuvamo koliko je potrebno” nije operativan rok.
+
+Načelo ograničenja pohrane nalazi se u **članku 5. stavku 1. točki (e) GDPR-a**. Rok može proizlaziti iz posebnog propisa ili dokumentiranog kriterija, ali mora postojati i tehnički postupak brisanja.
 
 | Kategorija | Početak roka | Rok ili kriterij | Način brisanja |
 |---|---|---|---|
@@ -197,17 +221,19 @@ Izvršitelj obrađuje podatke prema tvojim uputama. Samostalni voditelj sam odre
 
 Dostavljač, payment provider, marketplace ili oglašivačka platforma mogu imati različite uloge. Ulogu ne određuje naslov ugovora nego stvarni odnos. [EDPB vodič](https://www.edpb.europa.eu/sme/learn-the-basics/data-controller-or-data-processor_en)
 
-Za izvršitelje ugovor treba obuhvatiti upute, povjerljivost, sigurnost, podizvršitelje, pomoć kod prava i incidenata, brisanje ili povrat podataka te pravo na informacije i reviziju.
+Za izvršitelje ugovor prema **članku 28. GDPR-a** treba obuhvatiti upute, povjerljivost, sigurnost, podizvršitelje, pomoć kod prava i incidenata, brisanje ili povrat podataka te pravo na informacije i reviziju.
 
 ## 9. Provjeri međunarodne prijenose
 
+Prijenose osobnih podataka u treće zemlje uređuju **članci 44.–49. GDPR-a**.
+
 Provjeri obrađuju li se podaci izvan EGP-a, postoji li odluka o primjerenosti, je li američka organizacija aktivni sudionik EU–US Data Privacy Frameworka, koriste li se SCC, treba li procjena prijenosa i dodatne mjere te je li sve opisano u politici i evidenciji.
 
-EU–US DPF ne pokriva automatski svaku američku tvrtku. [Europska komisija o EU–US prijenosima](https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/eu-us-data-transfers_pl)
+EU–US DPF ne pokriva automatski svaku američku tvrtku. [Europska komisija o EU–US prijenosima](https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/eu-us-data-transfers_en)
 
 ## 10. Prava korisnika trebaju proceduru
 
-Korisnik može, ovisno o okolnostima, tražiti informacije, pristup, ispravak, brisanje, ograničenje, prenosivost, prigovor i zaštitu od određenih isključivo automatiziranih odluka.
+Korisnik može, ovisno o okolnostima, tražiti pristup, ispravak, brisanje, ograničenje, prenosivost, prigovor i zaštitu od određenih isključivo automatiziranih odluka. Ta prava uređuju **članci 15.–22. GDPR-a**, a rok i način komunikacije **članak 12.**
 
 ```text
 Zahtjev → evidencija → provjera identiteta → pronalazak podataka
@@ -228,19 +254,21 @@ GDPR traži sigurnost primjerenu riziku i redovito testiranje učinkovitosti mje
 
 Povreda može biti pogrešno poslan e-mail, javni backup, ukraden račun, izgubljen laptop, ransomware, pogrešna dozvola, neovlašten izvoz baze ili tuđi račun dostupan kroz URL.
 
-Svaka povreda mora biti dokumentirana. AZOP se obavještava ako je vjerojatan rizik za prava i slobode osoba, a korisnici ako je vjerojatan visok rizik. Rok od 72 sata računa se od saznanja; početna prijava može se dopuniti. [EDPB vodič](https://www.edpb.europa.eu/system/files/2025-03/edpb_summary_092022-012021_data_breach_en.pdf)
+Svaka povreda mora biti dokumentirana. Prijavu AZOP-u uređuje **članak 33. GDPR-a**: nadzorno tijelo obavještava se bez nepotrebnog odgađanja i, ako je izvedivo, najkasnije 72 sata nakon saznanja, osim ako nije vjerojatno da će povreda prouzročiti rizik. Obavještavanje pogođenih osoba kod vjerojatnog visokog rizika uređuje **članak 34. GDPR-a**. [EDPB vodič](https://www.edpb.europa.eu/system/files/2025-03/edpb_summary_092022-012021_data_breach_en.pdf)
 
 Registar treba sadržavati vrijeme otkrivanja, pogođene sustave i osobe, kategorije podataka, posljedice, mjere, procjenu rizika, odluku o prijavi i razloge.
 
 ## 13. DPIA, profiliranje i AI
 
-DPIA je potrebna kada je vjerojatan visok rizik, primjerice kod opsežnog profiliranja, značajnih automatiziranih odluka, posebnih kategorija podataka, praćenja ranjivih osoba ili kombinacije nove tehnologije s drugim rizičnim kriterijima.
+DPIA prema **članku 35. GDPR-a** potrebna je kada je vjerojatan visok rizik, primjerice kod opsežnog profiliranja, značajnih automatiziranih odluka, posebnih kategorija podataka, praćenja ranjivih osoba ili kombinacije nove tehnologije s drugim rizičnim kriterijima. Isključivo automatizirane odluke s pravnim ili slično značajnim učinkom dodatno provjeri prema **članku 22. GDPR-a**.
 
 Za recommendation, churn, propensity, antifraud, dinamičke cijene i AI chatbotove zabilježi ulazne podatke, svrhu, pravnu osnovu, dobavljača, lokaciju, koristi li podatke za treniranje, donosi li odluku, postoji li ljudska provjera, kako se rezultat osporava i koliko se podaci čuvaju.
 
 Nemoj u javni AI alat lijepiti ime, adresu, broj narudžbe i cijelu reklamaciju zato što alat brže piše odgovor.
 
 ## 14. Privacy by design u checkoutu
+
+Zaštita podataka od dizajna i prema zadanim postavkama obveza je iz **članka 25. GDPR-a**.
 
 - omogući guest checkout
 - ne traži datum rođenja, spol ili OIB bez potrebe
@@ -256,6 +284,29 @@ Nemoj u javni AI alat lijepiti ime, adresu, broj narudžbe i cijelu reklamaciju 
 
 Najbolja zaštita podataka često je podatak koji nikada nisi prikupio.
 
+## 15. Zaštita potrošača nije isto što i GDPR
+
+Web shop istodobno obrađuje podatke i sklapa ugovor na daljinu. Zato privatnost i zaštita potrošača moraju biti povezane, ali ih nemoj trpati u isti checkbox.
+
+- **Članak 10. Zakona o zaštiti potrošača** uređuje pisani prigovor, obavijest o načinu njegova podnošenja, odgovor u roku od 15 dana i evidenciju prigovora.
+- **Članak 60.** propisuje predugovorne obavijesti kod ugovora na daljinu, uključujući identitet trgovca, kontakt, cijenu, plaćanje, isporuku, prigovore i pravo na raskid. Članak je izmijenjen Zakonom iz NN 59/26.
+- **Članak 79.** uređuje opće pravo na jednostrani raskid ugovora sklopljenog na daljinu u roku od 14 dana, uz zakonske iznimke.
+
+Ti podaci mogu istodobno biti osobni podaci. Primjerice, reklamaciju čuvaš radi postupanja prema Zakonu o zaštiti potrošača, ali pristup, sigurnost i brisanje i dalje moraš urediti prema GDPR-u. [Zakon o zaštiti potrošača, NN 19/22](https://narodne-novine.nn.hr/clanci/sluzbeni/2022_02_19_203.html) i [izmjene NN 59/26](https://narodne-novine.nn.hr/clanci/sluzbeni/2026_06_59_728.html)
+
+## 16. Podaci radnika i videonadzor skladišta
+
+Ako web shop ima zaposlenike, skladište ili poslovnicu, ulaziš u dodatni pravni sloj.
+
+**Članak 29. Zakona o radu** dopušta prikupljanje i korištenje osobnih podataka radnika samo kada je to određeno zakonom ili potrebno radi prava i obveza iz radnog odnosa. Propisuje i ovlaštene osobe, ispravak netočnih podataka, uklanjanje podataka za koje više nema razloga te povjerljivost.
+
+Kod kamera treba zajedno čitati:
+
+- **članke 25.–30. Zakona o provedbi Opće uredbe**, posebno članak 29. o čuvanju snimki najviše šest mjeseci, osim propisanih iznimki, i članak 30. o videonadzoru radnih prostorija
+- **članak 43. Zakona o zaštiti na radu**, koji dopušta nadzorne uređaje radi kontrole ulazaka i izlazaka te smanjenja rizika od razbojstva, provala, nasilja i krađa, zabranjuje ih u prostorijama za osobnu higijenu i presvlačenje te propisuje dodatne uvjete kada su radnici stalno u vidnom polju
+
+Kamera ne smije postati alat za mjerenje tko je tri minute predugo slagao paket. AZOP-ova praksa i propisi traže konkretnu sigurnosnu svrhu, nužnost, unaprijed obaviještene radnike i ograničen pristup snimkama. [AZOP smjernice za radne odnose](https://azop.hr/wp-content/uploads/2023/11/Smjernice_radni-odnosi.pdf)
+
 ## Završna checklist
 
 ### Dokumentacija
@@ -268,6 +319,9 @@ Najbolja zaštita podataka često je podatak koji nikada nisi prikupio.
 - [ ] Ugovori prema članku 28. postoje gdje su potrebni
 - [ ] Dokumentirani su međunarodni prijenosi
 - [ ] Postoje LIA i DPIA screening gdje su potrebni
+- [ ] Postupanje s prigovorima kupaca usklađeno je s člankom 10. Zakona o zaštiti potrošača
+- [ ] Podaci radnika uređeni su prema članku 29. Zakona o radu
+- [ ] Videonadzor je provjeren prema člancima 25.–30. provedbenog zakona i članku 43. Zakona o zaštiti na radu
 
 ### Webshop
 

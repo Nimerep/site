@@ -35,8 +35,7 @@ def absolute_url(value: str) -> str:
 
 def add_blog_schema(html_path: Path, data: dict[str, str]) -> None:
     canonical = data["sourceURL"]
-    schema: dict[str, object] = {
-        "@context": "https://schema.org",
+    article: dict[str, object] = {
         "@type": "BlogPosting",
         "@id": f"{canonical}#article",
         "url": canonical,
@@ -51,7 +50,18 @@ def add_blog_schema(html_path: Path, data: dict[str, str]) -> None:
         "isPartOf": {"@id": f"{BASE_URL}#website"},
     }
     if data.get("image"):
-        schema["image"] = absolute_url(data["image"])
+        article["image"] = absolute_url(data["image"])
+
+    breadcrumb = {
+        "@type": "BreadcrumbList",
+        "@id": f"{canonical}#breadcrumb",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Početna", "item": BASE_URL},
+            {"@type": "ListItem", "position": 2, "name": data["title"], "item": canonical},
+        ],
+    }
+    article["breadcrumb"] = {"@id": breadcrumb["@id"]}
+    schema = {"@context": "https://schema.org", "@graph": [article, breadcrumb]}
 
     html = html_path.read_text(encoding="utf-8")
     html = re.sub(
@@ -82,8 +92,7 @@ def write_sitemap(dist: Path, pages: list[tuple[str, str | None]]) -> None:
     (dist / "sitemap.xml").write_text("\n".join(rows) + "\n", encoding="utf-8")
 
 
-def write_page_two_redirect(dist: Path) -> None:
-    target = BASE_URL
+def write_redirect(dist: Path, route: str, target: str) -> None:
     html = f"""<!doctype html>
 <html lang="hr"><head>
   <meta charset="utf-8">
@@ -94,7 +103,7 @@ def write_page_two_redirect(dist: Path) -> None:
   <script>location.replace({json.dumps(target)});</script>
 </head><body><p>Stranica je premještena na <a href="{target}">naslovnicu</a>.</p></body></html>
 """
-    path = dist / "page" / "2" / "index.html"
+    path = dist / route / "index.html"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(html, encoding="utf-8")
 
@@ -112,9 +121,12 @@ def process(content: Path, dist: Path) -> None:
         sitemap_pages.append((canonical, data.get("updated") or data.get("date")))
 
         if data["type"] == "blog-post":
-            required = {"title", "description", "date", "sourceURL"} - data.keys()
+            required = {"title", "description", "date", "sourceURL", "image"} - data.keys()
             if required:
                 raise ValueError(f"Missing {sorted(required)} in {source}")
+            image_path = content / data["image"].lstrip("/")
+            if not image_path.is_file():
+                raise FileNotFoundError(f"Missing article image {image_path}")
             html_path = dist / slug / "index.html"
             if not html_path.is_file():
                 raise FileNotFoundError(f"Missing generated article {html_path}")
@@ -123,7 +135,15 @@ def process(content: Path, dist: Path) -> None:
     sitemap_pages.append((absolute_url("lab/hypeometar/"), None))
     sitemap_pages = sorted(set(sitemap_pages), key=lambda item: (item[0] != BASE_URL, item[0]))
     write_sitemap(dist, sitemap_pages)
-    write_page_two_redirect(dist)
+    write_redirect(dist, "page/2", BASE_URL)
+    write_redirect(
+        dist,
+        "brand-kampanje-istina-mitovi-i-zasto-vecina-marketinskog-svijeta-jos-uvijek-ne-kuzi-igru-copy",
+        absolute_url("brand-kampanje-istina-mitovi-i-mjerenje-ucinka/"),
+    )
+    write_redirect(dist, "authors/goran-peremin", absolute_url("about-me/"))
+    write_redirect(dist, "authors/goran-peremin/page/2", absolute_url("about-me/"))
+    write_redirect(dist, "who-is-goran-peremin", absolute_url("about-me/"))
 
     sitemap = (dist / "sitemap.xml").read_text(encoding="utf-8")
     expected_articles = sum(1 for p in content.glob("*/index.md") if frontmatter(p).get("type") == "blog-post")
@@ -135,6 +155,7 @@ def process(content: Path, dist: Path) -> None:
     assert "/tags/" not in sitemap, "Tag URL leaked into sitemap"
     assert "/lab/hypeometar/" in sitemap, "Hypeometar is missing from sitemap"
     assert "/page/2/" not in sitemap, "Legacy pagination leaked into sitemap"
+    assert "-copy/" not in sitemap, "Legacy copy URL leaked into sitemap"
     assert actual_schemas == expected_articles, f"Expected {expected_articles} article schemas, found {actual_schemas}"
 
 
