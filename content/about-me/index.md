@@ -2,6 +2,7 @@
 title: Goran Peremin — Growth marketing i eCommerce stručnjak
 description: Goran Peremin je hrvatski stručnjak za growth marketing, eCommerce, SEO, CRO i marketinšku analitiku s više od deset godina iskustva.
 type: page
+nav: false
 weight: 10
 image: /assets/goran-peremin.webp
 date: 2025-05-20
