@@ -163,7 +163,7 @@
 
         {{#page.hasTags}}
           <nav class="tag-list" aria-label="Tags">
-            {{#page.tags}}<a href="{{ url }}">{{ name }}</a>{{/page.tags}}
+            {{#page.tags}}<span>{{ name }}</span>{{/page.tags}}
           </nav>
         {{/page.hasTags}}
 
@@ -280,14 +280,14 @@
               <p>Eight connected disciplines for building eCommerce growth systems that can be tested, explained and improved.</p>
             </div>
             <div class="core-topic-grid" aria-label="Core topics">
-              <a href="/tags/growth-marketing/"><span>01</span>Growth marketing</a>
-              <a href="/tags/ecommerce/"><span>02</span>eCommerce performance</a>
-              <a href="/tags/seo/"><span>03</span>SEO and technical SEO</a>
-              <a href="/tags/cro/"><span>04</span>Conversion rate optimization</a>
-              <a href="/tags/marketing-analytics/"><span>05</span>Marketing analytics and attribution</a>
-              <a href="/tags/ai/"><span>06</span>AI simulations and synthetic research</a>
-              <a href="/tags/gdpr/"><span>07</span>GDPR, cookie consent and privacy operations</a>
-              <a href="/tags/brand-strategy/"><span>08</span>Brand strategy and marketing effectiveness</a>
+              <a href="/ne-predvidaj-samo-prodaju-pronadi-signal-koji-je-zaustavlja/"><span>01</span>Growth marketing</a>
+              <a href="/sto-ce-kupac-sljedece-kupiti-recommendations-i-cltv/"><span>02</span>eCommerce performance</a>
+              <a href="/koliko-je-los-search-skup-seo-ux-i-konverzija/"><span>03</span>SEO and technical SEO</a>
+              <a href="/popust-nije-konverzija-uplift-marza-i-cro/"><span>04</span>Conversion rate optimization</a>
+              <a href="/napredna-analitika-i-predictive-analytics-marketing-bez-nagadanja/"><span>05</span>Marketing analytics and attribution</a>
+              <a href="/koristenje-genagents-simulacija-u-predvidanju-trzisnog-uspjeha-novih-e-commerce-proizvoda/"><span>06</span>AI simulations and synthetic research</a>
+              <a href="/gdpr-checklista-za-e-commerce-bez-gluposti-samo-ono-sto-ti-zapravo-treba/"><span>07</span>GDPR, cookie consent and privacy operations</a>
+              <a href="/zasto-brendovi-rastu-i-zasto-vas-mozda-stagnira/"><span>08</span>Brand strategy and marketing effectiveness</a>
             </div>
             <p class="lab-callout"><strong>Jesu li trendovi stvarni ili samo glasni?</strong> <a href="/lab/hypeometar/">Otvori Marketing Hypeometar &rarr;</a></p>
           </section>
@@ -304,7 +304,7 @@
                       {{#date}}<time class="post-date">{{ date }}</time>{{/date}}
                       <h3><a href="{{ url }}">{{ title }}</a></h3>
                       {{#description}}<p>{{ description }}</p>{{/description}}
-                      {{#hasTags}}<nav class="tag-list tag-list-small" aria-label="Article tags">{{#tags}}<a href="{{ url }}">{{ name }}</a>{{/tags}}</nav>{{/hasTags}}
+                      {{#hasTags}}<nav class="tag-list tag-list-small" aria-label="Article tags">{{#tags}}<span>{{ name }}</span>{{/tags}}</nav>{{/hasTags}}
                     </div>
                   </li>
                 {{/site.latestPosts}}
@@ -348,7 +348,7 @@
             <a href="{{ url }}" data-td-copy-permalink>Copy link</a>
             {{#site.feedPath}}<a href="{{ site.feedPath }}">RSS</a>{{/site.feedPath}}
           </nav>
-          {{#page.hasTags}}<nav class="tag-list" aria-label="Article tags">{{#page.tags}}<a href="{{ url }}">{{ name }}</a>{{/page.tags}}</nav>{{/page.hasTags}}
+          {{#page.hasTags}}<nav class="tag-list" aria-label="Article tags">{{#page.tags}}<span>{{ name }}</span>{{/page.tags}}</nav>{{/page.hasTags}}
         </header>
         {{#heroImage}}<figure class="article-media">{{{ heroHTML }}}</figure>{{/heroImage}}
         <div class="article-body">

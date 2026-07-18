@@ -1,6 +1,6 @@
 ---
-title: "Kako Automatski Optimizirati Slike za Web Shop Uz Pomoć Pythona"
-description: "Ova skripta štedi sate rada i omogućava vam da brzo optimizirate sve slike za svoj web shop. Brža stranica znači zadovoljnije korisnike, bolju SEO poziciju"
+title: Kako Automatski Optimizirati Slike za Web Shop Uz Pomoć Pythona
+description: Ova skripta štedi sate rada i omogućava vam da brzo optimizirate sve slike za svoj web shop. Brža stranica znači zadovoljnije korisnike, bolju SEO poziciju
 type: blog-post
 nav: false
 date: 2025-02-06

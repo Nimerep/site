@@ -1,6 +1,6 @@
 ---
-title: "Besplatno A/B testiranje s umjetnom inteligencijom (AI + LLM)"
-description: "Testirao sam nešto što klasični marketing nikad ne bi odobrio – besplatno A/B testiranje s umjetnom inteligencijom (AI + LLM) U ovom postupku koristimo gen"
+title: Besplatno A/B testiranje s umjetnom inteligencijom (AI + LLM)
+description: Testirao sam nešto što klasični marketing nikad ne bi odobrio – besplatno A/B testiranje s umjetnom inteligencijom (AI + LLM) U ovom postupku koristimo gen
 type: blog-post
 nav: false
 date: 2025-05-26

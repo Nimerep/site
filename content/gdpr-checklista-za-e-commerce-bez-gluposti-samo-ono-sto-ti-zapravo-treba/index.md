@@ -1,6 +1,6 @@
 ---
-title: "GDPR Checklist za eCommerce Web Shopove: Od bannera do stvarne usklađenosti"
-description: "Napredni GDPR vodič za webshopove: kolačići, newsletter, rokovi čuvanja, dobavljači, sigurnost, incidenti, prava kupaca, profiliranje i AI."
+title: GDPR Checklist za eCommerce Web Shopove: Od bannera do stvarne usklađenosti
+description: Napredni GDPR vodič za webshopove: kolačići, newsletter, rokovi čuvanja, dobavljači, sigurnost, incidenti, prava kupaca, profiliranje i AI.
 type: blog-post
 nav: false
 date: 2026-06-18

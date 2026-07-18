@@ -1,6 +1,6 @@
 ---
-title: "Sintetički podaci u istraživanjima: Genijalnost ili samo lijenost?"
-description: "Vrijeme je da otvoreno progovorimo: jesu li sintetički podaci u istraživanjima briljantna inovacija ili samo još jedan shortcut za one koji ne žele prljati"
+title: Sintetički podaci u istraživanjima: Genijalnost ili samo lijenost?
+description: Vrijeme je da otvoreno progovorimo: jesu li sintetički podaci u istraživanjima briljantna inovacija ili samo još jedan shortcut za one koji ne žele prljati
 type: blog-post
 nav: false
 date: 2025-05-17

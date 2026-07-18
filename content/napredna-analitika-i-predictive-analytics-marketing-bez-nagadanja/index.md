@@ -1,6 +1,6 @@
 ---
-title: "Napredna analitika i predictive analytics: Marketing bez nagađanja"
-description: "Ako i dalje šalješ iste kampanje svima, iskreno – nisi više u marketingu, već u spam-biznisu. Kupac ti šalje jasnu poruku: \"Daj mi ono što…"
+title: Napredna analitika i predictive analytics: Marketing bez nagađanja
+description: Ako i dalje šalješ iste kampanje svima, iskreno – nisi više u marketingu, već u spam-biznisu. Kupac ti šalje jasnu poruku: "Daj mi ono što…
 type: blog-post
 nav: false
 date: 2025-05-30

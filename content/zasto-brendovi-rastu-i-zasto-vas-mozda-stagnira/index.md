@@ -1,6 +1,6 @@
 ---
-title: "Zašto brendovi rastu? ...i zašto vaš možda stagnira"
-description: "Uvod: Vrijeme je da pogledate istini u oči Ako ste ikad sjedili na marketinškom sastanku gdje se raspravlja o “emocionalnoj vezi s brendom”, vjerojatno ste"
+title: Zašto brendovi rastu? ...i zašto vaš možda stagnira
+description: Uvod: Vrijeme je da pogledate istini u oči Ako ste ikad sjedili na marketinškom sastanku gdje se raspravlja o “emocionalnoj vezi s brendom”, vjerojatno ste
 type: blog-post
 nav: false
 date: 2024-06-18

@@ -1,6 +1,6 @@
 ---
-title: "Brand kampanje: Istina, mitovi i zašto većina marketinškog svijeta još uvijek ne kuži igru"
-description: "Svi ih hvale, nitko ih ne kuži. Brand kampanje su skupi PR balon koji puca na dodir podataka. Evo zašto više ne igramo tu igru"
+title: Brand kampanje: Istina, mitovi i zašto većina marketinškog svijeta još uvijek ne kuži igru
+description: Svi ih hvale, nitko ih ne kuži. Brand kampanje su skupi PR balon koji puca na dodir podataka. Evo zašto više ne igramo tu igru
 type: blog-post
 nav: false
 date: 2025-05-17

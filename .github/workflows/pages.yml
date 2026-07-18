@@ -39,6 +39,9 @@ jobs:
       - name: Build site
         run: tiledown build-site content/ templates/peremin.html dist/
 
+      - name: Apply and verify SEO output
+        run: python3 docs/postprocess_seo.py content/ dist/
+
       - name: Inspect deploy output
         run: |
           test -f dist/CNAME
@@ -49,6 +52,8 @@ jobs:
           test -f dist/goran-peremin.person.schema.json
           test -d dist/assets
           test -f dist/lab/hypeometar/index.html
+          test -f dist/page/2/index.html
+          test ! -d dist/tags
           test -d dist/media
 
       - name: Upload artifact

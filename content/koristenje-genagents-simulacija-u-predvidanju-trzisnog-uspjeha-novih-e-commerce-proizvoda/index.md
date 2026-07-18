@@ -1,6 +1,6 @@
 ---
-title: "Korištenje GenAgents simulacija u predviđanju tržišnog uspjeha novih e-commerce proizvoda"
-description: "Uvod u GenAgents: Virtualni kupci koji ne lažu Imaš ideju za novi proizvod – kišobran s interaktivnim LED svjetlima. Savršeno za Instagram, cool za TikTok"
+title: Korištenje GenAgents simulacija u predviđanju tržišnog uspjeha novih e-commerce proizvoda
+description: Uvod u GenAgents: Virtualni kupci koji ne lažu Imaš ideju za novi proizvod – kišobran s interaktivnim LED svjetlima. Savršeno za Instagram, cool za TikTok
 type: blog-post
 nav: false
 date: 2025-07-14

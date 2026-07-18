@@ -1,6 +1,6 @@
 ---
-title: "Ekonometrija u marketingu: Umijeće pretvaranja podataka u rezultate"
-description: "Marketing bez ekonometrije je kao rock koncert bez pojačala – svi trube, ali nitko ne čuje poruku. Evo kako integrirati modele u strategiju, a da…"
+title: Ekonometrija u marketingu: Umijeće pretvaranja podataka u rezultate
+description: Marketing bez ekonometrije je kao rock koncert bez pojačala – svi trube, ali nitko ne čuje poruku. Evo kako integrirati modele u strategiju, a da…
 type: blog-post
 nav: false
 date: 2024-10-22

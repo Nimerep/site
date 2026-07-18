@@ -1,6 +1,6 @@
 ---
-title: "Kolačići - uskladi se s GDPR-om i ePrivacy Direktivom"
-description: "Znaš onu poruku kad dođeš na webshop i iskače ti \"Ova stranica koristi kolačiće kako bi poboljšala iskustvo korisnika\"? Super. Samo što to nije ni…"
+title: Kolačići - uskladi se s GDPR-om i ePrivacy Direktivom
+description: Znaš onu poruku kad dođeš na webshop i iskače ti "Ova stranica koristi kolačiće kako bi poboljšala iskustvo korisnika"? Super. Samo što to nije ni…
 type: blog-post
 nav: false
 date: 2025-05-18

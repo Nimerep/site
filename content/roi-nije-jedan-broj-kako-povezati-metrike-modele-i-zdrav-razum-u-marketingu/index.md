@@ -1,6 +1,6 @@
 ---
-title: "ROI nije jedan broj: Kako povezati metrike, modele i zdrav razum u marketingu"
-description: "Uvod: Marketing ROI – sveti gral ili mit? Ah, ROI. Magični broj koji menadžeri žele, a marketinški timovi mrze. Svi pričaju o njemu, ali rijetko…"
+title: ROI nije jedan broj: Kako povezati metrike, modele i zdrav razum u marketingu
+description: Uvod: Marketing ROI – sveti gral ili mit? Ah, ROI. Magični broj koji menadžeri žele, a marketinški timovi mrze. Svi pričaju o njemu, ali rijetko…
 type: blog-post
 nav: false
 date: 2025-05-17

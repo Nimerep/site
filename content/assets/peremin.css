@@ -328,7 +328,8 @@ img {
   margin-top: 1rem;
 }
 
-.tag-list a {
+.tag-list a,
+.tag-list span {
   display: inline-flex;
   align-items: center;
   min-height: 1.8rem;

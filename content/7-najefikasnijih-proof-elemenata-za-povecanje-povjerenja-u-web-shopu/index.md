@@ -1,6 +1,6 @@
 ---
-title: "7 Najefikasnijih Proof Elemenata za Povećanje Povjerenja u Web Shopu"
-description: "Znaš onaj osjećaj kad uđeš u web shop i misliš si: \"Hmm, je li ovo legit ili će mi netko maznuti podatke s kartice i…"
+title: 7 Najefikasnijih Proof Elemenata za Povećanje Povjerenja u Web Shopu
+description: Znaš onaj osjećaj kad uđeš u web shop i misliš si: "Hmm, je li ovo legit ili će mi netko maznuti podatke s kartice i…
 type: blog-post
 nav: false
 date: 2024-09-16
