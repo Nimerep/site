@@ -15,7 +15,7 @@
   <meta name="theme-color" content="#0f766e">
   {{#site.feedPath}}<link rel="alternate" type="application/rss+xml" href="{{ site.feedPath }}">{{/site.feedPath}}
   {{#site.stylesheetPath}}<link rel="stylesheet" href="{{ site.stylesheetPath }}">{{/site.stylesheetPath}}
-  <link rel="stylesheet" href="/assets/peremin.css?v=20260702">
+  <link rel="stylesheet" href="/assets/peremin.css?v=20260718">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -143,9 +143,10 @@
     <nav class="site-nav" aria-label="Main navigation">
       {{#site.sections}}<a href="{{ url }}"{{#isCurrent}} aria-current="page"{{/isCurrent}}>{{ title }}</a>{{/site.sections}}
       <a href="/about-me/">O Goranu</a>
-      <a href="/ecommerce-growth-vodic-seo-cro-analitika-ai-gdpr/">eCommerce vodič</a>
-      <a href="/lab/hypeometar/">Hypeometar</a>
-      {{#site.feedPath}}<a href="{{ site.feedPath }}">RSS</a>{{/site.feedPath}}
+      <span class="nav-divider" aria-hidden="true"></span>
+      <a class="nav-cta nav-cta-secondary" href="/ecommerce-growth-vodic-seo-cro-analitika-ai-gdpr/">eCommerce vodič</a>
+      <a class="nav-cta nav-cta-primary" href="/lab/hypeometar/"><span aria-hidden="true">⚡</span> Marketing Hypeometar</a>
+      {{#site.feedPath}}<a class="nav-rss" href="{{ site.feedPath }}">RSS</a>{{/site.feedPath}}
     </nav>
   </header>
 

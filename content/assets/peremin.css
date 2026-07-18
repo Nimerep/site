@@ -120,6 +120,44 @@ img {
   color: var(--accent);
 }
 
+.nav-divider {
+  width: 1px;
+  height: 1.5rem;
+  margin-left: 0.15rem;
+  background: var(--line);
+}
+
+.site-nav a.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.48rem 0.72rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+  line-height: 1;
+  transition: transform 160ms ease, background 160ms ease, color 160ms ease;
+}
+
+.site-nav a.nav-cta:hover {
+  transform: translateY(-1px);
+  background: var(--accent-soft);
+}
+
+.site-nav a.nav-cta-primary {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.site-nav a.nav-cta-primary:hover {
+  background: var(--accent-strong);
+  color: #ffffff;
+}
+
+.site-nav a.nav-rss {
+  font-size: 0.8rem;
+}
+
 .site-main {
   min-height: 70vh;
 }
@@ -946,6 +984,10 @@ code {
 
   .about-metric-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nav-divider {
+    display: none;
   }
 
   .home-copy h1,
