@@ -25,8 +25,6 @@ Nisam koristio tuđe postotke konverzije ni graf koji izgleda uvjerljivo jer ima
 
 Koristio sam Amazon Science [Shopping Queries Dataset](https://github.com/amazon-science/esci-data), poznat kao ESCI. Autori rada navode približno 130 tisuća upita i 2,6 milijuna ručno označenih parova upit–proizvod na engleskom, japanskom i španjolskom jeziku.
 
-Datoteka koju sam analizirao 20. srpnja 2026. ima **2.621.288 redaka**. Njezin SHA-256 je `4a735b693b4a424a6fc67f5be6e4c811495c488bbf66d02a602d308b2744263a`, tako da se može provjeriti da nismo analizirali neku tajanstvenu verziju koja postoji samo na mom laptopu.
-
 Za eksperiment sam uzeo:
 
 - malu službenu verziju skupa podataka
