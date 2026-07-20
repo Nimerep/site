@@ -37,7 +37,7 @@ SEO nije proizvodnja članaka po kilogramu. Treba povezati tehničku dostupnost,
 
 Posebno zanemarena tema je interna tražilica. Kupac koji upiše konkretan upit već je pokazao namjeru. Ako mu web shop vrati krive proizvode, nismo izgubili „search session”. Izgubili smo čovjeka koji nam je doslovno napisao što želi.
 
-U vodiču [Koliko je loš search skup — SEO, UX i konverzija](/koliko-je-los-search-skup-seo-ux-i-konverzija/) pokazujem kako mjeriti relevantnost rezultata, reformulacije, izlaze, konverziju i maržu.
+U istraživanju [Koliko loša interna tražilica košta web shop?](/koliko-je-los-search-skup-seo-ux-i-konverzija/) na 5.041 ručno označenom upitu pokazujem koliko loš redoslijed skriva točne proizvode i kako stvarni trošak potvrditi kroz maržu.
 
 Brzina je drugi osnovni sloj. Ako slike proizvoda imaju nekoliko megabajta, ne treba ti nova SEO teorija nego kompresija. Pogledaj [optimizaciju slika za web shop pomoću Pythona](/kako-automatski-optimizirati-slike-za-web-shop-uz-pomoc-pythona/).
 
