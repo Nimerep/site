@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reproduce the offline ranking experiment used on peremin.com."""
+"""Analiza ESCI podataka koju je Goran Peremin izradio za svoj članak na peremin.com."""
 
 from __future__ import annotations
 
@@ -9,6 +9,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+
+__author__ = "Goran Peremin"
 
 GAINS = {"E": 1.0, "S": 0.1, "C": 0.01, "I": 0.0}
 RANDOM_REPEATS = 50

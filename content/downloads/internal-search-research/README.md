@@ -1,4 +1,6 @@
-# Reprodukcija ESCI eksperimenta
+# ESCI analiza interne tražilice — Goran Peremin
+
+Ovu analizu i pripadajući kod izradio je Goran Peremin za svoj članak [Koliko loša interna tražilica košta web shop?](https://www.peremin.com/koliko-je-los-search-skup-seo-ux-i-konverzija/).
 
 Eksperiment koristi službeni Amazon Science `shopping_queries_dataset_examples.parquet` iz skupa [Shopping Queries Dataset](https://github.com/amazon-science/esci-data).
 
