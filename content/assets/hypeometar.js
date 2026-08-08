@@ -99,6 +99,7 @@
 
   function load() {
     var topic = TOPICS[select.value];
+    $('trends-link').href = 'https://trends.google.com/trends/explore?q=' + encodeURIComponent(topic.query);
     var today = daysAgo(1), yearAgo = new Date(today), twoYearsAgo = new Date(today);
     yearAgo.setUTCFullYear(yearAgo.getUTCFullYear() - 1);
     twoYearsAgo.setUTCFullYear(twoYearsAgo.getUTCFullYear() - 2);
