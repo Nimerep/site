@@ -1,0 +1,16 @@
+const assert = require('node:assert/strict');
+const {recommend} = require('../content/assets/webshop-selector.js');
+const base = {stage:'new', owner:'self', skill:'none', model:'standard', systems:'none', initial:'mid', monthly:'mid', priority:'easy'};
+assert.equal(recommend(base).choices[0].id, 'shopify');
+assert.equal(recommend({...base, owner:'team', skill:'php', priority:'exit'}).choices[0].id, 'woo');
+assert.equal(recommend({...base, owner:'team', skill:'dotnet', model:'b2b', priority:'control', initial:'high', monthly:'high'}).choices[0].id, 'nop');
+assert.equal(recommend({...base, systems:'odoo', model:'operations', owner:'agency', initial:'high', monthly:'high'}).choices[0].id, 'odoo');
+assert.equal(recommend({...base, initial:'zero'}).status, 'budget');
+assert.equal(recommend({...base, initial:'unknown'}).status, 'conditional');
+assert.equal(recommend({...base, systems:'other'}).status, 'conditional');
+assert(!recommend({...base, owner:'team', skill:'js', initial:'high', monthly:'high'}).choices.some(x=>x.id==='headless'));
+assert(!recommend({...base, model:'custom'}).choices.some(x=>x.id==='headless'));
+assert(recommend({...base, owner:'team', skill:'js', model:'custom', initial:'high', monthly:'high', priority:'control'}).choices.some(x=>x.id==='headless'));
+assert.equal(recommend({...base, owner:'self', skill:'dotnet'}).choices[0].id, 'shopify', 'hidden stale skill must not affect recommendations');
+assert.throws(()=>recommend({...base, monthly:'invalid'}));
+console.log('12 recommendation checks passed');
