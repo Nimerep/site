@@ -108,6 +108,23 @@ def write_redirect(dist: Path, route: str, target: str) -> None:
     path.write_text(html, encoding="utf-8")
 
 
+def add_webshop_selector(html_path: Path) -> None:
+    html = html_path.read_text(encoding="utf-8")
+    if 'id="webshop-selector"' in html:
+        return
+    marker = '<div class="article-body">'
+    if marker not in html or '</head>' not in html or '</body>' not in html:
+        raise ValueError(f"Cannot insert webshop selector into {html_path}")
+    widget = '''<section id="webshop-selector" aria-label="Vodič za odabir webshopa">
+<h2>Koji webshop ima smisla za tebe?</h2>
+<p>Za interaktivni upitnik uključi JavaScript ili <a href="#platforme">nastavi na usporedbu platformi u članku</a>.</p>
+</section>'''
+    html = html.replace(marker, marker + widget, 1)
+    html = html.replace('</head>', '<link rel="stylesheet" href="/assets/webshop-selector.css?v=20260912">\n</head>', 1)
+    html = html.replace('</body>', '<script src="/assets/webshop-selector.js?v=20260912" defer></script>\n</body>', 1)
+    html_path.write_text(html, encoding="utf-8")
+
+
 def process(content: Path, dist: Path) -> None:
     shutil.rmtree(dist / "tags", ignore_errors=True)
 
@@ -131,6 +148,8 @@ def process(content: Path, dist: Path) -> None:
             if not html_path.is_file():
                 raise FileNotFoundError(f"Missing generated article {html_path}")
             add_blog_schema(html_path, data)
+            if data.get("webshopSelector") == "true":
+                add_webshop_selector(html_path)
 
     sitemap_pages.append((absolute_url("lab/hypeometar/"), None))
     sitemap_pages = sorted(set(sitemap_pages), key=lambda item: (item[0] != BASE_URL, item[0]))

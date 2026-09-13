@@ -1,0 +1,23 @@
+#webshop-selector{--ws-accent:#0f766e;--ws-tint:rgba(15,118,110,.07);border:1px solid rgba(15,118,110,.35);border-radius:18px;padding:clamp(20px,4vw,36px);margin:28px 0 36px;background:var(--ws-tint);font:inherit;color:inherit;scroll-margin-top:24px}
+#webshop-selector *{box-sizing:border-box}
+#webshop-selector h2{margin:8px 0 16px;font-size:clamp(1.4rem,4vw,2rem);line-height:1.25}
+#webshop-selector h3{margin:12px 0;font-size:1.25rem}
+#webshop-selector p{margin:12px 0;line-height:1.6}
+#webshop-selector .ws-kicker{font-size:.72rem;letter-spacing:.12em;font-weight:750;color:var(--ws-accent)}
+#webshop-selector .ws-small{font-size:.9rem}
+#webshop-selector fieldset{border:0;padding:0;margin:16px 0;min-width:0}
+#webshop-selector legend{font-size:.9rem;font-weight:700;margin-bottom:10px}
+#webshop-selector .ws-option{display:flex;align-items:center;gap:12px;padding:13px 16px;margin:8px 0;border:1px solid #858f8e;border-radius:10px;cursor:pointer;line-height:1.45;min-height:48px}
+#webshop-selector .ws-option:has(input:checked){border-color:var(--ws-accent);background:var(--ws-tint);box-shadow:inset 0 0 0 1px var(--ws-accent)}
+#webshop-selector input{width:18px;height:18px;flex:0 0 18px;accent-color:var(--ws-accent);margin:0}
+#webshop-selector button{font:inherit;font-weight:650;cursor:pointer;padding:12px 18px;min-height:46px;border-radius:9px;border:1px solid #858f8e;background:transparent;color:inherit;margin:6px 8px 6px 0;white-space:normal}
+#webshop-selector .ws-primary{background:#0f766e;color:#fff;border-color:#0f766e}
+#webshop-selector .ws-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0}
+#webshop-selector a{color:var(--ws-accent);text-decoration:underline;text-underline-offset:3px}
+#webshop-selector :is(button,a,input,summary):focus-visible{outline:3px solid #b45309;outline-offset:4px}
+#webshop-selector progress{display:block;width:100%;height:5px;accent-color:var(--ws-accent);margin:12px 0 22px}
+#webshop-selector .ws-card{border-top:1px solid #858f8e;padding:18px 0;margin-top:18px}
+#webshop-selector .ws-notice{border-left:3px solid #b45309;padding:8px 14px;background:rgba(180,83,9,.07)}
+#webshop-selector details{margin:22px 0;font-size:.9rem}
+#webshop-selector summary{cursor:pointer;font-weight:650}
+@media(max-width:480px){#webshop-selector .ws-actions{align-items:stretch;flex-direction:column}#webshop-selector button{width:100%;margin-right:0}#webshop-selector .ws-actions a{padding:8px 0}}

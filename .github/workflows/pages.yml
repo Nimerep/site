@@ -36,6 +36,12 @@ jobs:
       - name: Check TileDown content
         run: tiledown doctor --publish content/
 
+      - name: Check webshop selector
+        run: |
+          node --check content/assets/webshop-selector.js
+          node docs/test_webshop_selector.cjs
+          python3 -B docs/test_webshop_integration.py
+
       - name: Build site
         run: tiledown build-site content/ templates/peremin.html dist/
 
@@ -54,6 +60,12 @@ jobs:
           test -f dist/goran-peremin.person.schema.json
           test -d dist/assets
           test -f dist/lab/hypeometar/index.html
+          test -f dist/kako-pokrenuti-web-shop-u-hrvatskoj/index.html
+          test -f dist/assets/webshop-selector.js
+          test -f dist/assets/webshop-selector.css
+          grep -q 'id="webshop-selector"' dist/kako-pokrenuti-web-shop-u-hrvatskoj/index.html
+          grep -q 'id="platforme"' dist/kako-pokrenuti-web-shop-u-hrvatskoj/index.html
+          grep -q '/kako-pokrenuti-web-shop-u-hrvatskoj/' dist/index.html
           test -f dist/page/2/index.html
           test -f dist/brand-kampanje-istina-mitovi-i-zasto-vecina-marketinskog-svijeta-jos-uvijek-ne-kuzi-igru-copy/index.html
           test -f dist/authors/goran-peremin/page/2/index.html
