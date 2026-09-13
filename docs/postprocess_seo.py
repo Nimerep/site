@@ -110,7 +110,11 @@ def write_redirect(dist: Path, route: str, target: str) -> None:
 
 def add_webshop_selector(html_path: Path) -> None:
     html = html_path.read_text(encoding="utf-8")
+    # TileDown escapes raw Markdown HTML; restore only our six known anchors.
+    for anchor in ('pocetak-vodica', 'platforme', 'erp-hosting', 'izlazak', 'trosak', 'odrzavanje'):
+        html = html.replace(f'&lt;span id="{anchor}"&gt;&lt;/span&gt;', f'<span id="{anchor}"></span>')
     if 'id="webshop-selector"' in html:
+        html_path.write_text(html, encoding="utf-8")
         return
     marker = '<div class="article-body">'
     if marker not in html or '</head>' not in html or '</body>' not in html:
