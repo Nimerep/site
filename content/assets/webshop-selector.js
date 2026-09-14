@@ -67,7 +67,7 @@
   const steps = () => ['stage','owner', ...(answers.owner && answers.owner !== 'self' ? ['skill'] : []), 'model','systems','budget','priority'];
   const el = (tag, text, cls) => {const n=document.createElement(tag); if(text)n.textContent=text;if(cls)n.className=cls;return n;};
   function button(text, fn, cls) {const b=el('button',text,cls);b.type='button';b.addEventListener('click',fn);return b;}
-  function link(text, anchor) {const a=el('a',text);a.href='#'+anchor;return a;}
+  function link(text, anchor) {const a=el('a',text);a.href='/kako-pokrenuti-web-shop-u-hrvatskoj/#'+anchor;return a;}
   function focusHeading() {const h=root.querySelector('h2,h3');if(h){h.tabIndex=-1;h.focus({preventScroll:true});root.scrollIntoView({block:'start',behavior:'instant'});}}
   function intro() {
     root.replaceChildren();root.append(el('p','PEREMIN · VODIČ ZA ODLUKU','ws-kicker'),el('h2','Koji webshop ima smisla za tebe?'),el('p','Nekoliko pitanja o tvom poslu. Dobit ćeš uži izbor, način održavanja i ono što treba provjeriti prije trošenja novca.'));
