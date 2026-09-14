@@ -4,7 +4,8 @@ description: Kako povezati akviziciju, konverziju, retention, analitiku, AI i pr
 type: blog-post
 nav: false
 date: 2026-07-18
-updated: 2026-07-18
+updated: 2026-09-14
+webshopSelector: true
 author: Goran Peremin
 tags: ecommerce, growth marketing, seo, cro, marketing analytics, ai, gdpr, retention
 sourceURL: https://www.peremin.com/ecommerce-growth-vodic-seo-cro-analitika-ai-gdpr/
@@ -18,6 +19,12 @@ Web shop rijetko stagnira zato što mu nedostaje još jedan popup.
 Growth nije nova kampanja. To je način na koji povezuješ potražnju, iskustvo kupca, konverziju, ponovnu kupnju, maržu i učenje iz podataka.
 
 Ovaj vodič služi kao karta kroz glavne teme na peremin.com. Nije popis „37 trikova za rast do utorka”. Ako ti to netko obeća, provjeri prodaje li odmah ispod i tečaj.
+
+## Tek pokrećeš webshop ili mijenjaš platformu?
+
+Kreni od upitnika na početku ovog vodiča. Proći ćeš kroz budžet, znanje tima, održavanje i sustave koje već koristiš, pa dobiti uži izbor platformi s njihovim kompromisima.
+
+Zatim otvori [Kako pokrenuti web shop u Hrvatskoj](/kako-pokrenuti-web-shop-u-hrvatskoj/). Tamo prolazim računicu narudžbe, dostavu i nepreuzete pakete, hrvatske propise, platforme, ERP i hosting. To su odluke koje treba riješiti prije nego što počneš plaćati promet. Ako webshop već radi, iskoristi ih kao provjeru temelja pa nastavi na rast.
 
 ## 1. Počni od poslovnog problema
 
