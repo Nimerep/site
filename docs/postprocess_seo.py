@@ -121,11 +121,11 @@ def add_webshop_selector(html_path: Path) -> None:
         raise ValueError(f"Cannot insert webshop selector into {html_path}")
     widget = '''<section id="webshop-selector" aria-label="Vodič za odabir webshopa">
 <h2>Koji webshop ima smisla za tebe?</h2>
-<p>Za interaktivni upitnik uključi JavaScript ili <a href="#platforme">nastavi na usporedbu platformi u članku</a>.</p>
+<p>Za interaktivni upitnik uključi JavaScript ili <a href="/kako-pokrenuti-web-shop-u-hrvatskoj/#platforme">nastavi na usporedbu platformi u članku</a>.</p>
 </section>'''
     html = html.replace(marker, marker + widget, 1)
     html = html.replace('</head>', '<link rel="stylesheet" href="/assets/webshop-selector.css?v=20260912">\n</head>', 1)
-    html = html.replace('</body>', '<script src="/assets/webshop-selector.js?v=20260912" defer></script>\n</body>', 1)
+    html = html.replace('</body>', '<script src="/assets/webshop-selector.js?v=20260914" defer></script>\n</body>', 1)
     html_path.write_text(html, encoding="utf-8")
 
 

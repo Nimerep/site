@@ -14,6 +14,7 @@ with TemporaryDirectory() as folder:
     assert first.count('id="webshop-selector"') == 1
     assert '/assets/webshop-selector.js' in first
     assert '/assets/webshop-selector.css' in first
+    assert 'href="/kako-pokrenuti-web-shop-u-hrvatskoj/#platforme"' in first
     for anchor in anchors:
         assert f'<span id="{anchor}"></span>' in first
     assert '&lt;span' not in first
