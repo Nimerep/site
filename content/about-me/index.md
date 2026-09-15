@@ -11,10 +11,10 @@ tags: growth marketing, ecommerce, seo, cro, marketing analytics, gdpr, dpo, za�
 
 # Goran Peremin — growth marketing i eCommerce stručnjak
 
-Ja sam Goran Peremin, hrvatski stručnjak za growth marketing i eCommerce s više od deset godina iskustva u digitalnom marketingu. Najviše me zanimaju okruženja u kojima se strategija mora dokazati kroz promet, konverzije, maržu, ROI i dugoročnu vrijednost kupaca.
+Više od deset godina radim u digitalnom marketingu, s fokusom na rast web trgovina. Zanima me što dovodi kupce, što ih uvjeri da kupe i koliko ta prodaja stvarno vrijedi za poslovanje.
 
-Spajam SEO, CRO, performance marketing, sadržaj, UX, analitiku, Python i data science u sustav koji se može mjeriti, objasniti i stalno poboljšavati.
+Povezujem SEO, plaćene kampanje, sadržaj i korisničko iskustvo s analitikom. Python i data science koristim za istraživanje podataka i automatizaciju obrade. Pratim cijeli put od prvog posjeta do ponovne kupnje, uključujući trošak i maržu.
 
-Uz to, u tvrtki obavljam funkciju službenika za zaštitu podataka — DPO-a. Vodim praktičnu primjenu GDPR-a i povezujem propise s procesima, ljudima, dobavljačima i sustavima u kojima se osobni podaci stvarno obrađuju.
+U tvrtki obavljam i funkciju službenika za zaštitu podataka (DPO-a). Vodim praktičnu primjenu GDPR-a, što traži razumijevanje poslovnih procesa i sustava u kojima se osobni podaci obrađuju.
 
-> Kreativna ideja mora biti dovoljno jasna da je kupac razumije, dovoljno zanimljiva da je primijeti i dovoljno mjerljiva da preživi izvještaj.
+> Dobra ideja privuče pozornost. Mene zanima i što se dogodi nakon klika.
