@@ -6,10 +6,10 @@ image: /assets/goran-peremin.webp
 latest: true
 ---
 
-# Goran Peremin — marketing koji mora preživjeti brojke
+# Goran Peremin — eCommerce i growth marketing
 
-Povezujem eCommerce, SEO, CRO, performance marketing, sadržaj i analitiku u sustav koji se može mjeriti, objasniti i poboljšati.
+Više od deset godina radim na rastu web trgovina. Povezujem SEO, plaćene kampanje i iskustvo kupnje s podacima o prodaji, troškovima i marži.
 
-Više od deset godina radim na digitalnim projektima na kojima „imamo dobar osjećaj” nije završetak analize. Ideja može biti kreativna, ali mora znati što radi prometu, konverziji, marži i vrijednosti kupca.
+Ovdje objavljujem analize, praktične vodiče i vlastite eksperimente. Pokazujem kako dolazim do zaključaka, što podaci mogu objasniti i gdje treba biti oprezan.
 
-[Tko je Goran Peremin?](/about-me/)
+[Više o meni](/about-me/)
