@@ -43,7 +43,7 @@ def add_blog_schema(html_path: Path, data: dict[str, str]) -> None:
         "description": data["description"],
         "datePublished": data["date"],
         "dateModified": data.get("updated", data["date"]),
-        "inLanguage": "hr",
+        "inLanguage": data.get("language", "hr"),
         "mainEntityOfPage": {"@id": f"{canonical}#webpage"},
         "author": {"@id": f"{BASE_URL}about-me/#person"},
         "publisher": {"@id": f"{BASE_URL}about-me/#person"},
@@ -129,6 +129,29 @@ def add_webshop_selector(html_path: Path) -> None:
     html_path.write_text(html, encoding="utf-8")
 
 
+def add_eu_launch_planner(html_path: Path) -> None:
+    html = html_path.read_text(encoding="utf-8")
+    for anchor in ('eu-start', 'eu-platforms', 'eu-money', 'eu-cost-of-mistakes'):
+        html = html.replace(f'&lt;span id="{anchor}"&gt;&lt;/span&gt;', f'<span id="{anchor}"></span>')
+    if 'id="eu-launch-planner"' in html:
+        html_path.write_text(html, encoding="utf-8")
+        return
+    if '[[EU_LAUNCH_PLANNER]]' not in html or '</head>' not in html or '</body>' not in html:
+        raise ValueError(f"Cannot insert EU planner into {html_path}")
+    widget = '''<section id="eu-launch-planner" aria-label="EU ecommerce launch planner">
+<h2>Which setup fits your online business?</h2>
+<p>Enable JavaScript for the planner, or continue to the platform comparison and worked examples below.</p>
+</section>'''
+    html = re.sub(r'<p>\s*\[\[EU_LAUNCH_PLANNER\]\]\s*</p>', widget, html, count=1)
+    if '[[EU_LAUNCH_PLANNER]]' in html:
+        raise ValueError(f"Unexpected EU planner marker structure in {html_path}")
+    html = re.sub(r'<html\b([^>]*?)lang="[^"]*"', r'<html\1lang="en"', html, count=1)
+    html = html.replace('content="hr_HR"', 'content="en_US"')
+    html = html.replace('</head>', '<link rel="stylesheet" href="/assets/eu-launch-planner.css?v=20261001">\n</head>', 1)
+    html = html.replace('</body>', '<script src="/assets/eu-launch-planner.js?v=20261001" defer></script>\n</body>', 1)
+    html_path.write_text(html, encoding="utf-8")
+
+
 def process(content: Path, dist: Path) -> None:
     shutil.rmtree(dist / "tags", ignore_errors=True)
 
@@ -154,6 +177,8 @@ def process(content: Path, dist: Path) -> None:
             add_blog_schema(html_path, data)
             if data.get("webshopSelector") == "true":
                 add_webshop_selector(html_path)
+            if data.get("euLaunchPlanner") == "true":
+                add_eu_launch_planner(html_path)
 
     sitemap_pages.append((absolute_url("lab/hypeometar/"), None))
     sitemap_pages = sorted(set(sitemap_pages), key=lambda item: (item[0] != BASE_URL, item[0]))
