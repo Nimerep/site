@@ -42,6 +42,12 @@ jobs:
           node docs/test_webshop_selector.cjs
           python3 -B docs/test_webshop_integration.py
 
+      - name: Check EU launch planner
+        run: |
+          node --check content/assets/eu-launch-planner.js
+          node docs/test_eu_launch.cjs
+          python3 -B docs/test_eu_integration.py
+
       - name: Build site
         run: tiledown build-site content/ templates/peremin.html dist/
 
@@ -52,6 +58,13 @@ jobs:
 
       - name: Inspect deploy output
         run: |
+          test -f dist/eu-ecommerce-launch-planner/index.html
+          test -f dist/assets/eu-launch-planner.js
+          test -f dist/assets/eu-launch-planner.css
+          grep -q 'id="eu-launch-planner"' dist/eu-ecommerce-launch-planner/index.html
+          grep -q 'lang="en"' dist/eu-ecommerce-launch-planner/index.html
+          ! grep -q '\[\[EU_LAUNCH_PLANNER\]\]' dist/eu-ecommerce-launch-planner/index.html
+          grep -q '/eu-ecommerce-launch-planner/' dist/index.html
           test -f dist/CNAME
           test -f dist/.nojekyll
           test -f dist/robots.txt
