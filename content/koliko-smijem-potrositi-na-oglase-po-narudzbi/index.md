@@ -10,7 +10,7 @@ author: Goran Peremin
 language: hr
 tags: ecommerce, marža, oglasi, analitika
 sourceURL: https://www.peremin.com/koliko-smijem-potrositi-na-oglase-po-narudzbi/
-image: /media/posts/seo-covers/popust-nije-konverzija.webp
+image: /media/posts/seo-covers/ecommerce-growth-system.webp
 ---
 
 Koliko možeš platiti oglas po narudžbi ovisi o tome koliko ti ta narudžba ostavlja. Od prihoda oduzmi nabavu i ostale varijabilne troškove, pa odvoji iznos za fiksne troškove i željenu dobit. Ostatak je radni cilj troška oglasa. Potrošiš li na oglase sve što ostane nakon isporuke, iz te narudžbe nemaš čime pokriti poslovanje.
