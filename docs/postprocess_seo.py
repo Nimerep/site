@@ -8,8 +8,9 @@ import re
 import shutil
 import sys
 from html import escape
+from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit, unquote
 
 
 BASE_URL = "https://www.peremin.com/"
@@ -108,6 +109,86 @@ def write_redirect(dist: Path, route: str, target: str) -> None:
     path.write_text(html, encoding="utf-8")
 
 
+def hide_background_articles(dist: Path, urls: set[str]) -> None:
+    """Keep canonical pages and sitemap, remove entry points in HTML and feeds."""
+    if not urls:
+        return
+    paths = {urlsplit(url).path.rstrip('/') for url in urls}
+
+    def is_background(value: str, base: str = BASE_URL) -> bool:
+        parsed = urlsplit(urljoin(base, value))
+        return parsed.netloc in {'www.peremin.com', 'peremin.com'} and unquote(parsed.path).rstrip('/') in paths
+
+    class LinkRanges(HTMLParser):
+        def __init__(self, html: str, base: str):
+            super().__init__(convert_charrefs=False)
+            self.html, self.base = html, base
+            self.lines = [0]
+            self.lines.extend(match.end() for match in re.finditer('\n', html))
+            self.stack: list[dict] = []
+            self.ranges: list[tuple[int, int]] = []
+
+        def position(self) -> int:
+            line, column = self.getpos()
+            return self.lines[line - 1] + column
+
+        def handle_starttag(self, tag, attrs):
+            if tag in {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}:
+                return
+            node = {'tag': tag, 'start': self.position(), 'remove': False}
+            self.stack.append(node)
+            if tag == 'a' and is_background(dict(attrs).get('href') or '', self.base):
+                # Remove the whole card/list item; otherwise remove just this link.
+                target = next((n for n in reversed(self.stack[:-1]) if n['tag'] == 'li'), node)
+                target['remove'] = True
+
+        def handle_startendtag(self, tag, attrs):
+            pass
+
+        def handle_endtag(self, tag):
+            index = next((i for i in range(len(self.stack) - 1, -1, -1) if self.stack[i]['tag'] == tag), None)
+            if index is None:
+                return
+            end = self.html.find('>', self.position()) + 1
+            for node in self.stack[index:]:
+                if node['remove']:
+                    self.ranges.append((node['start'], end))
+            del self.stack[index:]
+
+    for page in dist.rglob('*.html'):
+        html = page.read_text(encoding='utf-8')
+        base = absolute_url(page.relative_to(dist).as_posix())
+        parser = LinkRanges(html, base)
+        parser.feed(html)
+        # Outer list-item ranges subsume thumbnail and title link ranges.
+        ranges = []
+        for start, end in sorted(parser.ranges):
+            if ranges and start <= ranges[-1][1]:
+                ranges[-1] = (ranges[-1][0], max(end, ranges[-1][1]))
+            else:
+                ranges.append((start, end))
+        for start, end in reversed(ranges):
+            html = html[:start] + html[end:]
+        if ranges:
+            page.write_text(html, encoding='utf-8')
+
+    for feed in dist.glob('*.xml'):
+        if feed.name == 'sitemap.xml':
+            continue
+        text = feed.read_text(encoding='utf-8')
+        text = re.sub(r'<(item|entry)\b[^>]*>.*?</\1>',
+                      lambda m: '' if any(url in m[0] for url in urls) else m[0], text, flags=re.DOTALL)
+        feed.write_text(text, encoding='utf-8')
+    feed = dist / 'feed.json'
+    if feed.is_file():
+        data = json.loads(feed.read_text(encoding='utf-8'))
+        items = data.get('items', [])
+        filtered = [item for item in items if not is_background(item.get('url') or item.get('id') or '')]
+        if filtered != items:
+            data['items'] = filtered
+            feed.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+
 def add_webshop_selector(html_path: Path) -> None:
     html = html_path.read_text(encoding="utf-8")
     # TileDown escapes raw Markdown HTML; restore only our six known anchors.
@@ -156,6 +237,7 @@ def process(content: Path, dist: Path) -> None:
     shutil.rmtree(dist / "tags", ignore_errors=True)
 
     sitemap_pages: list[tuple[str, str | None]] = []
+    background_urls: set[str] = set()
     for source in sorted(content.glob("**/index.md")):
         data = frontmatter(source)
         if data.get("type") not in {"page", "blog-post"}:
@@ -163,6 +245,8 @@ def process(content: Path, dist: Path) -> None:
         slug = source.parent.relative_to(content).as_posix()
         canonical = data.get("sourceURL") or (BASE_URL if slug == "." else absolute_url(f"{slug}/"))
         sitemap_pages.append((canonical, data.get("updated") or data.get("date")))
+        if data.get('background') == 'true':
+            background_urls.add(canonical)
 
         if data["type"] == "blog-post":
             required = {"title", "description", "date", "sourceURL", "image"} - data.keys()
@@ -192,6 +276,7 @@ def process(content: Path, dist: Path) -> None:
     write_redirect(dist, "authors/goran-peremin", absolute_url("about-me/"))
     write_redirect(dist, "authors/goran-peremin/page/2", absolute_url("about-me/"))
     write_redirect(dist, "who-is-goran-peremin", absolute_url("about-me/"))
+    hide_background_articles(dist, background_urls)
 
     sitemap = (dist / "sitemap.xml").read_text(encoding="utf-8")
     expected_articles = sum(1 for p in content.glob("*/index.md") if frontmatter(p).get("type") == "blog-post")

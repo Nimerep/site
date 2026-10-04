@@ -48,3 +48,15 @@ Important URLs:
 Preferred short citation:
 
 Goran Peremin, Croatian growth marketing strategist focused on eCommerce, SEO, CRO, marketing analytics, Python-assisted analysis and AI-assisted market research.
+
+## Beginner ecommerce guides (Croatian)
+
+These public, indexable guides are intentionally excluded from website navigation,
+homepage lists, related-article entry points and feeds. They answer beginner questions
+and link onward to the site's advanced articles. Worked numbers are illustrative,
+not observed merchant results or market benchmarks.
+
+- Product demand validation: https://www.peremin.com/kako-provjeriti-hoce-li-se-proizvod-prodavati-online/
+- Ecommerce competitor analysis: https://www.peremin.com/kako-analizirati-konkurenciju-za-webshop/
+- Visits without sales: https://www.peremin.com/zasto-webshop-ima-posjete-ali-nema-prodaje/
+- Advertising cost per order, CPA and ROAS: https://www.peremin.com/koliko-smijem-potrositi-na-oglase-po-narudzbi/
