@@ -46,7 +46,7 @@ def add_blog_schema(html_path: Path, data: dict[str, str]) -> None:
         "dateModified": data.get("updated", data["date"]),
         "inLanguage": data.get("language", "hr"),
         "mainEntityOfPage": {"@id": f"{canonical}#webpage"},
-        "author": {"@id": f"{BASE_URL}about-me/#person"},
+        "author": {"@id": f"{BASE_URL}about-me/#person", "@type": "Person", "name": "Goran Peremin", "url": f"{BASE_URL}about-me/"},
         "publisher": {"@id": f"{BASE_URL}about-me/#person"},
         "isPartOf": {"@id": f"{BASE_URL}#website"},
     }
@@ -66,13 +66,13 @@ def add_blog_schema(html_path: Path, data: dict[str, str]) -> None:
 
     html = html_path.read_text(encoding="utf-8")
     html = re.sub(
-        rf'\s*<script type="application/ld\+json" {SCHEMA_MARKER}>.*?</script>',
+        rf'\s*<script type="application/ld\+json" {SCHEMA_MARKER}>.*?</script>\s*',
         "",
         html,
         flags=re.DOTALL,
     )
     script = (
-        f'  <script type="application/ld+json" {SCHEMA_MARKER}>\n'
+        f'\n  <script type="application/ld+json" {SCHEMA_MARKER}>\n'
         f'  {json.dumps(schema, ensure_ascii=False, separators=(",", ":"))}\n'
         "  </script>\n"
     )
@@ -233,9 +233,56 @@ def add_eu_launch_planner(html_path: Path) -> None:
     html_path.write_text(html, encoding="utf-8")
 
 
+def add_article_navigation(html_path: Path, data: dict[str, str], related: list[dict]) -> None:
+    html = html_path.read_text(encoding="utf-8")
+    english = data.get("language") == "en"
+    label = "Author" if english else "Autor"
+    if 'class="article-byline"' not in html:
+        html = html.replace('</h1>', f'</h1><p class="article-byline">{label}: <a href="/about-me/" rel="author">Goran Peremin</a></p>', 1)
+    html = re.sub(r'\s*<aside class="related-posts".*?</aside>', '', html, flags=re.DOTALL)
+    html = re.sub(r'\s*<aside class="article-author".*?</aside>', '', html, flags=re.DOTALL)
+    bio = ('Goran Peremin writes about eCommerce, growth marketing, analytics and data protection.' if english else
+           'Goran Peremin piše o eCommerceu, growth marketingu, analitici i zaštiti osobnih podataka.')
+    author = f'<aside class="article-author" aria-label="{label}"><h2>{label}: <a href="/about-me/" rel="author">Goran Peremin</a></h2><p>{bio}</p></aside>'
+    title = "Related articles" if english else "Povezani članci"
+    # Croatian questions keep the destination language clear on the English guide.
+    language = ' lang="hr"' if english else ''
+    rows = ''.join(f'<li><a href="/{item["slug"]}/"{language}>{escape(item["question"])}</a><p{language}>{escape(item["summary"])}</p></li>' for item in related)
+    navigation = f'<aside class="related-posts" aria-label="{title}"><h2>{title}</h2><ul>{rows}</ul></aside>'
+    marker = '</article>'
+    if marker not in html:
+        raise ValueError(f"Missing article element in {html_path}")
+    html_path.write_text(html.replace(marker, author + navigation + marker, 1), encoding="utf-8")
+
+
+def add_author_profile(html_path: Path, articles: dict[str, dict[str, str]]) -> None:
+    html = html_path.read_text(encoding="utf-8")
+    marker = 'data-peremin-schema="profile"'
+    html = re.sub(r'\s*<script type="application/ld\+json" ' + marker + r'>.*?</script>', '', html, flags=re.DOTALL)
+    profile = {"@context": "https://schema.org", "@type": "ProfilePage", "@id": f"{BASE_URL}about-me/#profile", "url": f"{BASE_URL}about-me/", "mainEntity": {"@id": f"{BASE_URL}about-me/#person", "@type": "Person", "name": "Goran Peremin"}}
+    html = html.replace('</head>', f'<script type="application/ld+json" {marker}>' + json.dumps(profile, ensure_ascii=False, separators=(',', ':')) + '</script></head>', 1)
+    html = re.sub(r'\s*<section class="author-articles".*?</section>', '', html, flags=re.DOTALL)
+    rows = ''.join(f'<li><a href="/{slug}/"' + (' lang="en"' if data.get('language') == 'en' else '') + f'>{escape(data["title"])}</a></li>' for slug, data in sorted(articles.items(), key=lambda item: item[1]['date'], reverse=True) if data.get('background') != 'true')
+    section = '<section class="author-articles" aria-labelledby="author-articles-title"><h2 id="author-articles-title">Članci Gorana Peremina</h2><p>Vodiči, analize i eksperimenti o eCommerceu, marketingu i podacima.</p><ul>' + rows + '</ul></section>'
+    html_path.write_text(html.replace('</main>', section + '</main>', 1), encoding="utf-8")
+
+
 def process(content: Path, dist: Path) -> None:
     shutil.rmtree(dist / "tags", ignore_errors=True)
 
+    links_path = content.parent / "docs/article-links.json"
+    links = json.loads(links_path.read_text(encoding="utf-8")) if links_path.is_file() else {}
+    articles = {p.parent.relative_to(content).as_posix(): frontmatter(p) for p in content.glob("**/index.md") if frontmatter(p).get("type") == "blog-post"}
+    if links:
+        if set(articles) != set(links):
+            raise ValueError("Curated article links must cover every article")
+        for slug, item in links.items():
+            targets = item['related']
+            if len(targets) != len(set(targets)) or slug in targets or not 3 <= len(targets) <= 5:
+                raise ValueError(f"Invalid related articles for {slug}")
+            for target in targets:
+                if target not in articles or articles[target].get('background') == 'true':
+                    raise ValueError(f"Invalid or hidden related target: {target}")
     sitemap_pages: list[tuple[str, str | None]] = []
     background_urls: set[str] = set()
     for source in sorted(content.glob("**/index.md")):
@@ -259,11 +306,15 @@ def process(content: Path, dist: Path) -> None:
             if not html_path.is_file():
                 raise FileNotFoundError(f"Missing generated article {html_path}")
             add_blog_schema(html_path, data)
+            if links:
+                add_article_navigation(html_path, data, [dict(links[target], slug=target) for target in links[slug]['related']])
             if data.get("webshopSelector") == "true":
                 add_webshop_selector(html_path)
             if data.get("euLaunchPlanner") == "true":
                 add_eu_launch_planner(html_path)
 
+    if links and (dist / "about-me/index.html").is_file():
+        add_author_profile(dist / "about-me/index.html", articles)
     sitemap_pages.append((absolute_url("lab/hypeometar/"), None))
     sitemap_pages = sorted(set(sitemap_pages), key=lambda item: (item[0] != BASE_URL, item[0]))
     write_sitemap(dist, sitemap_pages)

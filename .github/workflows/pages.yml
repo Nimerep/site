@@ -55,6 +55,7 @@ jobs:
         run: |
           ! grep -q 'site.latestPosts' templates/peremin.html
           python3 -B docs/test_background_articles.py
+          python3 -B docs/test_article_links.py
           python3 docs/postprocess_seo.py content/ dist/
 
       - name: Inspect deploy output
