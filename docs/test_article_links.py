@@ -3,13 +3,15 @@ from tempfile import TemporaryDirectory
 import json, re
 from postprocess_seo import frontmatter, process
 root=Path(__file__).resolve().parents[1]
+hidden=[src.parent.name for src in (root/'content').glob('*/index.md') if frontmatter(src).get('background')=='true']
 with TemporaryDirectory() as folder:
     dist=Path(folder)
     for src in (root/'content').glob('*/index.md'):
         d=frontmatter(src)
         if d.get('type') not in {'blog-post','page'}: continue
         p=dist/src.parent.name/'index.html';p.parent.mkdir(parents=True,exist_ok=True)
-        p.write_text('<html><head></head><body><main><article class="article-shell"><header class="article-header"><h1>Title</h1></header><div class="article-body"><p>Keep body</p></div><aside class="related-posts"><h2>Povezani članci</h2><ul><li>Automatic</li></ul></aside></article></main></body></html>',encoding='utf-8')
+        body_links=''.join(f'<p><a href="{url}">Editorial link</a></p>' for url in re.findall(r'\]\((/[^)]+)\)',src.read_text(encoding='utf-8')))
+        p.write_text('<html><head></head><body><main><article class="article-shell"><header class="article-header"><h1>Title</h1></header><div class="article-body"><p>Keep body</p>'+body_links+'</div><aside class="related-posts"><h2>Povezani članci</h2><ul><li>Automatic</li></ul></aside></article></main></body></html>',encoding='utf-8')
     (dist/'index.html').write_text('<html><head></head><body></body></html>',encoding='utf-8')
     # Widget integrations have their own tests; these fixtures exercise the shared SEO output.
     import postprocess_seo
@@ -28,13 +30,18 @@ with TemporaryDirectory() as folder:
         author=graph[0]['author']
         assert author['name']=='Goran Peremin' and author['@id'].endswith('/about-me/#person')
         assert '<p>Keep body</p>' in html
+        if not d.get('image'): assert 'image' not in graph[0]
+        for url in re.findall(r'\]\((/[^)]+)\)',src.read_text(encoding='utf-8')):
+            assert f'href="{url}"' in html, src.parent.name+' lost an editorial link'
         assert len(re.findall(r'<li><a href=',html))>=3
         if d.get('background')!='true':visible.append(src.parent.name)
-        for hidden in ['kako-analizirati-konkurenciju-za-webshop','kako-provjeriti-hoce-li-se-proizvod-prodavati-online','koliko-smijem-potrositi-na-oglase-po-narudzbi','zasto-webshop-ima-posjete-ali-nema-prodaje']:
-            assert f'href="/{hidden}/"' not in html
+        outside_body=re.sub(r'<div class="article-body">.*?</div>','',html,flags=re.S)
+        for slug in hidden:
+            assert f'href="/{slug}/"' not in outside_body
     about=(dist/'about-me/index.html').read_text(encoding='utf-8')
     assert '"@type":"ProfilePage"' in about
     for slug in visible: assert f'href="/{slug}/"' in about
+    for slug in hidden: assert f'href="/{slug}/"' not in about
     first={p.relative_to(dist):p.read_bytes() for p in dist.rglob('*.html')}
     process(root/'content',dist)
     second={p.relative_to(dist):p.read_bytes() for p in dist.rglob('*.html')}

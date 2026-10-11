@@ -110,7 +110,7 @@ def write_redirect(dist: Path, route: str, target: str) -> None:
 
 
 def hide_background_articles(dist: Path, urls: set[str]) -> None:
-    """Keep canonical pages and sitemap, remove entry points in HTML and feeds."""
+    """Keep editorial body links; hide background pages from lists and feeds."""
     if not urls:
         return
     paths = {urlsplit(url).path.rstrip('/') for url in urls}
@@ -135,9 +135,12 @@ def hide_background_articles(dist: Path, urls: set[str]) -> None:
         def handle_starttag(self, tag, attrs):
             if tag in {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}:
                 return
-            node = {'tag': tag, 'start': self.position(), 'remove': False}
+            node = {'tag': tag, 'start': self.position(), 'remove': False,
+                    'editorial': 'article-body' in (dict(attrs).get('class') or '').split()}
             self.stack.append(node)
             if tag == 'a' and is_background(dict(attrs).get('href') or '', self.base):
+                if any(n['editorial'] for n in self.stack):
+                    return
                 # Remove the whole card/list item; otherwise remove just this link.
                 target = next((n for n in reversed(self.stack[:-1]) if n['tag'] == 'li'), node)
                 target['remove'] = True
@@ -296,12 +299,13 @@ def process(content: Path, dist: Path) -> None:
             background_urls.add(canonical)
 
         if data["type"] == "blog-post":
-            required = {"title", "description", "date", "sourceURL", "image"} - data.keys()
+            required = {"title", "description", "date", "sourceURL"} - data.keys()
             if required:
                 raise ValueError(f"Missing {sorted(required)} in {source}")
-            image_path = content / data["image"].lstrip("/")
-            if not image_path.is_file():
-                raise FileNotFoundError(f"Missing article image {image_path}")
+            if data.get("image"):
+                image_path = content / data["image"].lstrip("/")
+                if not image_path.is_file():
+                    raise FileNotFoundError(f"Missing article image {image_path}")
             html_path = dist / slug / "index.html"
             if not html_path.is_file():
                 raise FileNotFoundError(f"Missing generated article {html_path}")

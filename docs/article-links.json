@@ -239,6 +239,51 @@
       "ecommerce-growth-vodic-seo-cro-analitika-ai-gdpr"
     ]
   },
+  "kako-odrediti-prag-besplatne-dostave": {
+    "question": "Želiš odrediti prag besplatne dostave bez gubitka marže?",
+    "summary": "Goran Peremin uspoređuje doprinos košarice s prihodom i troškom dostave.",
+    "related": [
+      "popust-nije-konverzija-uplift-marza-i-cro",
+      "7-najefikasnijih-proof-elemenata-za-povecanje-povjerenja-u-web-shopu",
+      "ecommerce-growth-vodic-seo-cro-analitika-ai-gdpr"
+    ]
+  },
+  "kako-poboljsati-konverziju-webshopa-s-malo-prometa": {
+    "question": "Želiš poboljšati konverziju kad webshop nema dovoljno prometa za A/B test?",
+    "summary": "Goran Peremin predlaže provjeru kupnje i razgovore s kupcima, uz granice malog uzorka.",
+    "related": [
+      "7-najefikasnijih-proof-elemenata-za-povecanje-povjerenja-u-web-shopu",
+      "koliko-je-los-search-skup-seo-ux-i-konverzija",
+      "besplatno-ab-testiranje-s-umjetnom-inteligencijom-ai-llm"
+    ]
+  },
+  "zasto-ga4-prikazuje-manje-kupnji-nego-webshop": {
+    "question": "Želiš otkriti zašto GA4 prikazuje manje kupnji nego webshop?",
+    "summary": "Goran Peremin razdvaja nedostajuće događaje, opseg narudžbi i razlike u atribuciji.",
+    "related": [
+      "kolacici-uskladi-se-s-gdpr-om-i-eprivacy-direktivom",
+      "napredna-analitika-i-predictive-analytics-marketing-bez-nagadanja",
+      "roi-nije-jedan-broj-kako-povezati-metrike-modele-i-zdrav-razum-u-marketingu"
+    ]
+  },
+  "zasto-meta-i-google-ads-prijavljuju-vise-prodaje-nego-webshop": {
+    "question": "Želiš razumjeti zašto Meta i Google Ads zajedno prijavljuju višak prodaje?",
+    "summary": "Goran Peremin pokazuje kako dvije platforme mogu pripisati zaslugu istoj narudžbi.",
+    "related": [
+      "roi-nije-jedan-broj-kako-povezati-metrike-modele-i-zdrav-razum-u-marketingu",
+      "brand-kampanje-istina-mitovi-i-mjerenje-ucinka",
+      "ekonometrija-u-marketingu-kako-pretvoriti-brojke-u-oruzje"
+    ]
+  },
+  "treba-li-placati-google-oglase-za-vlastiti-brend": {
+    "question": "Želiš provjeriti trebaš li plaćati Google oglase za vlastiti brend?",
+    "summary": "Goran Peremin povezuje konkurentske oglase i organski promet s dodatnim doprinosom prodaje.",
+    "related": [
+      "brand-kampanje-istina-mitovi-i-mjerenje-ucinka",
+      "roi-nije-jedan-broj-kako-povezati-metrike-modele-i-zdrav-razum-u-marketingu",
+      "zasto-brendovi-rastu-i-zasto-vas-mozda-stagnira"
+    ]
+  },
   "zasto-webshop-ima-posjete-ali-nema-prodaje": {
     "question": "Želiš otkriti zašto posjetitelji webshopa ne kupuju?",
     "summary": "Goran Peremin prolazi promet, ponudu, povjerenje, dostavu i naplatu.",

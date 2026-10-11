@@ -1,4 +1,4 @@
-"""Background articles stay indexable without links in HTML or feeds."""
+"""Background articles stay indexable; only editorial body links remain."""
 import json
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -15,11 +15,15 @@ with TemporaryDirectory() as folder:
         (dist / slug).mkdir()
         (content / slug / 'index.md').write_text(
             '---\ntitle: Example\ndescription: Example article\ntype: blog-post\n'
-            'date: 2026-10-04\nimage: /cover.webp\nnav: false\n'
+            'date: 2026-10-04\nnav: false\n'
+            + ('image: /cover.webp\n' if not background else '') +
             f'sourceURL: https://www.peremin.com/{slug}/\n'
             f'background: {str(background).lower()}\n---\nArticle body\n', encoding='utf-8')
         (dist / slug / 'index.html').write_text(
             '<html><head></head><body><h1>Article</h1><p>Keep this body.</p>'
+            '<div class="article-body"><p><a href="/background/">Editorial</a></p>'
+            '<ul><li><a href="../background/?from=body#answer">Body list</a></li></ul>'
+            '<a href="https://www.peremin.com/background/">Body absolute</a></div>'
             '<ul><li><a href="/background/">Background</a></li>'
             '<li><a href="/visible/">Visible</a></li></ul>'
             '<a href="../background/?from=related#answer">Relative</a>'
@@ -46,8 +50,13 @@ with TemporaryDirectory() as folder:
         html = (dist / slug / 'index.html').read_text(encoding='utf-8')
         assert '<p>Keep this body.</p>' in html
         assert 'noindex' not in html and 'data-peremin-schema' in html
-        assert 'href="/background/' not in html and '../background/' not in html
-        assert 'href="https://www.peremin.com/background/' not in html
+        assert '<a href="/background/">Editorial</a>' in html
+        assert '<a href="../background/?from=body#answer">Body list</a>' in html
+        assert '<a href="https://www.peremin.com/background/">Body absolute</a>' in html
+        assert '>Background</a>' not in html and '>Relative</a>' not in html and '>Absolute</a>' not in html
+        if slug == 'background':
+            schema = json.loads(html.split('data-peremin-schema="blog-posting">')[1].split('</script>')[0])
+            assert 'image' not in schema['@graph'][0], 'Imageless article acquired an image'
         assert 'href="https://example.com/background/"' in html
     for feed in ['feed.xml', 'atom.xml', 'feed.json']:
         text = (dist / feed).read_text(encoding='utf-8')
@@ -58,4 +67,4 @@ with TemporaryDirectory() as folder:
     first = {str(p.relative_to(dist)): p.read_bytes() for p in dist.rglob('*') if p.is_file()}
     hide_background_articles(dist, {'https://www.peremin.com/background/'})
     assert first == {str(p.relative_to(dist)): p.read_bytes() for p in dist.rglob('*') if p.is_file()}
-print('Background pages: sitemap, schema, body, link removal, feeds and idempotence passed')
+print('Background pages: optional image, editorial links, hidden lists, feeds, sitemap and idempotence passed')
